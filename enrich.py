@@ -154,12 +154,43 @@ def load_careers(years=(2024, 2023, 2022)):
     return careers
 
 
+# ---------- RTSports / FreeDraftGuide player-id map (ids only) ----------
+
+RTS_RANKINGS = "https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS={pos}"
+RTS_POS = {"0": "QB", "1": "RB", "2": "WR", "3": "TE"}
+
+
+def load_rtsports_ids():
+    """Map (position, norm_name) -> RTSports player_id. Only identifiers are stored;
+    the copyrighted summary text is fetched live and shown with a linkback, never
+    committed to the repo."""
+    ids = {}
+    for code, pos in RTS_POS.items():
+        try:
+            data = json.loads(_get(RTS_RANKINGS.format(pos=code), timeout=30))
+        except Exception:
+            continue
+        plist = data.get("player_list", {})
+        rows = plist.values() if isinstance(plist, dict) else plist
+        for r in rows:
+            name = r.get("name")
+            pid = r.get("player_id")
+            if name and pid:
+                ids[(norm(name), pos)] = str(pid)
+    if ids:
+        print(f"  RTSports: mapped {len(ids)} player ids")
+    else:
+        print("  ! RTSports unavailable; skipping summary ids")
+    return ids
+
+
 # ---------- apply ----------
 
 def enrich(players):
     sleeper = load_sleeper()
     adp = load_adp()
     careers = load_careers()
+    rts = load_rtsports_ids()
     matched_bio = matched_adp = matched_car = 0
     for p in players:
         key = (norm(p["player"]), p["position"])
@@ -178,6 +209,9 @@ def enrich(players):
         if key in careers:
             p["career"] = careers[key]
             matched_car += 1
-    print(f"  Matched: {matched_bio} bios, {matched_adp} ADP, {matched_car} careers "
-          f"of {len(players)} players")
+        if key in rts:
+            p["rtsports_pid"] = rts[key]
+    matched_rts = sum(1 for p in players if p.get("rtsports_pid"))
+    print(f"  Matched: {matched_bio} bios, {matched_adp} ADP, {matched_car} careers, "
+          f"{matched_rts} RTSports ids of {len(players)} players")
     return players

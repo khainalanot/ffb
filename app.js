@@ -471,8 +471,32 @@ function openModal(k) {
   document.getElementById("comment-error").classList.add("hidden");
   document.getElementById("comment-form").reset();
   modal.classList.remove("hidden");
+  loadSummary(p);
   loadComments(p);
   loadNews(p);
+}
+
+async function loadSummary(p) {
+  const wrap = document.getElementById("snap-summary-wrap");
+  const el = document.getElementById("snap-summary");
+  if (!p.rtsports_pid) { wrap.classList.add("hidden"); return; }
+  wrap.classList.remove("hidden");
+  el.innerHTML = `<div class="comment-empty">Loading outlook…</div>`;
+  document.getElementById("snap-summary-link").href =
+    `https://www.freedraftguide.com/football/draft-guide-player.php?PID=${encodeURIComponent(p.rtsports_pid)}`;
+  try {
+    const res = await fetch(`api/summary.php?pid=${encodeURIComponent(p.rtsports_pid)}`);
+    if (!res.ok) throw new Error();
+    const d = await res.json();
+    const parts = [];
+    if (d.outlook) parts.push(`<p class="summary-para">${escapeHtml(d.outlook)}</p>`);
+    if (d.summary) parts.push(`<p class="summary-para muted">${escapeHtml(d.summary)}</p>`);
+    if (!parts.length) { wrap.classList.add("hidden"); return; }
+    el.innerHTML = parts.join("") +
+      `<div class="summary-attr">Data via <a href="https://www.rtsports.com" target="_blank" rel="noopener noreferrer">RTSports.com</a></div>`;
+  } catch (_) {
+    wrap.classList.add("hidden");
+  }
 }
 
 function tile(label, value, hero) {

@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <header class="topbar">
@@ -88,6 +88,11 @@ ffb_require_auth_or_redirect();
 
     <div class="stat-grid" id="modal-stats"></div>
 
+    <div id="snap-summary-wrap" class="snap-section hidden">
+      <div class="section-head">Fantasy Outlook <a id="snap-summary-link" class="section-link" href="#" target="_blank" rel="noopener noreferrer">via RTSports.com ↗</a></div>
+      <div id="snap-summary" class="summary-body"></div>
+    </div>
+
     <div id="snap-career-wrap" class="snap-section hidden">
       <div class="section-head">Career</div>
       <div class="career-scroll"><table id="snap-career" class="career-table"></table></div>
@@ -137,6 +142,6 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>
