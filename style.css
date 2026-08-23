@@ -435,6 +435,7 @@ td { padding: 11px 14px; font-size: 14px; white-space: nowrap; vertical-align: m
   display: flex; align-items: center; justify-content: center; padding: 20px;
 }
 .modal.hidden { display: none; }
+body.modal-open { overflow: hidden; }
 .modal-content {
   background: var(--surface);
   border: 1px solid var(--line);

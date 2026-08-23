@@ -29,6 +29,11 @@ let editMode = false;
 let tagFilters = new Set();   // active legend filters (tag slugs); empty = show all
 let keepVisible = new Set();  // keys of rows just re-tagged; stay visible until you navigate
 
+function syncBodyScroll() {
+  const anyOpen = [...document.querySelectorAll(".modal")].some(m => !m.classList.contains("hidden"));
+  document.body.classList.toggle("modal-open", anyOpen);
+}
+
 function key(p) { return `${p.position}|${p.player}`; }
 function ovr(p) { return overrides[key(p)] || {}; }
 function tagOf(p) {
@@ -473,6 +478,7 @@ function openModal(k) {
   document.getElementById("comment-error").classList.add("hidden");
   document.getElementById("comment-form").reset();
   modal.classList.remove("hidden");
+  syncBodyScroll();
   loadSummary(p);
   loadComments(p);
   loadNews(p);
@@ -555,7 +561,7 @@ async function loadNews(p) {
   }
 }
 
-function closeModal() { modal.classList.add("hidden"); activeKey = null; }
+function closeModal() { modal.classList.add("hidden"); activeKey = null; syncBodyScroll(); }
 document.getElementById("modal-close").addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
 document.getElementById("snap-tag").addEventListener("click", (e) => {
@@ -692,7 +698,7 @@ document.getElementById("legend-edit-toggle").addEventListener("click", () => {
 // ---- trending ----
 
 const trendModal = document.getElementById("trending-modal");
-function closeTrending() { trendModal.classList.add("hidden"); }
+function closeTrending() { trendModal.classList.add("hidden"); syncBodyScroll(); }
 document.getElementById("trending-close").addEventListener("click", closeTrending);
 trendModal.addEventListener("click", (e) => { if (e.target === trendModal) closeTrending(); });
 
@@ -739,6 +745,7 @@ async function loadTrending() {
 
 function openTrending() {
   trendModal.classList.remove("hidden");
+  syncBodyScroll();
   loadTrending();
 }
 document.getElementById("trending-open").addEventListener("click", openTrending);
@@ -746,12 +753,13 @@ document.getElementById("trending-open").addEventListener("click", openTrending)
 // ---- latest analysis ----
 
 const latestModal = document.getElementById("latest-modal");
-function closeLatest() { latestModal.classList.add("hidden"); }
+function closeLatest() { latestModal.classList.add("hidden"); syncBodyScroll(); }
 document.getElementById("latest-close").addEventListener("click", closeLatest);
 latestModal.addEventListener("click", (e) => { if (e.target === latestModal) closeLatest(); });
 
 async function openLatest() {
   latestModal.classList.remove("hidden");
+  syncBodyScroll();
   const el = document.getElementById("latest-list");
   el.innerHTML = `<div class="comment-empty">Loading…</div>`;
   try {
