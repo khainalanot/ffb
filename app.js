@@ -246,6 +246,7 @@ function renderHead() {
 }
 
 function renderTable() {
+  if (typeof closeTagMenu === "function") closeTagMenu();
   renderHead();
   const query = document.getElementById("search").value.trim().toLowerCase();
   const body = document.getElementById("ranks-body");
@@ -257,8 +258,8 @@ function renderTable() {
     const t = tagMap[slug];
     if (tagFilters.size) {
       if (!tagFilters.has(slug)) return false;   // explicit filter overrides hidden rule
-    } else if (!showHidden && t && t.hidden_default) {
-      return false;
+    } else if (!showHidden && !editMode && t && t.hidden_default) {
+      return false;                              // edit mode keeps hidden players visible
     }
     if (!query) return true;
     return p.player.toLowerCase().includes(query) || (p.team || "").toLowerCase().includes(query);
@@ -275,8 +276,9 @@ function renderTable() {
       : "";
     const posBadge = showPos ? `<td><span class="pos-badge">${p.position}</span></td>` : "";
     const inj = injuryDot(p.injury_status);
+    const dimmed = (t && t.hidden_default) ? " row-hidden-tag" : "";
     return `
-      <tr class="player-row" data-key="${encodeURIComponent(key(p))}" ${canDrag ? 'draggable="true"' : ""}>
+      <tr class="player-row${dimmed}" data-key="${encodeURIComponent(key(p))}" ${canDrag ? 'draggable="true"' : ""}>
         <td class="drag-col">${canDrag ? '<span class="drag-handle">⠿</span>' : ""}</td>
         <td class="rk-cell">${i + 1}</td>
         ${posBadge}
@@ -297,7 +299,7 @@ function renderTable() {
     const k = decodeURIComponent(row.dataset.key);
     const pill = row.querySelector(".tag-chip");
     if (editMode) {
-      pill.addEventListener("click", (e) => { e.stopPropagation(); cycleTag(k); });
+      pill.addEventListener("click", (e) => { e.stopPropagation(); openTagMenu(k, pill); });
       const starEl = row.querySelector(".pick-star");
       if (starEl) starEl.addEventListener("click", (e) => { e.stopPropagation(); togglePick(k); });
     }
@@ -315,18 +317,61 @@ function renderTable() {
 
 // ---- editing: tags / picks ----
 
-async function cycleTag(k) {
+let tagMenuEl = null;
+
+function closeTagMenu() {
+  if (tagMenuEl) { tagMenuEl.remove(); tagMenuEl = null; }
+  document.removeEventListener("click", onDocClickForMenu, true);
+}
+function onDocClickForMenu(e) {
+  if (tagMenuEl && !tagMenuEl.contains(e.target)) closeTagMenu();
+}
+
+function openTagMenu(k, anchor) {
+  closeTagMenu();
   const p = players.find(pl => key(pl) === k);
   if (!p) return;
-  const order = [...tags.map(t => t.slug), null];
   const current = tagOf(p);
-  const idx = order.indexOf(current ?? null);
-  const next = order[(idx + 1) % order.length];
-  overrides[k] = { ...ovr(p), tag: next };
+
+  const menu = document.createElement("div");
+  menu.className = "tag-menu";
+  const opts = tags.map(t =>
+    `<button class="tag-opt ${t.slug === current ? "current" : ""}" data-slug="${t.slug}">
+       <span class="dot" style="background:${t.color}"></span>${escapeHtml(t.label)}
+     </button>`
+  ).join("");
+  menu.innerHTML = `<div class="tag-menu-head">Set tag</div>${opts}
+    <button class="tag-opt clear ${!current ? "current" : ""}" data-slug="">
+      <span class="dot" style="background:transparent;border:1px solid var(--line)"></span>No tag
+    </button>`;
+  document.body.appendChild(menu);
+
+  const r = anchor.getBoundingClientRect();
+  const mw = 240;
+  let left = r.left;
+  if (left + mw > window.innerWidth - 8) left = window.innerWidth - mw - 8;
+  menu.style.top = `${r.bottom + window.scrollY + 6}px`;
+  menu.style.left = `${left + window.scrollX}px`;
+
+  menu.querySelectorAll(".tag-opt").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setTag(k, btn.dataset.slug || null);
+      closeTagMenu();
+    });
+  });
+  tagMenuEl = menu;
+  setTimeout(() => document.addEventListener("click", onDocClickForMenu, true), 0);
+}
+
+async function setTag(k, slug) {
+  const p = players.find(pl => key(pl) === k);
+  if (!p) return;
+  overrides[k] = { ...ovr(p), tag: slug };
   renderTable();
   try {
     await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ position: p.position, player: p.player, tag: next }) });
+      body: JSON.stringify({ position: p.position, player: p.player, tag: slug }) });
   } catch (_) {}
 }
 
@@ -485,7 +530,8 @@ async function loadNews(p) {
   wrap.classList.remove("hidden");
   el.innerHTML = `<div class="comment-empty">Loading news…</div>`;
   try {
-    const res = await fetch(`api/news.php?player=${encodeURIComponent(p.player)}`);
+    const eid = p.espn_id ? `&espn_id=${encodeURIComponent(p.espn_id)}` : "";
+    const res = await fetch(`api/news.php?player=${encodeURIComponent(p.player)}${eid}`);
     if (!res.ok) throw new Error();
     const items = (await res.json()).news || [];
     if (!items.length) { el.innerHTML = `<div class="comment-empty">No recent news mentioning ${escapeHtml(p.player)}.</div>`; return; }

@@ -169,6 +169,8 @@ def enrich(players):
             p["headshot"] = s["headshot"]
             p["injury_status"] = s.get("injury_status")
             p["sleeper_id"] = s["sleeper_id"]
+            if s.get("espn_id"):
+                p["espn_id"] = s["espn_id"]
             matched_bio += 1
         if key in adp and adp[key] is not None:
             p["adp"] = adp[key]

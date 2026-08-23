@@ -26,6 +26,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3257.jpg",
       "injury_status": null,
       "sleeper_id": "3257",
+      "espn_id": 2578570,
       "adp": 167.0,
       "career": [
         {
@@ -92,6 +93,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6011.jpg",
       "injury_status": null,
       "sleeper_id": "6011",
+      "espn_id": 4038524,
       "career": [
         {
           "season": 2024,
@@ -184,6 +186,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6768.jpg",
       "injury_status": null,
       "sleeper_id": "6768",
+      "espn_id": 4241479,
       "career": [
         {
           "season": 2024,
@@ -290,6 +293,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4881.jpg",
       "injury_status": null,
       "sleeper_id": "4881",
+      "espn_id": 3916387,
       "adp": 56.7,
       "career": [
         {
@@ -356,6 +360,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7083.jpg",
       "injury_status": null,
       "sleeper_id": "7083",
+      "espn_id": 4035671,
       "career": [
         {
           "season": 2024,
@@ -421,6 +426,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4984.jpg",
       "injury_status": null,
       "sleeper_id": "4984",
+      "espn_id": 3918298,
       "adp": 33.7,
       "career": [
         {
@@ -487,6 +493,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5127.jpg",
       "injury_status": null,
       "sleeper_id": "5127",
+      "espn_id": 3115293,
       "career": [
         {
           "season": 2024,
@@ -766,6 +773,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6770.jpg",
       "injury_status": null,
       "sleeper_id": "6770",
+      "espn_id": 3915511,
       "adp": 57.4,
       "career": [
         {
@@ -832,6 +840,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/19.jpg",
       "injury_status": null,
       "sleeper_id": "19",
+      "espn_id": 11252,
       "career": [
         {
           "season": 2024,
@@ -924,6 +933,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4017.jpg",
       "injury_status": null,
       "sleeper_id": "4017",
+      "espn_id": 3122840,
       "career": [
         {
           "season": 2024,
@@ -1016,6 +1026,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3294.jpg",
       "injury_status": null,
       "sleeper_id": "3294",
+      "espn_id": 2577417,
       "adp": 65.3,
       "career": [
         {
@@ -1189,6 +1200,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6136.jpg",
       "injury_status": null,
       "sleeper_id": "6136",
+      "espn_id": 3892775,
       "career": [
         {
           "season": 2024,
@@ -1254,6 +1266,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3163.jpg",
       "injury_status": null,
       "sleeper_id": "3163",
+      "espn_id": 3046779,
       "adp": 99.7,
       "career": [
         {
@@ -1320,6 +1333,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2152.jpg",
       "injury_status": "NA",
       "sleeper_id": "2152",
+      "espn_id": 16728,
       "career": [
         {
           "season": 2023,
@@ -1373,6 +1387,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6804.jpg",
       "injury_status": null,
       "sleeper_id": "6804",
+      "espn_id": 4036378,
       "adp": 146.3,
       "career": [
         {
@@ -1439,6 +1454,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/827.jpg",
       "injury_status": null,
       "sleeper_id": "827",
+      "espn_id": 14163,
       "career": [
         {
           "season": 2024,
@@ -1623,6 +1639,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5870.jpg",
       "injury_status": null,
       "sleeper_id": "5870",
+      "espn_id": 3917792,
       "adp": 160.1,
       "career": [
         {
@@ -1808,6 +1825,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4464.jpg",
       "injury_status": null,
       "sleeper_id": "4464",
+      "espn_id": 3059989,
       "career": [
         {
           "season": 2024,
@@ -1873,6 +1891,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4046.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4046",
+      "espn_id": 3139477,
       "adp": 101.9,
       "career": [
         {
@@ -2004,6 +2023,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6797.jpg",
       "injury_status": null,
       "sleeper_id": "6797",
+      "espn_id": 4038941,
       "adp": 105.8,
       "career": [
         {
@@ -2123,6 +2143,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/421.jpg",
       "injury_status": null,
       "sleeper_id": "421",
+      "espn_id": 12483,
       "adp": 77.2,
       "career": [
         {
@@ -2216,6 +2237,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/1166.jpg",
       "injury_status": null,
       "sleeper_id": "1166",
+      "espn_id": 14880,
       "career": [
         {
           "season": 2024,
@@ -2402,6 +2424,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5849.jpg",
       "injury_status": null,
       "sleeper_id": "5849",
+      "espn_id": 3917315,
       "adp": 133.3,
       "career": [
         {
@@ -2740,6 +2763,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2306.jpg",
       "injury_status": null,
       "sleeper_id": "2306",
+      "espn_id": 2969939,
       "career": [
         {
           "season": 2024,
@@ -2805,6 +2829,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/1373.jpg",
       "injury_status": null,
       "sleeper_id": "1373",
+      "espn_id": 15864,
       "career": [
         {
           "season": 2024,
@@ -2924,6 +2949,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6904.jpg",
       "injury_status": null,
       "sleeper_id": "6904",
+      "espn_id": 4040715,
       "adp": 79.7,
       "career": [
         {
@@ -3031,6 +3057,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/96.jpg",
       "injury_status": null,
       "sleeper_id": "96",
+      "espn_id": 8439,
       "adp": 164.8,
       "career": [
         {
@@ -3151,6 +3178,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4943.jpg",
       "injury_status": null,
       "sleeper_id": "4943",
+      "espn_id": 3912547,
       "adp": 141.4,
       "career": [
         {
@@ -3375,6 +3403,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4892.jpg",
       "injury_status": null,
       "sleeper_id": "4892",
+      "espn_id": 3052587,
       "adp": 129.3,
       "career": [
         {
@@ -3441,6 +3470,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6111.jpg",
       "injury_status": null,
       "sleeper_id": "6111",
+      "espn_id": 3886812,
       "career": [
         {
           "season": 2024,
@@ -3522,6 +3552,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3976.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "3976",
+      "espn_id": 3039707,
       "career": [
         {
           "season": 2024,
@@ -3629,6 +3660,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2307.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "2307",
+      "espn_id": 2576980,
       "career": [
         {
           "season": 2024,
@@ -3833,6 +3865,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4137.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4137",
+      "espn_id": 3045147,
       "adp": 160.3,
       "career": [
         {
@@ -4076,6 +4109,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3198.jpg",
       "injury_status": null,
       "sleeper_id": "3198",
+      "espn_id": 3043078,
       "adp": 17.6,
       "career": [
         {
@@ -4143,6 +4177,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5995.jpg",
       "injury_status": null,
       "sleeper_id": "5995",
+      "espn_id": 4038441,
       "adp": 168.8,
       "career": [
         {
@@ -4347,6 +4382,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6039.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "6039",
+      "espn_id": 3915411,
       "adp": 182.4,
       "career": [
         {
@@ -4567,6 +4603,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6828.jpg",
       "injury_status": null,
       "sleeper_id": "6828",
+      "espn_id": 4239934,
       "career": [
         {
           "season": 2023,
@@ -4649,6 +4686,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6790.jpg",
       "injury_status": null,
       "sleeper_id": "6790",
+      "espn_id": 4259545,
       "adp": 45.8,
       "career": [
         {
@@ -4854,6 +4892,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4147.jpg",
       "injury_status": null,
       "sleeper_id": "4147",
+      "espn_id": 3116389,
       "adp": 169.0,
       "career": [
         {
@@ -5201,6 +5240,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6806.jpg",
       "injury_status": null,
       "sleeper_id": "6806",
+      "espn_id": 4241985,
       "adp": 91.5,
       "career": [
         {
@@ -5530,6 +5570,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5850.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "5850",
+      "espn_id": 4047365,
       "adp": 30.9,
       "career": [
         {
@@ -5748,6 +5789,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5892.jpg",
       "injury_status": null,
       "sleeper_id": "5892",
+      "espn_id": 4035538,
       "adp": 58.4,
       "career": [
         {
@@ -5872,6 +5914,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6813.jpg",
       "injury_status": null,
       "sleeper_id": "6813",
+      "espn_id": 4242335,
       "adp": 7.5,
       "career": [
         {
@@ -6775,6 +6818,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4199.jpg",
       "injury_status": null,
       "sleeper_id": "4199",
+      "espn_id": 3042519,
       "adp": 101.6,
       "career": [
         {
@@ -7128,6 +7172,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4035.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4035",
+      "espn_id": 3054850,
       "adp": 143.1,
       "career": [
         {
@@ -7349,6 +7394,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6130.jpg",
       "injury_status": null,
       "sleeper_id": "6130",
+      "espn_id": 4040761,
       "career": [
         {
           "season": 2024,
@@ -7567,6 +7613,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4866.jpg",
       "injury_status": null,
       "sleeper_id": "4866",
+      "espn_id": 3929630,
       "adp": 19.7,
       "career": [
         {
@@ -7731,6 +7778,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7021.jpg",
       "injury_status": null,
       "sleeper_id": "7021",
+      "espn_id": 4038815,
       "adp": 74.9,
       "career": [
         {
@@ -8089,6 +8137,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4034.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4034",
+      "espn_id": 3117251,
       "adp": 6.6,
       "career": [
         {
@@ -8408,6 +8457,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5967.jpg",
       "injury_status": null,
       "sleeper_id": "5967",
+      "espn_id": 3916148,
       "adp": 68.4,
       "career": [
         {
@@ -8682,6 +8732,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4219.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4219",
+      "espn_id": 3127586,
       "career": [
         {
           "season": 2024,
@@ -8816,6 +8867,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4454.jpg",
       "injury_status": null,
       "sleeper_id": "4454",
+      "espn_id": 3045523,
       "career": [
         {
           "season": 2024,
@@ -8905,6 +8957,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6847.jpg",
       "injury_status": null,
       "sleeper_id": "6847",
+      "espn_id": 4039050,
       "career": [
         {
           "season": 2024,
@@ -9097,6 +9150,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6271.jpg",
       "injury_status": null,
       "sleeper_id": "6271",
+      "espn_id": 3917914,
       "career": [
         {
           "season": 2024,
@@ -9471,6 +9525,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4983.jpg",
       "injury_status": null,
       "sleeper_id": "4983",
+      "espn_id": 3915416,
       "adp": 48.9,
       "career": [
         {
@@ -9692,6 +9747,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5917.jpg",
       "injury_status": null,
       "sleeper_id": "5917",
+      "espn_id": 4035004,
       "career": [
         {
           "season": 2024,
@@ -10011,6 +10067,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3634.jpg",
       "injury_status": null,
       "sleeper_id": "3634",
+      "espn_id": 2973405,
       "career": [
         {
           "season": 2024,
@@ -10126,7 +10183,8 @@
       },
       "headshot": "https://sleepercdn.com/content/nfl/players/6290.jpg",
       "injury_status": null,
-      "sleeper_id": "6290"
+      "sleeper_id": "6290",
+      "espn_id": 3914397
     },
     {
       "position": "WR",
@@ -10217,6 +10275,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6801.jpg",
       "injury_status": null,
       "sleeper_id": "6801",
+      "espn_id": 4239993,
       "adp": 36.2,
       "career": [
         {
@@ -10454,6 +10513,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6783.jpg",
       "injury_status": null,
       "sleeper_id": "6783",
+      "espn_id": 4241463,
       "adp": 126.4,
       "career": [
         {
@@ -10657,6 +10717,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6786.jpg",
       "injury_status": null,
       "sleeper_id": "6786",
+      "espn_id": 4241389,
       "adp": 10.6,
       "career": [
         {
@@ -10937,6 +10998,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5086.jpg",
       "injury_status": null,
       "sleeper_id": "5086",
+      "espn_id": 3051738,
       "career": [
         {
           "season": 2024,
@@ -11062,6 +11124,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5045.jpg",
       "injury_status": null,
       "sleeper_id": "5045",
+      "espn_id": 3128429,
       "adp": 60.3,
       "career": [
         {
@@ -11371,6 +11434,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5970.jpg",
       "injury_status": null,
       "sleeper_id": "5970",
+      "espn_id": 4037235,
       "career": [
         {
           "season": 2024,
@@ -11461,6 +11525,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5113.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "5113",
+      "espn_id": 4036335,
       "career": [
         {
           "season": 2024,
@@ -12028,6 +12093,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5374.jpg",
       "injury_status": null,
       "sleeper_id": "5374",
+      "espn_id": 3118892,
       "career": [
         {
           "season": 2024,
@@ -12205,6 +12271,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7496.jpg",
       "injury_status": null,
       "sleeper_id": "7496",
+      "espn_id": 3929785,
       "career": [
         {
           "season": 2024,
@@ -12294,6 +12361,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6427.jpg",
       "injury_status": null,
       "sleeper_id": "6427",
+      "espn_id": 4061956,
       "career": [
         {
           "season": 2024,
@@ -12478,6 +12546,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5947.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "5947",
+      "espn_id": 3916433,
       "adp": 88.5,
       "career": [
         {
@@ -13086,6 +13155,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2133.jpg",
       "injury_status": null,
       "sleeper_id": "2133",
+      "espn_id": 16800,
       "adp": 41.8,
       "career": [
         {
@@ -13829,6 +13899,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6794.jpg",
       "injury_status": null,
       "sleeper_id": "6794",
+      "espn_id": 4262921,
       "adp": 11.7,
       "career": [
         {
@@ -13944,6 +14015,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7049.jpg",
       "injury_status": null,
       "sleeper_id": "7049",
+      "espn_id": 3886598,
       "adp": 148.9,
       "career": [
         {
@@ -14061,6 +14133,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5859.jpg",
       "injury_status": null,
       "sleeper_id": "5859",
+      "espn_id": 4047646,
       "adp": 18.2,
       "career": [
         {
@@ -14239,6 +14312,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4177.jpg",
       "injury_status": null,
       "sleeper_id": "4177",
+      "espn_id": 2991662,
       "career": [
         {
           "season": 2024,
@@ -14351,7 +14425,8 @@
       },
       "headshot": "https://sleepercdn.com/content/nfl/players/638.jpg",
       "injury_status": null,
-      "sleeper_id": "638"
+      "sleeper_id": "638",
+      "espn_id": 13488
     },
     {
       "position": "WR",
@@ -14619,6 +14694,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7090.jpg",
       "injury_status": null,
       "sleeper_id": "7090",
+      "espn_id": 4040655,
       "career": [
         {
           "season": 2024,
@@ -14681,6 +14757,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6149.jpg",
       "injury_status": null,
       "sleeper_id": "6149",
+      "espn_id": 3916945,
       "adp": 184.7,
       "career": [
         {
@@ -14982,6 +15059,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4351.jpg",
       "injury_status": null,
       "sleeper_id": "4351",
+      "espn_id": 3134353,
       "career": [
         {
           "season": 2024,
@@ -15337,6 +15415,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6819.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "6819",
+      "espn_id": 4035687,
       "adp": 74.6,
       "career": [
         {
@@ -15400,6 +15479,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5846.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "5846",
+      "espn_id": 4047650,
       "adp": 64.8,
       "career": [
         {
@@ -15695,6 +15775,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4039.jpg",
       "injury_status": null,
       "sleeper_id": "4039",
+      "espn_id": 2977187,
       "adp": 151.5,
       "career": [
         {
@@ -15836,6 +15917,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2216.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "2216",
+      "espn_id": 16737,
       "adp": 53.6,
       "career": [
         {
@@ -15899,6 +15981,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5872.jpg",
       "injury_status": null,
       "sleeper_id": "5872",
+      "espn_id": 3126486,
       "adp": 112.4,
       "career": [
         {
@@ -15990,6 +16073,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4950.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4950",
+      "espn_id": 3895856,
       "career": [
         {
           "season": 2024,
@@ -16123,6 +16207,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4037.jpg",
       "injury_status": null,
       "sleeper_id": "4037",
+      "espn_id": 3116165,
       "adp": 80.4,
       "career": [
         {
@@ -16412,6 +16497,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4981.jpg",
       "injury_status": null,
       "sleeper_id": "4981",
+      "espn_id": 3925357,
       "adp": 144.2,
       "career": [
         {
@@ -16519,6 +16605,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7066.jpg",
       "injury_status": null,
       "sleeper_id": "7066",
+      "espn_id": 3916566,
       "career": [
         {
           "season": 2024,
@@ -16581,6 +16668,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5927.jpg",
       "injury_status": null,
       "sleeper_id": "5927",
+      "espn_id": 3121422,
       "adp": 46.7,
       "career": [
         {
@@ -16644,6 +16732,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/2449.jpg",
       "injury_status": null,
       "sleeper_id": "2449",
+      "espn_id": 2976212,
       "adp": 91.2,
       "career": [
         {
@@ -17134,6 +17223,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3202.jpg",
       "injury_status": null,
       "sleeper_id": "3202",
+      "espn_id": 3043275,
       "career": [
         {
           "season": 2024,
@@ -17193,6 +17283,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7075.jpg",
       "injury_status": null,
       "sleeper_id": "7075",
+      "espn_id": 4035020,
       "career": [
         {
           "season": 2024,
@@ -17252,6 +17343,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5012.jpg",
       "injury_status": null,
       "sleeper_id": "5012",
+      "espn_id": 3116365,
       "adp": 128.8,
       "career": [
         {
@@ -17312,6 +17404,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5008.jpg",
       "injury_status": null,
       "sleeper_id": "5008",
+      "espn_id": 3052897,
       "career": [
         {
           "season": 2024,
@@ -17448,6 +17541,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5906.jpg",
       "injury_status": null,
       "sleeper_id": "5906",
+      "espn_id": 3930086,
       "career": [
         {
           "season": 2024,
@@ -17660,6 +17754,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6826.jpg",
       "injury_status": null,
       "sleeper_id": "6826",
+      "espn_id": 4258595,
       "career": [
         {
           "season": 2024,
@@ -17746,6 +17841,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4993.jpg",
       "injury_status": null,
       "sleeper_id": "4993",
+      "espn_id": 3116164,
       "career": [
         {
           "season": 2024,
@@ -17844,6 +17940,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6001.jpg",
       "injury_status": null,
       "sleeper_id": "6001",
+      "espn_id": 3127310,
       "career": [
         {
           "season": 2024,
@@ -18153,6 +18250,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4066.jpg",
       "injury_status": null,
       "sleeper_id": "4066",
+      "espn_id": 3051876,
       "career": [
         {
           "season": 2024,
@@ -18212,6 +18310,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6869.jpg",
       "injury_status": null,
       "sleeper_id": "6869",
+      "espn_id": 3911853,
       "career": [
         {
           "season": 2024,
@@ -18407,6 +18506,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5133.jpg",
       "injury_status": null,
       "sleeper_id": "5133",
+      "espn_id": 3122920,
       "career": [
         {
           "season": 2024,
@@ -18565,6 +18665,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5001.jpg",
       "injury_status": null,
       "sleeper_id": "5001",
+      "espn_id": 3117256,
       "adp": 163.7,
       "career": [
         {
@@ -18652,6 +18753,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5985.jpg",
       "injury_status": null,
       "sleeper_id": "5985",
+      "espn_id": 3843945,
       "career": [
         {
           "season": 2024,
@@ -18766,6 +18868,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4054.jpg",
       "injury_status": null,
       "sleeper_id": "4054",
+      "espn_id": 2998565,
       "career": [
         {
           "season": 2024,
@@ -18929,6 +19032,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/1466.jpg",
       "injury_status": null,
       "sleeper_id": "1466",
+      "espn_id": 15847,
       "adp": 109.0,
       "career": [
         {
@@ -19115,6 +19219,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4033.jpg",
       "injury_status": null,
       "sleeper_id": "4033",
+      "espn_id": 3123076,
       "adp": 136.0,
       "career": [
         {
@@ -19262,6 +19367,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/6865.jpg",
       "injury_status": null,
       "sleeper_id": "6865",
+      "espn_id": 4242557,
       "career": [
         {
           "season": 2024,
@@ -19484,6 +19590,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5844.jpg",
       "injury_status": null,
       "sleeper_id": "5844",
+      "espn_id": 4036133,
       "adp": 166.9,
       "career": [
         {
@@ -19544,6 +19651,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5973.jpg",
       "injury_status": null,
       "sleeper_id": "5973",
+      "espn_id": 3921690,
       "career": [
         {
           "season": 2024,
@@ -19630,6 +19738,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/3214.jpg",
       "injury_status": null,
       "sleeper_id": "3214",
+      "espn_id": 3046439,
       "adp": 156.8,
       "career": [
         {
@@ -19766,6 +19875,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/7002.jpg",
       "injury_status": null,
       "sleeper_id": "7002",
+      "espn_id": 3929645,
       "adp": 141.0,
       "career": [
         {
@@ -19826,6 +19936,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5857.jpg",
       "injury_status": null,
       "sleeper_id": "5857",
+      "espn_id": 4036131,
       "career": [
         {
           "season": 2024,
@@ -20241,6 +20352,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/5022.jpg",
       "injury_status": null,
       "sleeper_id": "5022",
+      "espn_id": 3121023,
       "adp": 105.3,
       "career": [
         {
@@ -20563,6 +20675,7 @@
       "headshot": "https://sleepercdn.com/content/nfl/players/4217.jpg",
       "injury_status": "Questionable",
       "sleeper_id": "4217",
+      "espn_id": 3040151,
       "adp": 117.9,
       "career": [
         {
