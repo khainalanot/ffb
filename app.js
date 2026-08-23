@@ -512,7 +512,7 @@ async function loadNews(p) {
     el.innerHTML = items.map(n => `
       <a class="news-item" href="${escapeAttr(n.link)}" target="_blank" rel="noopener noreferrer">
         <div class="news-title">${escapeHtml(n.title)}</div>
-        <div class="news-summary">${escapeHtml(n.summary)}</div>
+        ${n.summary ? `<div class="news-summary">${escapeHtml(n.summary)}</div>` : ""}
         <div class="news-meta">${escapeHtml(n.source)}${n.date ? " · " + fmtDate(n.date) : ""} ↗</div>
       </a>`).join("");
   } catch (_) {
