@@ -359,6 +359,7 @@ async function setTag(k, slug) {
   overrides[k] = { ...ovr(p), tag: slug };
   keepVisible.add(k);   // don't yank the row out from under the click; drops off on next navigation
   renderTable();
+  if (activeKey === k) updateSnapTag(p);   // keep the modal chip in sync
   try {
     await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ position: p.position, player: p.player, tag: slug }) });
@@ -467,6 +468,7 @@ function openModal(k) {
   }).forEach(([label, val]) => tiles.push(tile(label, fmt(val))));
   document.getElementById("modal-stats").innerHTML = tiles.join("");
 
+  updateSnapTag(p);
   renderCareer(p);
   document.getElementById("comment-error").classList.add("hidden");
   document.getElementById("comment-form").reset();
@@ -497,6 +499,15 @@ async function loadSummary(p) {
   } catch (_) {
     wrap.classList.add("hidden");
   }
+}
+
+function updateSnapTag(p) {
+  const btn = document.getElementById("snap-tag");
+  if (!btn) return;
+  const t = tagMap[tagOf(p)];
+  const color = t ? t.color : "transparent";
+  const label = t ? t.label : "Set tag";
+  btn.innerHTML = `<span class="snap-tag-dot" style="background:${color}"></span>${escapeHtml(label)}`;
 }
 
 function tile(label, value, hero) {
@@ -547,6 +558,10 @@ async function loadNews(p) {
 function closeModal() { modal.classList.add("hidden"); activeKey = null; }
 document.getElementById("modal-close").addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+document.getElementById("snap-tag").addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (activeKey) openTagMenu(activeKey, e.currentTarget);
+});
 
 function fmtDate(s) {
   const d = new Date((s || "").replace(" ", "T"));

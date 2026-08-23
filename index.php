@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 <header class="topbar">
@@ -80,7 +80,10 @@ ffb_require_auth_or_redirect();
     <div class="snap-head">
       <img id="snap-photo" class="snap-photo" alt="" hidden>
       <div class="snap-headinfo">
-        <h2 id="modal-player-name"></h2>
+        <div class="snap-title-row">
+          <h2 id="modal-player-name"></h2>
+          <button id="snap-tag" class="snap-tag" type="button" aria-label="Set tag"></button>
+        </div>
         <div id="modal-player-sub" class="modal-player-sub"></div>
         <div id="snap-bio" class="snap-bio"></div>
       </div>
@@ -88,31 +91,37 @@ ffb_require_auth_or_redirect();
 
     <div class="stat-grid" id="modal-stats"></div>
 
-    <div id="snap-summary-wrap" class="snap-section hidden">
-      <div class="section-head">Fantasy Outlook <a id="snap-summary-link" class="section-link" href="#" target="_blank" rel="noopener noreferrer">via RTSports.com ↗</a></div>
-      <div id="snap-summary" class="summary-body"></div>
-    </div>
+    <div class="snap-cols">
+      <div class="snap-col">
+        <div id="snap-summary-wrap" class="snap-section hidden">
+          <div class="section-head">Fantasy Outlook <a id="snap-summary-link" class="section-link" href="#" target="_blank" rel="noopener noreferrer">via RTSports.com ↗</a></div>
+          <div id="snap-summary" class="summary-body scrollbox"></div>
+        </div>
 
-    <div id="snap-career-wrap" class="snap-section hidden">
-      <div class="section-head">Career</div>
-      <div class="career-scroll"><table id="snap-career" class="career-table"></table></div>
-    </div>
-
-    <div id="snap-news-wrap" class="snap-section hidden">
-      <div class="section-head">Analysis</div>
-      <div id="snap-news" class="news-list"></div>
-    </div>
-
-    <div class="section-head">Notes</div>
-    <div id="modal-comments" class="comments-list"></div>
-
-    <form id="comment-form">
-      <textarea id="comment-text" placeholder="Add a note…" required maxlength="1000"></textarea>
-      <div class="comment-form-actions">
-        <button type="submit">Post note</button>
-        <div id="comment-error" class="comment-error hidden"></div>
+        <div id="snap-news-wrap" class="snap-section hidden">
+          <div class="section-head">Analysis</div>
+          <div id="snap-news" class="news-list scrollbox"></div>
+        </div>
       </div>
-    </form>
+
+      <div class="snap-col">
+        <div id="snap-career-wrap" class="snap-section hidden">
+          <div class="section-head">Career</div>
+          <div class="career-scroll"><table id="snap-career" class="career-table"></table></div>
+        </div>
+
+        <div class="section-head">Notes</div>
+        <div id="modal-comments" class="comments-list scrollbox"></div>
+
+        <form id="comment-form">
+          <textarea id="comment-text" placeholder="Add a note…" required maxlength="1000"></textarea>
+          <div class="comment-form-actions">
+            <button type="submit">Post note</button>
+            <div id="comment-error" class="comment-error hidden"></div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -142,6 +151,6 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>

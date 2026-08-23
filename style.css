@@ -471,8 +471,25 @@ td { padding: 11px 14px; font-size: 14px; white-space: nowrap; vertical-align: m
 .inj-warn { background: #f2c14e; box-shadow: 0 0 8px rgba(242,193,78,0.4); }
 
 /* snapshot header */
-.snapshot { max-width: 560px; }
+.snapshot { max-width: 880px; }
 .snap-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.snap-title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.snap-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--surface-2); border: 1px solid var(--line); color: var(--text-dim);
+  padding: 4px 10px; border-radius: 999px; cursor: pointer; font-size: 12px; font-weight: 600;
+}
+.snap-tag:hover { border-color: var(--brand); color: var(--text); }
+.snap-tag-dot { width: 10px; height: 10px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.15); }
+
+.snap-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; align-items: start; }
+.snap-col { min-width: 0; }
+.snap-col .snap-section:first-child { margin-top: 0; }
+.scrollbox { max-height: 300px; overflow-y: auto; }
+@media (max-width: 720px) {
+  .snap-cols { grid-template-columns: 1fr; }
+  .scrollbox { max-height: none; }
+}
 .snap-photo {
   width: 72px; height: 72px; border-radius: 12px; object-fit: cover;
   background: var(--surface-2); border: 1px solid var(--line); flex-shrink: 0;
