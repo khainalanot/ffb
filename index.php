@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/auth.php';
+ffb_require_auth_or_redirect();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,30 +12,39 @@
 </head>
 <body>
 <header class="topbar">
-  <h1>Jake's Ranks <span class="subtitle">— QB</span></h1>
+  <h1>Jake's Ranks <span class="subtitle" id="pos-subtitle">— QB</span></h1>
   <div class="controls">
     <input id="search" type="search" placeholder="Search player or team…">
+    <a href="logout.php" class="logout-link">Log out</a>
   </div>
 </header>
 
+<div class="tabs" id="position-tabs"></div>
+
 <div class="legend" id="legend"></div>
+
+<div class="toolbar">
+  <div class="sort-buttons" id="sort-buttons"></div>
+  <div class="toolbar-right">
+    <label class="show-ignored">
+      <input type="checkbox" id="show-ignored">
+      Show ignored (red)
+    </label>
+    <button id="edit-toggle" class="edit-toggle">Edit</button>
+  </div>
+</div>
+
+<p class="edit-hint hidden" id="edit-hint">Editing on — click a player's dot to change its color, or drag the ⠿ handle to reorder. Sort must be “My rank” to drag.</p>
 
 <main>
   <table id="ranks-table">
     <thead>
       <tr>
+        <th class="drag-col"></th>
         <th data-key="rank" class="sortable">RK</th>
-        <th data-key="player" class="sortable">Player</th>
-        <th data-key="team" class="sortable">TM</th>
-        <th data-key="bye" class="sortable">BYE</th>
-        <th data-key="pass_yards" class="sortable">Pass Yds</th>
-        <th data-key="pass_td" class="sortable">Pass TD</th>
-        <th data-key="int" class="sortable">INT</th>
-        <th data-key="rush_yards" class="sortable">Rush Yds</th>
-        <th data-key="rush_td" class="sortable">Rush TD</th>
+        <th>Player</th>
         <th data-key="fps" class="sortable">FPS</th>
         <th data-key="auction" class="sortable">AUC$</th>
-        <th></th>
       </tr>
     </thead>
     <tbody id="ranks-body"></tbody>
@@ -42,6 +55,9 @@
   <div class="modal-content">
     <button class="modal-close" id="modal-close">&times;</button>
     <h2 id="modal-player-name"></h2>
+    <div id="modal-player-sub" class="modal-player-sub"></div>
+
+    <div class="stat-grid" id="modal-stats"></div>
 
     <div id="modal-excel-comment" class="excel-comment hidden">
       <div class="excel-comment-label">From the spreadsheet</div>
@@ -52,7 +68,6 @@
     <div id="modal-comments" class="comments-list"></div>
 
     <form id="comment-form">
-      <input id="comment-author" type="text" placeholder="Your name" required maxlength="40">
       <textarea id="comment-text" placeholder="Add a comment…" required maxlength="1000"></textarea>
       <button type="submit">Post</button>
       <div id="comment-error" class="comment-error hidden"></div>

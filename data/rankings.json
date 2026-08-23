@@ -1,722 +1,8061 @@
 {
   "players": [
     {
-      "rank": 1.0,
-      "player": "Josh Allen",
-      "team": "BUF",
-      "bye": 7,
-      "pass_att": 515.9682,
-      "comp": 346.4623705,
-      "pass_yards": 4001.64038,
-      "pass_td": 27.37052727,
-      "int": 11.14325119,
-      "rush_att": 105.7124432,
-      "rush_yards": 538.1820988,
-      "rush_td": 11.65931112,
-      "fps": 371.0,
-      "auction": 12.9,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 2.0,
-      "player": "Drake Maye",
-      "team": "NE",
-      "bye": 11,
-      "pass_att": 545.3798,
-      "comp": 383.4019994,
-      "pass_yards": 4412.957013,
-      "pass_td": 29.90535595,
-      "int": 11.85097739,
-      "rush_att": 86.661939,
-      "rush_yards": 416.8439266,
-      "rush_td": 3.639801438,
-      "fps": 336.0,
-      "auction": 8.9,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 3.0,
-      "player": "Lamar Jackson",
-      "team": "BAL",
-      "bye": 13,
-      "pass_att": 455.5744,
-      "comp": 294.6620048,
-      "pass_yards": 3653.80886,
-      "pass_td": 27.50990152,
-      "int": 8.677554778,
-      "rush_att": 127.9545497,
-      "rush_yards": 723.4358535,
-      "rush_td": 3.506065196,
-      "fps": 332.2,
-      "auction": 7.9,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 4.0,
-      "player": "Jayden Daniels",
-      "team": "WSH",
-      "bye": 7,
-      "pass_att": 482.5829,
-      "comp": 323.8131259,
-      "pass_yards": 3570.44878,
-      "pass_td": 23.63835819,
-      "int": 9.115595021,
-      "rush_att": 129.9525864,
-      "rush_yards": 734.2321132,
-      "rush_td": 4.808245697,
-      "fps": 321.4,
-      "auction": 4.3,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 5.0,
-      "player": "Joe Burrow",
-      "team": "CIN",
-      "bye": 6,
-      "pass_att": 613.34375,
-      "comp": 419.8044051,
-      "pass_yards": 4542.283663,
-      "pass_td": 36.10317884,
-      "int": 11.04144847,
-      "rush_att": 37.203495,
-      "rush_yards": 131.0422946,
-      "rush_td": 1.078901355,
-      "fps": 323.6,
-      "auction": 6.1,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 6.0,
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "bye": 10,
-      "pass_att": 480.31368,
-      "comp": 315.358633,
-      "pass_yards": 3538.323863,
-      "pass_td": 24.91333201,
-      "int": 8.055078335,
-      "rush_att": 108.7332893,
-      "rush_yards": 444.4601711,
-      "rush_td": 8.807396432,
-      "fps": 322.4,
-      "auction": 4.5,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 7.0,
-      "player": "Dak Prescott",
-      "team": "DAL",
-      "bye": 14,
-      "pass_att": 602.7637,
-      "comp": 405.5824688,
-      "pass_yards": 4542.523651,
-      "pass_td": 31.2298501,
-      "int": 12.26777374,
-      "rush_att": 46.1315841,
-      "rush_yards": 168.8896835,
-      "rush_td": 1.667013611,
-      "fps": 309.0,
-      "auction": 2.5,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 8.0,
-      "player": "Jaxson Dart",
-      "team": "NYG",
-      "bye": 8,
-      "pass_att": 479.28355,
-      "comp": 308.9405179,
-      "pass_yards": 3355.094024,
-      "pass_td": 22.24371729,
-      "int": 8.407186995,
-      "rush_att": 98.68127836,
-      "rush_yards": 556.56241,
-      "rush_td": 7.697139712,
-      "fps": 308.2,
-      "auction": 2.1,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 9.0,
-      "player": "Trevor Lawrence",
-      "team": "JAX",
-      "bye": 7,
-      "pass_att": 565.38405,
-      "comp": 348.8419589,
-      "pass_yards": 4018.659366,
-      "pass_td": 26.17068505,
-      "int": 13.25344754,
-      "rush_att": 74.9407323,
-      "rush_yards": 337.3671996,
-      "rush_td": 6.040223023,
-      "fps": 308.9,
-      "auction": 2.2,
-      "tag": "priority",
-      "excel_comment": null
-    },
-    {
-      "rank": 10.0,
-      "player": "Patrick Mahomes",
-      "team": "KC",
-      "bye": 5,
-      "pass_att": 567.55375,
-      "comp": 369.3765233,
-      "pass_yards": 4051.994033,
-      "pass_td": 30.28887491,
-      "int": 12.10858249,
-      "rush_att": 56.256655,
-      "rush_yards": 327.3579533,
-      "rush_td": 2.644062785,
-      "fps": 307.6,
-      "auction": 2.0,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 11.0,
-      "player": "Caleb Williams",
-      "team": "CHI",
-      "bye": 10,
-      "pass_att": 563.93512,
-      "comp": 342.872553,
-      "pass_yards": 4087.040831,
-      "pass_td": 27.58774859,
-      "int": 8.156084248,
-      "rush_att": 67.7186076,
-      "rush_yards": 346.7777483,
-      "rush_td": 2.776462912,
-      "fps": 308.9,
-      "auction": 2.2,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 12.0,
-      "player": "Justin Herbert",
-      "team": "LAC",
-      "bye": 7,
-      "pass_att": 531.69116,
-      "comp": 352.2282947,
-      "pass_yards": 4029.147069,
-      "pass_td": 26.43035539,
-      "int": 10.07540637,
-      "rush_att": 71.8862144,
-      "rush_yards": 384.4700905,
-      "rush_td": 2.012814003,
-      "fps": 297.3,
-      "auction": 0.3,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 13.0,
-      "player": "Brock Purdy",
-      "team": "SF",
-      "bye": 8,
-      "pass_att": 536.83616,
-      "comp": 361.2907357,
-      "pass_yards": 4295.746847,
-      "pass_td": 29.62584033,
-      "int": 15.44180587,
-      "rush_att": 64.13188992,
-      "rush_yards": 275.8061623,
-      "rush_td": 3.949594523,
-      "fps": 310.7,
-      "auction": 3.0,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 14.0,
-      "player": "Bo Nix",
-      "team": "DEN",
-      "bye": 10,
-      "pass_att": 570.67164,
-      "comp": 369.9299179,
-      "pass_yards": 3913.858531,
-      "pass_td": 26.26502417,
-      "int": 11.44504529,
-      "rush_att": 81.72200988,
-      "rush_yards": 353.0682237,
-      "rush_td": 4.273902009,
-      "fps": 299.7,
-      "auction": 0.9,
-      "tag": "like",
-      "excel_comment": null
-    },
-    {
-      "rank": 15.0,
-      "player": "Matthew Stafford",
-      "team": "LAR",
-      "bye": 11,
-      "pass_att": 571.032,
-      "comp": 371.741832,
-      "pass_yards": 4323.357506,
-      "pass_td": 34.57199038,
-      "int": 9.758730459,
-      "rush_att": 24.42748,
-      "rush_yards": 31.922275,
-      "rush_td": 0.6014341667,
-      "fps": 298.5,
-      "auction": 0.6,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 16.0,
-      "player": "Kyler Murray",
-      "team": "MIN",
-      "bye": 6,
-      "pass_att": 513.6992,
-      "comp": 349.8423127,
-      "pass_yards": 3673.344283,
-      "pass_td": 22.73975032,
-      "int": 10.21890289,
-      "rush_att": 77.734776,
-      "rush_yards": 466.8501355,
-      "rush_td": 3.731269248,
-      "fps": 286.5,
-      "auction": 0,
-      "tag": "priority",
-      "excel_comment": null
-    },
-    {
-      "rank": 17.0,
-      "player": "Malik Willis",
-      "team": "MIA",
-      "bye": 6,
-      "pass_att": 487.42209,
-      "comp": 321.8693061,
-      "pass_yards": 3469.75112,
-      "pass_td": 18.02468114,
-      "int": 10.25703466,
-      "rush_att": 109.2995619,
-      "rush_yards": 598.9615994,
-      "rush_td": 4.699881163,
-      "fps": 278.5,
-      "auction": 0,
-      "tag": "like",
-      "excel_comment": null
-    },
-    {
-      "rank": 18.0,
-      "player": "Jared Goff",
-      "team": "DET",
-      "bye": 6,
-      "pass_att": 585.4128,
-      "comp": 402.75216,
-      "pass_yards": 4642.526965,
-      "pass_td": 32.2201728,
-      "int": 10.98000442,
-      "rush_att": 19.4315968,
-      "rush_yards": 38.99233376,
-      "rush_td": 0.4919625121,
-      "fps": 299.5,
-      "auction": 0.8,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 19.0,
-      "player": "Baker Mayfield",
-      "team": "TB",
-      "bye": 10,
-      "pass_att": 551.82918,
-      "comp": 360.4186164,
-      "pass_yards": 3995.292207,
-      "pass_td": 26.95451255,
-      "int": 12.91731914,
-      "rush_att": 53.87397512,
-      "rush_yards": 328.6312482,
-      "rush_td": 1.161459343,
-      "fps": 281.6,
-      "auction": 0,
-      "tag": "like",
-      "excel_comment": null
-    },
-    {
-      "rank": 20.0,
-      "player": "Tyler Shough",
-      "team": "NO",
-      "bye": 8,
-      "pass_att": 502.59968,
-      "comp": 333.1213352,
-      "pass_yards": 3631.022553,
-      "pass_td": 21.98600812,
-      "int": 9.977357831,
-      "rush_att": 75.84804864,
-      "rush_yards": 312.4939604,
-      "rush_td": 4.019946578,
-      "fps": 268.6,
-      "auction": 0,
-      "tag": "like",
-      "excel_comment": "Good Preseason and Camp. Stock rising"
-    },
-    {
-      "rank": 21.0,
-      "player": "Jordan Love",
-      "team": "GB",
-      "bye": 11,
-      "pass_att": 524.46636,
-      "comp": 340.9320606,
-      "pass_yards": 4036.635598,
-      "pass_td": 27.27456485,
-      "int": 10.35364537,
-      "rush_att": 44.8030716,
-      "rush_yards": 192.6377548,
-      "rush_td": 1.12007679,
-      "fps": 275.8,
-      "auction": 0,
-      "tag": "ignore",
-      "excel_comment": null
-    },
-    {
-      "rank": 22.0,
-      "player": "C.J. Stroud",
-      "team": "HOU",
-      "bye": 8,
-      "pass_att": 578.73123,
-      "comp": 370.8996756,
-      "pass_yards": 4147.995661,
-      "pass_td": 24.47937859,
-      "int": 12.140102,
-      "rush_att": 53.37433388,
-      "rush_yards": 225.1106944,
-      "rush_td": 1.067486678,
-      "fps": 268.5,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 23.0,
-      "player": "Cam Ward",
-      "team": "TEN",
-      "bye": 9,
-      "pass_att": 549.23904,
-      "comp": 348.2175514,
-      "pass_yards": 3774.678257,
-      "pass_td": 22.98235839,
-      "int": 9.140933566,
-      "rush_att": 50.4391104,
-      "rush_yards": 212.4835877,
-      "rush_td": 2.622833741,
-      "fps": 261.6,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 24.0,
-      "player": "Daniel Jones",
-      "team": "IND",
-      "bye": 13,
-      "pass_att": 479.952,
-      "comp": 318.8959234,
-      "pass_yards": 3479.154524,
-      "pass_td": 21.36602687,
-      "int": 10.65112995,
-      "rush_att": 72.413768,
-      "rush_yards": 284.7243558,
-      "rush_td": 5.06896376,
-      "fps": 262.2,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 25.0,
-      "player": "Sam Darnold",
-      "team": "SEA",
-      "bye": 11,
-      "pass_att": 504.72744,
-      "comp": 335.6437476,
-      "pass_yards": 4135.13097,
-      "pass_td": 26.51585606,
-      "int": 13.01233199,
-      "rush_att": 34.84315926,
-      "rush_yards": 110.3491272,
-      "rush_td": 0.8612279709,
-      "fps": 261.6,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 26.0,
-      "player": "Bryce Young",
-      "team": "CAR",
-      "bye": 5,
-      "pass_att": 521.9775,
-      "comp": 333.021645,
-      "pass_yards": 3466.020204,
-      "pass_td": 23.31151515,
-      "int": 12.02844765,
-      "rush_att": 52.240419,
-      "rush_yards": 245.5299693,
-      "rush_td": 2.194097598,
-      "fps": 245.5,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 27.0,
-      "player": "Aaron Rodgers",
-      "team": "PIT",
-      "bye": 9,
-      "pass_att": 550.62,
-      "comp": 353.4539232,
-      "pass_yards": 3666.833631,
-      "pass_td": 23.10374182,
-      "int": 9.890200199,
-      "rush_att": 20.08314,
-      "rush_yards": 65.0693736,
-      "rush_td": 0.6732038657,
-      "fps": 229.9,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 28.0,
+      "position": "QB",
       "player": "Jacoby Brissett",
       "team": "ARI",
       "bye": 14,
-      "pass_att": 482.188,
-      "comp": 309.564696,
-      "pass_yards": 3231.855426,
-      "pass_td": 21.97909342,
-      "int": 7.952446949,
-      "rush_att": 44.1173656,
-      "rush_yards": 208.6467828,
-      "rush_td": 1.10958708,
-      "fps": 228.8,
-      "auction": 0,
+      "fps": 232.8,
+      "auction": 18.9,
+      "stats": {
+        "Pass Yds": 3231.9,
+        "Pass TD": 22.0,
+        "INT": 8.0,
+        "Rush Yds": 208.6,
+        "Rush TD": 1.1
+      },
       "tag": null,
       "excel_comment": null
     },
     {
-      "rank": 29.0,
+      "position": "QB",
+      "player": "Gardner Minshew",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 5.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 75.4,
+        "Pass TD": 0.5,
+        "INT": 0.3,
+        "Rush Yds": 4.6,
+        "Rush TD": 0.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Carson Beck",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 16.6,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 469.3,
+        "Pass TD": 0,
+        "INT": 2.0,
+        "Rush Yds": 5.5,
+        "Rush TD": 0.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
       "player": "Tua Tagovailoa",
       "team": "ATL",
       "bye": 11,
-      "pass_att": 521.3178,
-      "comp": 348.0481276,
-      "pass_yards": 3842.451329,
-      "pass_td": 20.69828437,
-      "int": 12.81500278,
-      "rush_att": 12.03951952,
-      "rush_yards": 32.11780781,
-      "rush_td": 0.1805927928,
-      "fps": 215.2,
-      "auction": 0,
+      "fps": 221.6,
+      "auction": 4.2,
+      "stats": {
+        "Pass Yds": 3842.5,
+        "Pass TD": 20.7,
+        "INT": 12.8,
+        "Rush Yds": 32.1,
+        "Rush TD": 0.2
+      },
       "tag": null,
       "excel_comment": null
     },
     {
-      "rank": 30.0,
-      "player": "Geno Smith",
-      "team": "NYJ",
-      "bye": 13,
-      "pass_att": 516.078,
-      "comp": 353.2506678,
-      "pass_yards": 3634.391955,
-      "pass_td": 20.13528807,
-      "int": 15.20388736,
-      "rush_att": 41.5449832,
-      "rush_yards": 140.9459324,
-      "rush_td": 0.7478096976,
-      "fps": 214.1,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 31.0,
-      "player": "Kirk Cousins",
-      "team": "LV",
-      "bye": 13,
-      "pass_att": 361.0152,
-      "comp": 231.4107432,
-      "pass_yards": 2420.556374,
-      "pass_td": 13.42182311,
-      "int": 9.23298763,
-      "rush_att": 2.2177008,
-      "rush_yards": 3.433859303,
-      "rush_td": 0.02384624516,
-      "fps": 132.5,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 32.0,
-      "player": "Deshaun Watson",
-      "team": "CLE",
+      "position": "QB",
+      "player": "Michael Penix",
+      "team": "ATL",
       "bye": 11,
-      "pass_att": 242.352,
-      "comp": 147.350016,
-      "pass_yards": 1611.948529,
-      "pass_td": 9.135700992,
-      "int": 6.099991406,
-      "rush_att": 32.81187,
-      "rush_yards": 145.0929362,
-      "rush_td": 0.9538975231,
-      "fps": 109.1,
-      "auction": 0,
+      "fps": 34.1,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 410.1,
+        "Pass TD": 1.9,
+        "INT": 1.0,
+        "Rush Yds": 60.2,
+        "Rush TD": 0.9
+      },
       "tag": null,
       "excel_comment": null
     },
     {
-      "rank": 33.0,
+      "position": "QB",
+      "player": "Lamar Jackson",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 336.6,
+      "auction": 14.5,
+      "stats": {
+        "Pass Yds": 3653.8,
+        "Pass TD": 27.5,
+        "INT": 8.7,
+        "Rush Yds": 723.4,
+        "Rush TD": 3.5
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tyler Huntley",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 14.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 177.3,
+        "Pass TD": 1.0,
+        "INT": 0.3,
+        "Rush Yds": 24.4,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 376.6,
+      "auction": 23.7,
+      "stats": {
+        "Pass Yds": 4001.6,
+        "Pass TD": 27.4,
+        "INT": 11.1,
+        "Rush Yds": 538.2,
+        "Rush TD": 11.7
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Kyle Allen",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 1.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 32.1,
+        "Pass TD": 0.2,
+        "INT": 0.1,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 251.6,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3466.0,
+        "Pass TD": 23.3,
+        "INT": 12.0,
+        "Rush Yds": 245.5,
+        "Rush TD": 2.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Kenny Pickett",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 10.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 170.1,
+        "Pass TD": 1.0,
+        "INT": 0.5,
+        "Rush Yds": 3.1,
+        "Rush TD": 0.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 312.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 4087.0,
+        "Pass TD": 27.6,
+        "INT": 8.2,
+        "Rush Yds": 346.8,
+        "Rush TD": 2.8
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tyson Bagent",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 8.1,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 95.6,
+        "Pass TD": 0.6,
+        "INT": 0.3,
+        "Rush Yds": 16.8,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 329.1,
+      "auction": 11.0,
+      "stats": {
+        "Pass Yds": 4542.3,
+        "Pass TD": 36.1,
+        "INT": 11.0,
+        "Rush Yds": 131.0,
+        "Rush TD": 1.1
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Joe Flacco",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 13.1,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 205.5,
+        "Pass TD": 1.5,
+        "INT": 0.7,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
       "player": "Shedeur Sanders",
       "team": "CLE",
       "bye": 11,
-      "pass_att": 252.45,
-      "comp": 149.4504,
-      "pass_yards": 1652.921424,
-      "pass_td": 8.967024,
-      "int": 8.920464166,
-      "rush_att": 31.297476,
-      "rush_yards": 216.2655592,
-      "rush_td": 1.466449218,
-      "fps": 114.6,
-      "auction": 0,
+      "fps": 119.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 1652.9,
+        "Pass TD": 9.0,
+        "INT": 8.9,
+        "Rush Yds": 216.3,
+        "Rush TD": 1.5
+      },
       "tag": null,
       "excel_comment": null
     },
     {
-      "rank": 34.0,
+      "position": "QB",
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 112.1,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 1611.9,
+        "Pass TD": 9.1,
+        "INT": 6.1,
+        "Rush Yds": 145.1,
+        "Rush TD": 1.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Taylen Green",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 3.2,
+      "auction": 1.0,
+      "stats": {
+        "Pass Yds": 63.0,
+        "Pass TD": 0.3,
+        "INT": 0.3,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 315.1,
+      "auction": 15.0,
+      "stats": {
+        "Pass Yds": 4542.5,
+        "Pass TD": 31.2,
+        "INT": 12.3,
+        "Rush Yds": 168.9,
+        "Rush TD": 1.7
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Sam Howell",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 5.8,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 75.6,
+        "Pass TD": 0.5,
+        "INT": 0.3,
+        "Rush Yds": 7.2,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Bo Nix",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 305.4,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3913.9,
+        "Pass TD": 26.3,
+        "INT": 11.4,
+        "Rush Yds": 353.1,
+        "Rush TD": 4.3
+      },
+      "tag": "like",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jarrett Stidham",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 4.4,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 74.2,
+        "Pass TD": 0.5,
+        "INT": 0.3,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jared Goff",
+      "team": "DET",
+      "bye": 6,
+      "fps": 305.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 4642.5,
+        "Pass TD": 32.2,
+        "INT": 11.0,
+        "Rush Yds": 39.0,
+        "Rush TD": 0.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Teddy Bridgewater",
+      "team": "DET",
+      "bye": 6,
+      "fps": 5.8,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 80.7,
+        "Pass TD": 0.4,
+        "INT": 0.2,
+        "Rush Yds": 7.8,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jordan Love",
+      "team": "GB",
+      "bye": 11,
+      "fps": 281.0,
+      "auction": 16.1,
+      "stats": {
+        "Pass Yds": 4036.6,
+        "Pass TD": 27.3,
+        "INT": 10.4,
+        "Rush Yds": 192.6,
+        "Rush TD": 1.1
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tyrod Taylor",
+      "team": "GB",
+      "bye": 11,
+      "fps": 2.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 32.0,
+        "Pass TD": 0.2,
+        "INT": 0.1,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Davis Mills",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 3.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 34.3,
+        "Pass TD": 0.2,
+        "INT": 0.1,
+        "Rush Yds": 9.4,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 274.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 4148.0,
+        "Pass TD": 24.5,
+        "INT": 12.1,
+        "Rush Yds": 225.1,
+        "Rush TD": 1.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Daniel Jones",
+      "team": "IND",
+      "bye": 13,
+      "fps": 267.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3479.2,
+        "Pass TD": 21.4,
+        "INT": 10.7,
+        "Rush Yds": 284.7,
+        "Rush TD": 5.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Anthony Richardson",
+      "team": "IND",
+      "bye": 13,
+      "fps": 30.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 196.3,
+        "Pass TD": 0.8,
+        "INT": 0.4,
+        "Rush Yds": 119.1,
+        "Rush TD": 1.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 315.5,
+      "auction": 6.1,
+      "stats": {
+        "Pass Yds": 4018.7,
+        "Pass TD": 26.2,
+        "INT": 13.3,
+        "Rush Yds": 337.4,
+        "Rush TD": 6.0
+      },
+      "tag": "priority",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Nick Mullens",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 2.4,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 42.5,
+        "Pass TD": 0.2,
+        "INT": 0.2,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Patrick Mahomes",
+      "team": "KC",
+      "bye": 5,
+      "fps": 313.7,
+      "auction": 24.0,
+      "stats": {
+        "Pass Yds": 4052.0,
+        "Pass TD": 30.3,
+        "INT": 12.1,
+        "Rush Yds": 327.4,
+        "Rush TD": 2.6
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Justin Fields",
+      "team": "KC",
+      "bye": 5,
+      "fps": 16.3,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 187.6,
+        "Pass TD": 1.2,
+        "INT": 0.5,
+        "Rush Yds": 32.8,
+        "Rush TD": 0.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Justin Herbert",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 302.3,
+      "auction": 12.1,
+      "stats": {
+        "Pass Yds": 4029.1,
+        "Pass TD": 26.4,
+        "INT": 10.1,
+        "Rush Yds": 384.5,
+        "Rush TD": 2.0
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Trey Lance",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 5.2,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 62.5,
+        "Pass TD": 0.3,
+        "INT": 0.2,
+        "Rush Yds": 11.3,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Matthew Stafford",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 303.4,
+      "auction": 1.9,
+      "stats": {
+        "Pass Yds": 4323.4,
+        "Pass TD": 34.6,
+        "INT": 9.8,
+        "Rush Yds": 31.9,
+        "Rush TD": 0.6
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Ty Simpson",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 2.3,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 37.3,
+        "Pass TD": 0.2,
+        "INT": 0.1,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Kirk Cousins",
+      "team": "LV",
+      "bye": 13,
+      "fps": 137.1,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 2420.6,
+        "Pass TD": 13.4,
+        "INT": 9.2,
+        "Rush Yds": 3.4,
+        "Rush TD": 0.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
       "player": "Fernando Mendoza",
       "team": "LV",
       "bye": 13,
-      "pass_att": 194.3928,
-      "comp": 121.4572833,
-      "pass_yards": 1332.386398,
-      "pass_td": 7.651808849,
-      "int": 4.747416422,
-      "rush_att": 38.58799392,
-      "rush_yards": 176.0296957,
-      "rush_td": 1.678348846,
-      "fps": 102.1,
-      "auction": 0,
+      "fps": 104.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 1332.4,
+        "Pass TD": 7.7,
+        "INT": 4.7,
+        "Rush Yds": 176.0,
+        "Rush TD": 1.7
+      },
       "tag": "rookie",
       "excel_comment": null
     },
     {
-      "rank": 35.0,
-      "player": "Michael Penix",
-      "team": "ATL",
-      "bye": 11,
-      "pass_att": 57.9242,
-      "comp": 34.7584124,
-      "pass_yards": 410.1492663,
-      "pass_td": 1.936964137,
-      "int": 1.023899298,
-      "rush_att": 17.1993136,
-      "rush_yards": 60.24065792,
-      "rush_td": 0.9079159008,
-      "fps": 33.6,
-      "auction": 0,
+      "position": "QB",
+      "player": "Malik Willis",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 283.6,
+      "auction": 0.8,
+      "stats": {
+        "Pass Yds": 3469.8,
+        "Pass TD": 18.0,
+        "INT": 10.3,
+        "Rush Yds": 599.0,
+        "Rush TD": 4.7
+      },
+      "tag": "like",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Quinn Ewers",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 5.3,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 85.1,
+        "Pass TD": 0.4,
+        "INT": 0.3,
+        "Rush Yds": 4.1,
+        "Rush TD": 0.1
+      },
       "tag": null,
       "excel_comment": null
     },
     {
-      "rank": 36.0,
-      "player": "Anthony Richardson",
-      "team": "IND",
-      "bye": 13,
-      "pass_att": 26.664,
-      "comp": 14.66897011,
-      "pass_yards": 196.2708201,
-      "pass_td": 0.7921243859,
-      "int": 0.3891726214,
-      "rush_att": 23.35928,
-      "rush_yards": 119.132328,
-      "rush_td": 1.42491608,
-      "fps": 30.7,
-      "auction": 0,
-      "tag": null,
+      "position": "QB",
+      "player": "Kyler Murray",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 291.6,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3673.3,
+        "Pass TD": 22.7,
+        "INT": 10.2,
+        "Rush Yds": 466.9,
+        "Rush TD": 3.7
+      },
+      "tag": "priority",
       "excel_comment": null
     },
     {
-      "rank": 37.0,
-      "player": "Justin Fields",
-      "team": "KC",
-      "bye": 5,
-      "pass_att": 29.87125,
-      "comp": 18.91611603,
-      "pass_yards": 187.647871,
-      "pass_td": 1.160542978,
-      "int": 0.4671552749,
-      "rush_att": 6.4911525,
-      "rush_yards": 32.82309645,
-      "rush_td": 0.2555159722,
-      "fps": 16.0,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 38.0,
-      "player": "Marcus Mariota",
-      "team": "WSH",
-      "bye": 7,
-      "pass_att": 25.3991,
-      "comp": 16.50700911,
-      "pass_yards": 191.8114459,
-      "pass_td": 1.250316232,
-      "int": 0.6281421644,
-      "rush_att": 4.9981764,
-      "rush_yards": 31.52125882,
-      "rush_td": 0.1231019056,
-      "fps": 15.3,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 39.0,
-      "player": "Tyler Huntley",
-      "team": "BAL",
-      "bye": 13,
-      "pass_att": 23.9776,
-      "comp": 17.18405379,
-      "pass_yards": 177.3394351,
-      "pass_td": 1.009109556,
-      "int": 0.34172606,
-      "rush_att": 4.539728645,
-      "rush_yards": 24.39480558,
-      "rush_td": 0.1496613839,
-      "fps": 13.8,
-      "auction": 0,
-      "tag": null,
-      "excel_comment": null
-    },
-    {
-      "rank": 40.0,
+      "position": "QB",
       "player": "J.J. McCarthy",
       "team": "MIN",
       "bye": 6,
-      "pass_att": 27.0368,
-      "comp": 16.46385182,
-      "pass_yards": 195.2824219,
-      "pass_td": 1.19238145,
-      "int": 0.711534157,
-      "rush_att": 2.2209936,
-      "rush_yards": 10.3913759,
-      "rush_td": 0.1199336544,
+      "fps": 13.3,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 195.3,
+        "Pass TD": 1.2,
+        "INT": 0.7,
+        "Rush Yds": 10.4,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Drake Maye",
+      "team": "NE",
+      "bye": 11,
+      "fps": 341.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 4413.0,
+        "Pass TD": 29.9,
+        "INT": 11.9,
+        "Rush Yds": 416.8,
+        "Rush TD": 3.6
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tommy DeVito",
+      "team": "NE",
+      "bye": 11,
+      "fps": 4.2,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 66.9,
+        "Pass TD": 0.4,
+        "INT": 0.2,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "bye": 8,
+      "fps": 273.6,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3631.0,
+        "Pass TD": 22.0,
+        "INT": 10.0,
+        "Rush Yds": 312.5,
+        "Rush TD": 4.0
+      },
+      "tag": "like",
+      "excel_comment": "Good Preseason and Camp. Stock rising"
+    },
+    {
+      "position": "QB",
+      "player": "Spencer Rattler",
+      "team": "NO",
+      "bye": 8,
+      "fps": 7.7,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 100.2,
+        "Pass TD": 0.6,
+        "INT": 0.3,
+        "Rush Yds": 13.7,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Zach Wilson",
+      "team": "NO",
+      "bye": 8,
+      "fps": 0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 0,
+        "Pass TD": 0,
+        "INT": 0,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jaxson Dart",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 312.4,
+      "auction": 2.2,
+      "stats": {
+        "Pass Yds": 3355.1,
+        "Pass TD": 22.2,
+        "INT": 8.4,
+        "Rush Yds": 556.6,
+        "Rush TD": 7.7
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jameis Winston",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 11.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 195.2,
+        "Pass TD": 1.2,
+        "INT": 0.8,
+        "Rush Yds": 1.3,
+        "Rush TD": 0.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 221.7,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3634.4,
+        "Pass TD": 20.1,
+        "INT": 15.2,
+        "Rush Yds": 140.9,
+        "Rush TD": 0.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Brady Cook",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 11.8,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 202.6,
+        "Pass TD": 1.1,
+        "INT": 1.0,
+        "Rush Yds": 6.2,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Cade Klubnik",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 8.6,
+      "auction": 1.0,
+      "stats": {
+        "Pass Yds": 135.0,
+        "Pass TD": 0.8,
+        "INT": 0.6,
+        "Rush Yds": 8.2,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 326.4,
+      "auction": 10.2,
+      "stats": {
+        "Pass Yds": 3538.3,
+        "Pass TD": 24.9,
+        "INT": 8.1,
+        "Rush Yds": 444.5,
+        "Rush TD": 8.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Tanner McKee",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 1.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 33.0,
+        "Pass TD": 0.2,
+        "INT": 0.1,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 234.8,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3666.8,
+        "Pass TD": 23.1,
+        "INT": 9.9,
+        "Rush Yds": 65.1,
+        "Rush TD": 0.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Will Howard",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 10.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 199.7,
+        "Pass TD": 1.0,
+        "INT": 0.9,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Drew Allar",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 0,
+        "Pass TD": 0,
+        "INT": 0,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Sam Darnold",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 268.2,
+      "auction": 12.3,
+      "stats": {
+        "Pass Yds": 4135.1,
+        "Pass TD": 26.5,
+        "INT": 13.0,
+        "Rush Yds": 110.3,
+        "Rush TD": 0.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jalen Milroe",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 3.5,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 64.8,
+        "Pass TD": 0.3,
+        "INT": 0.3,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Brock Purdy",
+      "team": "SF",
+      "bye": 8,
+      "fps": 318.4,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 4295.7,
+        "Pass TD": 29.6,
+        "INT": 15.4,
+        "Rush Yds": 275.8,
+        "Rush TD": 3.9
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Mac Jones",
+      "team": "SF",
+      "bye": 8,
+      "fps": 4.9,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 83.4,
+        "Pass TD": 0.5,
+        "INT": 0.4,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Baker Mayfield",
+      "team": "TB",
+      "bye": 10,
+      "fps": 288.1,
+      "auction": 10.1,
+      "stats": {
+        "Pass Yds": 3995.3,
+        "Pass TD": 27.0,
+        "INT": 12.9,
+        "Rush Yds": 328.6,
+        "Rush TD": 1.2
+      },
+      "tag": "like",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jake Browning",
+      "team": "TB",
+      "bye": 10,
+      "fps": 4.7,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 80.4,
+        "Pass TD": 0.5,
+        "INT": 0.4,
+        "Rush Yds": 0,
+        "Rush TD": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Cam Ward",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 266.2,
+      "auction": 4.8,
+      "stats": {
+        "Pass Yds": 3774.7,
+        "Pass TD": 23.0,
+        "INT": 9.1,
+        "Rush Yds": 212.5,
+        "Rush TD": 2.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Mitchell Trubisky",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 5.2,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 75.8,
+        "Pass TD": 0.4,
+        "INT": 0.3,
+        "Rush Yds": 8.2,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Jayden Daniels",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 326.0,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 3570.4,
+        "Pass TD": 23.6,
+        "INT": 9.1,
+        "Rush Yds": 734.2,
+        "Rush TD": 4.8
+      },
+      "tag": "ignore",
+      "excel_comment": null
+    },
+    {
+      "position": "QB",
+      "player": "Marcus Mariota",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 15.6,
+      "auction": 0.0,
+      "stats": {
+        "Pass Yds": 191.8,
+        "Pass TD": 1.3,
+        "INT": 0.6,
+        "Rush Yds": 31.5,
+        "Rush TD": 0.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jeremiyah Love",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 241.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1007.4,
+        "Rush TD": 6.1,
+        "Rec": 52.6,
+        "Rec Yds": 394.7,
+        "Rec TD": 1.9,
+        "PPR": 241.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyler Allgeier",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 86.7,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 451.4,
+        "Rush TD": 3.0,
+        "Rec": 13.0,
+        "Rec Yds": 84.7,
+        "Rec TD": 0.4,
+        "PPR": 86.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Trey Benson",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 38.5,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 203.6,
+        "Rush TD": 1.1,
+        "Rec": 6.2,
+        "Rec Yds": 42.2,
+        "Rec TD": 0.2,
+        "PPR": 38.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "James Conner",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 17.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 33.3,
+        "Rush TD": 0.2,
+        "Rec": 6.7,
+        "Rec Yds": 43.4,
+        "Rec TD": 0.3,
+        "PPR": 17.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 361.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1287.3,
+        "Rush TD": 10.1,
+        "Rec": 76.4,
+        "Rec Yds": 737.6,
+        "Rec TD": 3.6,
+        "PPR": 361.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Brian Robinson",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 89.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 471.9,
+        "Rush TD": 4.5,
+        "Rec": 8.1,
+        "Rec Yds": 54.6,
+        "Rec TD": 0.2,
+        "PPR": 89.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyler Goodson",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 16.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 85.0,
+        "Rush TD": 0.7,
+        "Rec": 2.0,
+        "Rec Yds": 12.2,
+        "Rec TD": 0.1,
+        "PPR": 16.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 250.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1413.2,
+        "Rush TD": 11.1,
+        "Rec": 18.5,
+        "Rec Yds": 177.2,
+        "Rec TD": 1.0,
+        "PPR": 250.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Justice Hill",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 111.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 189.7,
+        "Rush TD": 1.4,
+        "Rec": 38.4,
+        "Rec Yds": 328.3,
+        "Rec TD": 2.1,
+        "PPR": 111.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Rasheen Ali",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 25.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 157.3,
+        "Rush TD": 1.0,
+        "Rec": 1.8,
+        "Rec Yds": 15.0,
+        "Rec TD": 0.1,
+        "PPR": 25.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Adam Randall",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 19.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 88.7,
+        "Rush TD": 0.5,
+        "Rec": 3.9,
+        "Rec Yds": 29.4,
+        "Rec TD": 0.2,
+        "PPR": 19.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "James Cook",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 270.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1357.0,
+        "Rush TD": 10.0,
+        "Rec": 34.8,
+        "Rec Yds": 281.6,
+        "Rec TD": 2.0,
+        "PPR": 270.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Ty Johnson",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 87.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 244.6,
+        "Rush TD": 2.1,
+        "Rec": 22.3,
+        "Rec Yds": 195.2,
+        "Rec TD": 1.5,
+        "PPR": 87.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Ray Davis",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 52.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 247.3,
+        "Rush TD": 1.6,
+        "Rec": 8.3,
+        "Rec Yds": 67.7,
+        "Rec TD": 0.6,
+        "PPR": 52.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 190.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 805.1,
+        "Rush TD": 4.8,
+        "Rec": 42.2,
+        "Rec Yds": 268.5,
+        "Rec TD": 2.1,
+        "PPR": 190.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jonathon Brooks",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 140.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 634.5,
+        "Rush TD": 3.7,
+        "Rec": 28.6,
+        "Rec Yds": 210.3,
+        "Rec TD": 0.9,
+        "PPR": 140.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "AJ Dillon",
+      "team": "CAR",
+      "bye": 5,
       "fps": 12.9,
-      "auction": 0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 71.5,
+        "Rush TD": 0.4,
+        "Rec": 1.9,
+        "Rec Yds": 11.8,
+        "Rec TD": 0.0,
+        "PPR": 12.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Trevor Etienne",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 15.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 70.6,
+        "Rush TD": 0.3,
+        "Rec": 3.9,
+        "Rec Yds": 25.1,
+        "Rec TD": 0.1,
+        "PPR": 15.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 197.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 859.8,
+        "Rush TD": 7.1,
+        "Rec": 33.9,
+        "Rec Yds": 281.6,
+        "Rec TD": 1.1,
+        "PPR": 197.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 158.5,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 758.9,
+        "Rush TD": 6.7,
+        "Rec": 21.8,
+        "Rec Yds": 166.5,
+        "Rec TD": 0.7,
+        "PPR": 158.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Roschon Johnson",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 13.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 65.4,
+        "Rush TD": 0.5,
+        "Rec": 1.9,
+        "Rec Yds": 10.9,
+        "Rec TD": 0.1,
+        "PPR": 13.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Chase Brown",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 284.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1011.0,
+        "Rush TD": 6.7,
+        "Rec": 71.4,
+        "Rec Yds": 490.7,
+        "Rec TD": 3.8,
+        "PPR": 284.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Samaje Perine",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 96.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 376.4,
+        "Rush TD": 2.6,
+        "Rec": 22.3,
+        "Rec Yds": 149.5,
+        "Rec TD": 1.0,
+        "PPR": 96.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tahj Brooks",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 15.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 78.8,
+        "Rush TD": 0.5,
+        "Rec": 2.4,
+        "Rec Yds": 13.1,
+        "Rec TD": 0.1,
+        "PPR": 15.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 199.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1136.2,
+        "Rush TD": 7.9,
+        "Rec": 20.1,
+        "Rec Yds": 139.8,
+        "Rec TD": 0.7,
+        "PPR": 199.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 105.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 376.8,
+        "Rush TD": 1.5,
+        "Rec": 28.6,
+        "Rec Yds": 220.7,
+        "Rec TD": 1.3,
+        "PPR": 105.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Raheim Sanders",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 26.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 151.9,
+        "Rush TD": 0.7,
+        "Rec": 3.4,
+        "Rec Yds": 29.4,
+        "Rec TD": 0.1,
+        "PPR": 26.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 246.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1195.3,
+        "Rush TD": 9.7,
+        "Rec": 37.6,
+        "Rec Yds": 191.0,
+        "Rec TD": 1.9,
+        "PPR": 246.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jaydon Blue",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 52.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 203.8,
+        "Rush TD": 1.4,
+        "Rec": 13.3,
+        "Rec Yds": 87.0,
+        "Rec TD": 0.3,
+        "PPR": 52.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Malik Davis",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 37.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 205.7,
+        "Rush TD": 1.6,
+        "Rec": 4.0,
+        "Rec Yds": 25.4,
+        "Rec TD": 0.1,
+        "PPR": 37.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Phil Mafah",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 10.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 45.4,
+        "Rush TD": 0.3,
+        "Rec": 2.1,
+        "Rec Yds": 12.7,
+        "Rec TD": 0.1,
+        "PPR": 10.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "J.K. Dobbins",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 128.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 735.8,
+        "Rush TD": 4.8,
+        "Rec": 15.3,
+        "Rec Yds": 74.5,
+        "Rec TD": 0.5,
+        "PPR": 128.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "RJ Harvey",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 189.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 576.6,
+        "Rush TD": 5.1,
+        "Rec": 47.6,
+        "Rec Yds": 339.3,
+        "Rec TD": 3.3,
+        "PPR": 189.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jonah Coleman",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 51.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 240.9,
+        "Rush TD": 2.3,
+        "Rec": 7.3,
+        "Rec Yds": 50.6,
+        "Rec TD": 0.1,
+        "PPR": 51.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jaleel McLaughlin",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 11.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 21.9,
+        "Rush TD": 0.1,
+        "Rec": 4.1,
+        "Rec Yds": 30.7,
+        "Rec TD": 0.1,
+        "PPR": 11.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jahmyr Gibbs",
+      "team": "DET",
+      "bye": 6,
+      "fps": 360.5,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1279.8,
+        "Rush TD": 13.5,
+        "Rec": 72.8,
+        "Rec Yds": 575.0,
+        "Rec TD": 3.5,
+        "PPR": 360.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Isiah Pacheco",
+      "team": "DET",
+      "bye": 6,
+      "fps": 113.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 530.4,
+        "Rush TD": 5.3,
+        "Rec": 14.2,
+        "Rec Yds": 95.7,
+        "Rec TD": 0.8,
+        "PPR": 113.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jacob Saylors",
+      "team": "DET",
+      "bye": 6,
+      "fps": 16.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 77.7,
+        "Rush TD": 0.9,
+        "Rec": 1.9,
+        "Rec Yds": 10.6,
+        "Rec TD": 0.1,
+        "PPR": 16.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Josh Jacobs",
+      "team": "GB",
+      "bye": 11,
+      "fps": 234.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 992.9,
+        "Rush TD": 11.2,
+        "Rec": 34.7,
+        "Rec Yds": 264.4,
+        "Rec TD": 1.2,
+        "PPR": 234.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "MarShawn Lloyd",
+      "team": "GB",
+      "bye": 11,
+      "fps": 74.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 415.5,
+        "Rush TD": 3.2,
+        "Rec": 7.0,
+        "Rec Yds": 49.8,
+        "Rec TD": 0.3,
+        "PPR": 74.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Chris Brooks",
+      "team": "GB",
+      "bye": 11,
+      "fps": 43.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 173.8,
+        "Rush TD": 1.2,
+        "Rec": 10.2,
+        "Rec Yds": 67.2,
+        "Rec TD": 0.3,
+        "PPR": 43.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Pierre Strong",
+      "team": "GB",
+      "bye": 11,
+      "fps": 3.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 23.5,
+        "Rush TD": 0.2,
+        "Rec": 0,
+        "Rec Yds": 0,
+        "Rec TD": 0,
+        "PPR": 3.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "David Montgomery",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 209.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1060.4,
+        "Rush TD": 8.7,
+        "Rec": 27.4,
+        "Rec Yds": 192.6,
+        "Rec TD": 0.7,
+        "PPR": 209.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Woody Marks",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 106.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 434.6,
+        "Rush TD": 3.2,
+        "Rec": 22.4,
+        "Rec Yds": 166.0,
+        "Rec TD": 0.7,
+        "PPR": 106.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jawhar Jordan",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 17.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 75.3,
+        "Rush TD": 0.4,
+        "Rec": 4.2,
+        "Rec Yds": 25.4,
+        "Rec TD": 0.1,
+        "PPR": 17.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "bye": 13,
+      "fps": 309.7,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1452.7,
+        "Rush TD": 13.3,
+        "Rec": 43.7,
+        "Rec Yds": 331.2,
+        "Rec TD": 1.4,
+        "PPR": 309.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Seth McGowan",
+      "team": "IND",
+      "bye": 13,
+      "fps": 29.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 167.7,
+        "Rush TD": 1.5,
+        "Rec": 2.0,
+        "Rec Yds": 12.0,
+        "Rec TD": 0.0,
+        "PPR": 29.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "DJ Giddens",
+      "team": "IND",
+      "bye": 13,
+      "fps": 21.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 79.6,
+        "Rush TD": 0.6,
+        "Rec": 5.9,
+        "Rec Yds": 35.9,
+        "Rec TD": 0.1,
+        "PPR": 21.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Bhayshul Tuten",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 217.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 918.5,
+        "Rush TD": 7.7,
+        "Rec": 37.5,
+        "Rec Yds": 293.3,
+        "Rec TD": 2.2,
+        "PPR": 217.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Chris Rodriguez",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 104.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 554.1,
+        "Rush TD": 5.0,
+        "Rec": 10.1,
+        "Rec Yds": 68.6,
+        "Rec TD": 0.3,
+        "PPR": 104.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "LeQuint Allen",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 31.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 78.9,
+        "Rush TD": 0.6,
+        "Rec": 10.7,
+        "Rec Yds": 74.4,
+        "Rec TD": 0.4,
+        "PPR": 31.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kenneth Walker",
+      "team": "KC",
+      "bye": 5,
+      "fps": 253.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1131.4,
+        "Rush TD": 9.2,
+        "Rec": 40.1,
+        "Rec Yds": 323.8,
+        "Rec TD": 2.0,
+        "PPR": 253.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Emari Demercado",
+      "team": "KC",
+      "bye": 5,
+      "fps": 65.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 170.1,
+        "Rush TD": 1.4,
+        "Rec": 20.6,
+        "Rec Yds": 144.4,
+        "Rec TD": 0.8,
+        "PPR": 65.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Emmett Johnson",
+      "team": "KC",
+      "bye": 5,
+      "fps": 56.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 164.8,
+        "Rush TD": 1.4,
+        "Rec": 15.6,
+        "Rec Yds": 112.9,
+        "Rec TD": 0.7,
+        "PPR": 56.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Brashard Smith",
+      "team": "KC",
+      "bye": 5,
+      "fps": 13.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 33.9,
+        "Rush TD": 0.3,
+        "Rec": 4.2,
+        "Rec Yds": 30.6,
+        "Rec TD": 0.2,
+        "PPR": 13.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Omarion Hampton",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 258.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1059.2,
+        "Rush TD": 9.3,
+        "Rec": 50.5,
+        "Rec Yds": 354.5,
+        "Rec TD": 1.7,
+        "PPR": 258.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Keaton Mitchell",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 86.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 408.3,
+        "Rush TD": 2.7,
+        "Rec": 15.0,
+        "Rec Yds": 111.7,
+        "Rec TD": 0.5,
+        "PPR": 86.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kimani Vidal",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 37.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 153.2,
+        "Rush TD": 0.8,
+        "Rec": 8.8,
+        "Rec Yds": 69.4,
+        "Rec TD": 0.3,
+        "PPR": 37.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 236.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1119.2,
+        "Rush TD": 10.7,
+        "Rec": 28.3,
+        "Rec Yds": 209.7,
+        "Rec TD": 1.8,
+        "PPR": 236.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Blake Corum",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 138.5,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 743.6,
+        "Rush TD": 6.5,
+        "Rec": 12.6,
+        "Rec Yds": 81.2,
+        "Rec TD": 0.7,
+        "PPR": 138.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jarquez Hunter",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 9.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 37.8,
+        "Rush TD": 0.3,
+        "Rec": 1.9,
+        "Rec Yds": 13.3,
+        "Rec TD": 0.1,
+        "PPR": 9.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Ashton Jeanty",
+      "team": "LV",
+      "bye": 13,
+      "fps": 258.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1144.9,
+        "Rush TD": 7.8,
+        "Rec": 50.5,
+        "Rec Yds": 351.9,
+        "Rec TD": 1.9,
+        "PPR": 258.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Mike Washington",
+      "team": "LV",
+      "bye": 13,
+      "fps": 67.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 439.7,
+        "Rush TD": 2.3,
+        "Rec": 5.4,
+        "Rec Yds": 36.0,
+        "Rec TD": 0.1,
+        "PPR": 67.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Dylan Laube",
+      "team": "LV",
+      "bye": 13,
+      "fps": 9.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 21.7,
+        "Rush TD": 0.1,
+        "Rec": 3.8,
+        "Rec Yds": 23.9,
+        "Rec TD": 0.1,
+        "PPR": 9.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "De'Von Achane",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 280.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1193.5,
+        "Rush TD": 6.0,
+        "Rec": 61.8,
+        "Rec Yds": 451.6,
+        "Rec TD": 3.0,
+        "PPR": 280.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Ollie Gordon",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 49.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 322.5,
+        "Rush TD": 1.8,
+        "Rec": 3.7,
+        "Rec Yds": 23.6,
+        "Rec TD": 0.1,
+        "PPR": 49.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jaylen Wright",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 32.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 137.7,
+        "Rush TD": 0.7,
+        "Rec": 7.3,
+        "Rec Yds": 56.5,
+        "Rec TD": 0.2,
+        "PPR": 32.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Aaron Jones",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 146.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 643.0,
+        "Rush TD": 3.9,
+        "Rec": 30.1,
+        "Rec Yds": 215.7,
+        "Rec TD": 1.1,
+        "PPR": 146.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jordan Mason",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 137.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 796.3,
+        "Rush TD": 6.7,
+        "Rec": 9.9,
+        "Rec Yds": 61.4,
+        "Rec TD": 0.3,
+        "PPR": 137.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Demond Claiborne",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 50.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 129.1,
+        "Rush TD": 1.0,
+        "Rec": 17.0,
+        "Rec Yds": 112.3,
+        "Rec TD": 0.5,
+        "PPR": 50.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "bye": 11,
+      "fps": 213.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 824.5,
+        "Rush TD": 7.0,
+        "Rec": 45.2,
+        "Rec Yds": 337.7,
+        "Rec TD": 1.6,
+        "PPR": 213.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "bye": 11,
+      "fps": 211.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 717.1,
+        "Rush TD": 7.2,
+        "Rec": 44.4,
+        "Rec Yds": 388.6,
+        "Rec TD": 2.2,
+        "PPR": 211.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jam Miller",
+      "team": "NE",
+      "bye": 11,
+      "fps": 14.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 74.1,
+        "Rush TD": 0.6,
+        "Rec": 2.0,
+        "Rec Yds": 16.2,
+        "Rec TD": 0.1,
+        "PPR": 14.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Travis Etienne",
+      "team": "NO",
+      "bye": 8,
+      "fps": 223.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1099.8,
+        "Rush TD": 7.1,
+        "Rec": 34.2,
+        "Rec Yds": 272.9,
+        "Rec TD": 1.6,
+        "PPR": 223.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Alvin Kamara",
+      "team": "NO",
+      "bye": 8,
+      "fps": 118.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 476.8,
+        "Rush TD": 2.5,
+        "Rec": 29.6,
+        "Rec Yds": 209.5,
+        "Rec TD": 1.0,
+        "PPR": 118.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kendre Miller",
+      "team": "NO",
+      "bye": 8,
+      "fps": 21.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 107.9,
+        "Rush TD": 0.5,
+        "Rec": 3.8,
+        "Rec Yds": 30.8,
+        "Rec TD": 0.1,
+        "PPR": 21.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Devin Neal",
+      "team": "NO",
+      "bye": 8,
+      "fps": 8.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 37.7,
+        "Rush TD": 0.2,
+        "Rec": 1.8,
+        "Rec Yds": 12.7,
+        "Rec TD": 0.0,
+        "PPR": 8.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Cam Skattebo",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 244.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1083.8,
+        "Rush TD": 8.4,
+        "Rec": 40.4,
+        "Rec Yds": 308.2,
+        "Rec TD": 2.3,
+        "PPR": 244.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyrone Tracy",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 99.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 448.7,
+        "Rush TD": 3.2,
+        "Rec": 17.7,
+        "Rec Yds": 127.9,
+        "Rec TD": 0.8,
+        "PPR": 99.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Devin Singletary",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 18.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 98.2,
+        "Rush TD": 0.7,
+        "Rec": 2.6,
+        "Rec Yds": 16.9,
+        "Rec TD": 0.1,
+        "PPR": 18.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Breece Hall",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 244.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1013.0,
+        "Rush TD": 6.1,
+        "Rec": 50.3,
+        "Rec Yds": 439.2,
+        "Rec TD": 2.2,
+        "PPR": 244.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Braelon Allen",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 100.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 507.4,
+        "Rush TD": 4.1,
+        "Rec": 12.9,
+        "Rec Yds": 99.9,
+        "Rec TD": 0.3,
+        "PPR": 100.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Isaiah Davis",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 30.7,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 129.4,
+        "Rush TD": 0.9,
+        "Rec": 6.3,
+        "Rec Yds": 52.4,
+        "Rec TD": 0.1,
+        "PPR": 30.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 249.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1320.9,
+        "Rush TD": 9.3,
+        "Rec": 29.9,
+        "Rec Yds": 221.1,
+        "Rec TD": 1.6,
+        "PPR": 249.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tank Bigsby",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 73.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 463.7,
+        "Rush TD": 3.5,
+        "Rec": 3.5,
+        "Rec Yds": 24.4,
+        "Rec TD": 0.1,
+        "PPR": 73.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Will Shipley",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 16.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 53.6,
+        "Rush TD": 0.2,
+        "Rec": 5.4,
+        "Rec Yds": 36.5,
+        "Rec TD": 0.1,
+        "PPR": 16.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Rico Dowdle",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 181.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 926.0,
+        "Rush TD": 6.4,
+        "Rec": 26.4,
+        "Rec Yds": 196.5,
+        "Rec TD": 0.8,
+        "PPR": 181.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 185.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 803.0,
+        "Rush TD": 4.7,
+        "Rec": 39.8,
+        "Rec Yds": 295.0,
+        "Rec TD": 1.2,
+        "PPR": 185.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kaleb Johnson",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 10.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 54.6,
+        "Rush TD": 0.3,
+        "Rec": 2.1,
+        "Rec Yds": 12.8,
+        "Rec TD": 0.0,
+        "PPR": 10.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Eli Heidenreich",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 22.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 52.6,
+        "Rush TD": 0.3,
+        "Rec": 7.1,
+        "Rec Yds": 46.2,
+        "Rec TD": 0.5,
+        "PPR": 22.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jadarian Price",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 193.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 990.7,
+        "Rush TD": 8.2,
+        "Rec": 21.7,
+        "Rec Yds": 173.9,
+        "Rec TD": 0.9,
+        "PPR": 193.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Emanuel Wilson",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 122.7,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 565.0,
+        "Rush TD": 4.7,
+        "Rec": 18.3,
+        "Rec Yds": 148.7,
+        "Rec TD": 0.8,
+        "PPR": 122.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Zach Charbonnet",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 40.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 187.4,
+        "Rush TD": 1.7,
+        "Rec": 5.6,
+        "Rec Yds": 44.8,
+        "Rec TD": 0.2,
+        "PPR": 40.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "George Holani",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 14.0,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 45.5,
+        "Rush TD": 0.4,
+        "Rec": 3.7,
+        "Rec Yds": 28.3,
+        "Rec TD": 0.1,
+        "PPR": 14.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "bye": 8,
+      "fps": 349.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1049.2,
+        "Rush TD": 9.0,
+        "Rec": 82.9,
+        "Rec Yds": 752.2,
+        "Rec TD": 5.4,
+        "PPR": 349.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kaelon Black",
+      "team": "SF",
+      "bye": 8,
+      "fps": 45.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 274.3,
+        "Rush TD": 1.8,
+        "Rec": 4.0,
+        "Rec Yds": 28.0,
+        "Rec TD": 0.1,
+        "PPR": 45.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jordan James",
+      "team": "SF",
+      "bye": 8,
+      "fps": 41.5,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 148.3,
+        "Rush TD": 1.0,
+        "Rec": 10.7,
+        "Rec Yds": 76.9,
+        "Rec TD": 0.3,
+        "PPR": 41.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Isaac Guerendo",
+      "team": "SF",
+      "bye": 8,
+      "fps": 25.1,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 134.4,
+        "Rush TD": 1.0,
+        "Rec": 3.1,
+        "Rec Yds": 21.9,
+        "Rec TD": 0.1,
+        "PPR": 25.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "bye": 10,
+      "fps": 194.6,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 676.0,
+        "Rush TD": 3.9,
+        "Rec": 46.7,
+        "Rec Yds": 393.0,
+        "Rec TD": 2.9,
+        "PPR": 194.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kenneth Gainwell",
+      "team": "TB",
+      "bye": 10,
+      "fps": 206.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 754.6,
+        "Rush TD": 5.8,
+        "Rec": 48.9,
+        "Rec Yds": 354.8,
+        "Rec TD": 2.0,
+        "PPR": 206.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Sean Tucker",
+      "team": "TB",
+      "bye": 10,
+      "fps": 39.8,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 247.1,
+        "Rush TD": 2.1,
+        "Rec": 1.2,
+        "Rec Yds": 8.8,
+        "Rec TD": 0.0,
+        "PPR": 39.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 197.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 1007.8,
+        "Rush TD": 6.0,
+        "Rec": 32.5,
+        "Rec Yds": 218.2,
+        "Rec TD": 1.0,
+        "PPR": 197.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyjae Spears",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 88.2,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 303.0,
+        "Rush TD": 1.8,
+        "Rec": 25.2,
+        "Rec Yds": 167.8,
+        "Rec TD": 0.9,
+        "PPR": 88.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Nicholas Singleton",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 53.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 302.7,
+        "Rush TD": 2.1,
+        "Rec": 6.0,
+        "Rec Yds": 37.3,
+        "Rec TD": 0.2,
+        "PPR": 53.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jacory Croskey-Merritt",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 130.9,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 682.1,
+        "Rush TD": 5.7,
+        "Rec": 15.0,
+        "Rec Yds": 107.4,
+        "Rec TD": 0.4,
+        "PPR": 130.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Rachaad White",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 148.7,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 463.2,
+        "Rush TD": 3.1,
+        "Rec": 42.9,
+        "Rec Yds": 293.5,
+        "Rec TD": 1.9,
+        "PPR": 148.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Kaytron Allen",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 65.4,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 379.1,
+        "Rush TD": 2.9,
+        "Rec": 5.4,
+        "Rec Yds": 37.0,
+        "Rec TD": 0.2,
+        "PPR": 65.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "RB",
+      "player": "Jeremy McNichols",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 21.3,
+      "auction": null,
+      "stats": {
+        "Rush Yds": 50.0,
+        "Rush TD": 0.3,
+        "Rec": 7.6,
+        "Rec Yds": 56.4,
+        "Rec TD": 0.2,
+        "PPR": 21.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Marvin Harrison",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 192.6,
+      "auction": 36.4,
+      "stats": {
+        "Rec": 67.2,
+        "Rec Yds": 923.4,
+        "Rec TD": 5.5,
+        "Rush Yds": 0,
+        "PPR": 192.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Michael Wilson",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 176.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 66.3,
+        "Rec Yds": 804.6,
+        "Rec TD": 5.0,
+        "Rush Yds": 0,
+        "PPR": 176.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kendrick Bourne",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 67.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 27.5,
+        "Rec Yds": 296.8,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 67.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Reggie Virgil",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 9.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.9,
+        "Rec Yds": 43.0,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Devin Duvernay",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 7.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.0,
+        "Rec Yds": 29.3,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Weaver",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 3.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 1.7,
+        "Rec Yds": 16.0,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 3.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Drake London",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 279.4,
+      "auction": 36.6,
+      "stats": {
+        "Rec": 101.0,
+        "Rec Yds": 1316.6,
+        "Rec TD": 7.8,
+        "Rush Yds": 0,
+        "PPR": 279.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Zachariah Branch",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 89.2,
+      "auction": 0.9,
+      "stats": {
+        "Rec": 33.3,
+        "Rec Yds": 403.1,
+        "Rec TD": 2.3,
+        "Rush Yds": 15.3,
+        "PPR": 89.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Olamide Zaccheaus",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 70.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 30.2,
+        "Rec Yds": 304.0,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 70.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jahan Dotson",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 73.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 28.0,
+        "Rec Yds": 348.9,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 73.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Casey Washington",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 9.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.9,
+        "Rec Yds": 43.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 245.8,
+      "auction": 1.0,
+      "stats": {
+        "Rec": 82.0,
+        "Rec Yds": 1157.2,
+        "Rec TD": 6.8,
+        "Rush Yds": 56.4,
+        "PPR": 245.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Rashod Bateman",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 104.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 33.1,
+        "Rec Yds": 480.2,
+        "Rec TD": 3.9,
+        "Rush Yds": 0,
+        "PPR": 104.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ja'Kobi Lane",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 70.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 23.4,
+        "Rec Yds": 333.1,
+        "Rec TD": 2.3,
+        "Rush Yds": 0,
+        "PPR": 70.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Elijah Sarratt",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 77.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 26.2,
+        "Rec Yds": 361.3,
+        "Rec TD": 2.5,
+        "Rush Yds": 0,
+        "PPR": 77.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Devontez Walker",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 48.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 15.2,
+        "Rec Yds": 230.5,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 48.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "DJ Moore",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 224.5,
+      "auction": 40.6,
+      "stats": {
+        "Rec": 77.1,
+        "Rec Yds": 994.0,
+        "Rec TD": 7.4,
+        "Rush Yds": 25.9,
+        "PPR": 224.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Khalil Shakir",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 157.5,
+      "auction": 6.2,
+      "stats": {
+        "Rec": 64.5,
+        "Rec Yds": 706.0,
+        "Rec TD": 3.7,
+        "Rush Yds": 0,
+        "PPR": 157.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Keon Coleman",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 59.6,
+      "auction": 4.1,
+      "stats": {
+        "Rec": 19.6,
+        "Rec Yds": 281.0,
+        "Rec TD": 2.0,
+        "Rush Yds": 0,
+        "PPR": 59.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Joshua Palmer",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 45.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 16.3,
+        "Rec Yds": 228.7,
+        "Rec TD": 1.0,
+        "Rush Yds": 0,
+        "PPR": 45.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Skyler Bell",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 34.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 12.7,
+        "Rec Yds": 161.1,
+        "Rec TD": 1.0,
+        "Rush Yds": 0,
+        "PPR": 34.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Mecole Hardman",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 11.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.4,
+        "Rec Yds": 53.9,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 11.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 250.2,
+      "auction": 17.9,
+      "stats": {
+        "Rec": 84.7,
+        "Rec Yds": 1213.3,
+        "Rec TD": 7.4,
+        "Rush Yds": 0,
+        "PPR": 250.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 167.3,
+      "auction": 14.4,
+      "stats": {
+        "Rec": 62.6,
+        "Rec Yds": 770.1,
+        "Rec TD": 4.6,
+        "Rush Yds": 0,
+        "PPR": 167.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Legette",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 73.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 28.9,
+        "Rec Yds": 298.9,
+        "Rec TD": 2.4,
+        "Rush Yds": 0,
+        "PPR": 73.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "John Metchie",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 54.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 21.6,
+        "Rec Yds": 229.2,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 54.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jimmy Horn",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 10.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.4,
+        "Rec Yds": 31.6,
+        "Rec TD": 0.3,
+        "Rush Yds": 19.4,
+        "PPR": 10.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Luther Burden",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 232.6,
+      "auction": 26.6,
+      "stats": {
+        "Rec": 81.0,
+        "Rec Yds": 1060.6,
+        "Rec TD": 6.5,
+        "Rush Yds": 49.0,
+        "PPR": 232.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 207.0,
+      "auction": 3.2,
+      "stats": {
+        "Rec": 66.0,
+        "Rec Yds": 982.4,
+        "Rec TD": 7.1,
+        "Rush Yds": 0,
+        "PPR": 207.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kalif Raymond",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 51.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 20.3,
+        "Rec Yds": 224.5,
+        "Rec TD": 1.3,
+        "Rush Yds": 14.5,
+        "PPR": 51.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Zavion Thomas",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 16.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 6.9,
+        "Rec Yds": 66.1,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 16.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jahdae Walker",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 9.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.2,
+        "Rec Yds": 38.7,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 9.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Scotty Miller",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 7.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.3,
+        "Rec Yds": 32.5,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ja'Marr Chase",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 364.1,
+      "auction": 20.9,
+      "stats": {
+        "Rec": 130.5,
+        "Rec Yds": 1621.5,
+        "Rec TD": 11.6,
+        "Rush Yds": 14.9,
+        "PPR": 364.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 250.6,
+      "auction": 18.6,
+      "stats": {
+        "Rec": 80.6,
+        "Rec Yds": 1081.8,
+        "Rec TD": 10.3,
+        "Rush Yds": 0,
+        "PPR": 250.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Andrei Iosivas",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 124.5,
+      "auction": 11.3,
+      "stats": {
+        "Rec": 46.7,
+        "Rec Yds": 524.5,
+        "Rec TD": 4.0,
+        "Rush Yds": 11.1,
+        "PPR": 124.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Charlie Jones",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 14.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 5.7,
+        "Rec Yds": 58.8,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 14.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Mitchell Tinsley",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 22.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 8.4,
+        "Rec Yds": 95.4,
+        "Rec TD": 0.7,
+        "Rush Yds": 0,
+        "PPR": 22.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 122.3,
+      "auction": 14.2,
+      "stats": {
+        "Rec": 44.4,
+        "Rec Yds": 597.8,
+        "Rec TD": 3.0,
+        "Rush Yds": 0,
+        "PPR": 122.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "KC Concepcion",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 122.1,
+      "auction": 5.1,
+      "stats": {
+        "Rec": 44.2,
+        "Rec Yds": 571.5,
+        "Rec TD": 2.9,
+        "Rush Yds": 28.0,
+        "PPR": 122.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 117.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 45.1,
+        "Rec Yds": 554.2,
+        "Rec TD": 2.9,
+        "Rush Yds": 0,
+        "PPR": 117.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Isaiah Bond",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 67.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 22.1,
+        "Rec Yds": 274.1,
+        "Rec TD": 1.3,
+        "Rush Yds": 75.7,
+        "PPR": 67.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Cedric Tillman",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 10.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.9,
+        "Rec Yds": 51.0,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 10.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tylan Wallace",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 6.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 2.8,
+        "Rec Yds": 27.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 6.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 272.0,
+      "auction": 24.4,
+      "stats": {
+        "Rec": 97.5,
+        "Rec Yds": 1311.8,
+        "Rec TD": 7.2,
+        "Rush Yds": 0,
+        "PPR": 272.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "George Pickens",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 278.4,
+      "auction": 23.9,
+      "stats": {
+        "Rec": 91.8,
+        "Rec Yds": 1343.3,
+        "Rec TD": 8.7,
+        "Rush Yds": 0,
+        "PPR": 278.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 111.2,
+      "auction": 7.0,
+      "stats": {
+        "Rec": 41.8,
+        "Rec Yds": 472.7,
+        "Rec TD": 3.7,
+        "Rush Yds": 0,
+        "PPR": 111.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "KaVontae Turpin",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 76.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 24.1,
+        "Rec Yds": 303.4,
+        "Rec TD": 2.1,
+        "Rush Yds": 85.9,
+        "PPR": 76.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jonathan Mingo",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 10.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.0,
+        "Rec Yds": 45.2,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 10.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Marquez Valdes-Scantling",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 9.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.0,
+        "Rec Yds": 55.3,
+        "Rec TD": 0,
+        "Rush Yds": 0,
+        "PPR": 9.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jaylen Waddle",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 245.3,
+      "auction": 14.2,
+      "stats": {
+        "Rec": 89.0,
+        "Rec Yds": 1131.7,
+        "Rec TD": 6.9,
+        "Rush Yds": 12.3,
+        "PPR": 245.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Courtland Sutton",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 205.4,
+      "auction": 5.5,
+      "stats": {
+        "Rec": 70.0,
+        "Rec Yds": 930.5,
+        "Rec TD": 7.1,
+        "Rush Yds": 0,
+        "PPR": 205.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Troy Franklin",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 77.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 28.9,
+        "Rec Yds": 332.4,
+        "Rec TD": 2.5,
+        "Rush Yds": 0,
+        "PPR": 77.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Pat Bryant",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 64.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 25.2,
+        "Rec Yds": 296.5,
+        "Rec TD": 1.5,
+        "Rush Yds": 0,
+        "PPR": 64.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Marvin Mims",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 41.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 15.1,
+        "Rec Yds": 154.7,
+        "Rec TD": 0.8,
+        "Rush Yds": 40.6,
+        "PPR": 41.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "bye": 6,
+      "fps": 216.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 65.7,
+        "Rec Yds": 1080.0,
+        "Rec TD": 6.1,
+        "Rush Yds": 37.6,
+        "PPR": 216.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Amon-Ra St. Brown",
+      "team": "DET",
+      "bye": 6,
+      "fps": 323.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 120.5,
+        "Rec Yds": 1423.6,
+        "Rec TD": 9.9,
+        "Rush Yds": 11.0,
+        "PPR": 323.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Greg Dortch",
+      "team": "DET",
+      "bye": 6,
+      "fps": 27.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 10.8,
+        "Rec Yds": 105.6,
+        "Rec TD": 0.6,
+        "Rush Yds": 18.0,
+        "PPR": 27.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Isaac TeSlaa",
+      "team": "DET",
+      "bye": 6,
+      "fps": 105.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 32.7,
+        "Rec Yds": 451.6,
+        "Rec TD": 4.5,
+        "Rush Yds": 0,
+        "PPR": 105.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Cedrick Wilson",
+      "team": "DET",
+      "bye": 6,
+      "fps": 9.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.9,
+        "Rec Yds": 46.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Christian Watson",
+      "team": "GB",
+      "bye": 11,
+      "fps": 212.3,
+      "auction": 48.0,
+      "stats": {
+        "Rec": 63.5,
+        "Rec Yds": 1032.5,
+        "Rec TD": 7.4,
+        "Rush Yds": 11.4,
+        "PPR": 212.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jayden Reed",
+      "team": "GB",
+      "bye": 11,
+      "fps": 179.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 61.0,
+        "Rec Yds": 746.9,
+        "Rec TD": 5.0,
+        "Rush Yds": 103.8,
+        "PPR": 179.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Matthew Golden",
+      "team": "GB",
+      "bye": 11,
+      "fps": 148.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 53.6,
+        "Rec Yds": 676.5,
+        "Rec TD": 4.0,
+        "Rush Yds": 25.0,
+        "PPR": 148.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Savion Williams",
+      "team": "GB",
+      "bye": 11,
+      "fps": 61.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 23.2,
+        "Rec Yds": 211.0,
+        "Rec TD": 1.7,
+        "Rush Yds": 53.1,
+        "PPR": 61.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Bo Melton",
+      "team": "GB",
+      "bye": 11,
+      "fps": 9.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.8,
+        "Rec Yds": 46.3,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Skyy Moore",
+      "team": "GB",
+      "bye": 11,
+      "fps": 0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 0,
+        "Rec Yds": 0,
+        "Rec TD": 0,
+        "Rush Yds": 0,
+        "PPR": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Nico Collins",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 255.7,
+      "auction": 15.1,
+      "stats": {
+        "Rec": 86.4,
+        "Rec Yds": 1272.5,
+        "Rec TD": 7.0,
+        "Rush Yds": 0,
+        "PPR": 255.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jayden Higgins",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 186.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 67.5,
+        "Rec Yds": 843.4,
+        "Rec TD": 5.7,
+        "Rush Yds": 0,
+        "PPR": 186.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jaylin Noel",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 92.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 36.5,
+        "Rec Yds": 398.4,
+        "Rec TD": 2.3,
+        "Rush Yds": 24.1,
+        "PPR": 92.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tank Dell",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 85.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 32.5,
+        "Rec Yds": 367.4,
+        "Rec TD": 2.7,
+        "Rush Yds": 0,
+        "PPR": 85.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 24.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 9.5,
+        "Rec Yds": 109.0,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 24.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Justin Watson",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 8.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.6,
+        "Rec Yds": 32.0,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Alec Pierce",
+      "team": "IND",
+      "bye": 13,
+      "fps": 204.1,
+      "auction": 3.2,
+      "stats": {
+        "Rec": 63.0,
+        "Rec Yds": 1044.7,
+        "Rec TD": 6.1,
+        "Rush Yds": 0,
+        "PPR": 204.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Josh Downs",
+      "team": "IND",
+      "bye": 13,
+      "fps": 188.3,
+      "auction": 0.6,
+      "stats": {
+        "Rec": 79.1,
+        "Rec Yds": 781.4,
+        "Rec TD": 5.0,
+        "Rush Yds": 9.8,
+        "PPR": 188.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Nick Westbrook-Ikhine",
+      "team": "IND",
+      "bye": 13,
+      "fps": 84.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 31.1,
+        "Rec Yds": 366.1,
+        "Rec TD": 2.8,
+        "Rush Yds": 0,
+        "PPR": 84.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Deion Burks",
+      "team": "IND",
+      "bye": 13,
+      "fps": 25.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 10.3,
+        "Rec Yds": 115.6,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 25.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ashton Dulin",
+      "team": "IND",
+      "bye": 13,
+      "fps": 19.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 7.2,
+        "Rec Yds": 77.6,
+        "Rec TD": 0.4,
+        "Rush Yds": 18.7,
+        "PPR": 19.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Anthony Gould",
+      "team": "IND",
+      "bye": 13,
+      "fps": 6.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 2.9,
+        "Rec Yds": 30.5,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 6.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Parker Washington",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 227.3,
+      "auction": 15.8,
+      "stats": {
+        "Rec": 78.6,
+        "Rec Yds": 1057.7,
+        "Rec TD": 6.6,
+        "Rush Yds": 22.8,
+        "PPR": 227.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Brian Thomas",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 173.7,
+      "auction": 10.1,
+      "stats": {
+        "Rec": 56.5,
+        "Rec Yds": 842.8,
+        "Rec TD": 5.5,
+        "Rush Yds": 0,
+        "PPR": 173.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 170.3,
+      "auction": 8.6,
+      "stats": {
+        "Rec": 65.5,
+        "Rec Yds": 740.8,
+        "Rec TD": 4.9,
+        "Rush Yds": 10.9,
+        "PPR": 170.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Travis Hunter",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 56.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 22.4,
+        "Rec Yds": 244.3,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 56.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "CJ Williams",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 7.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.4,
+        "Rec Yds": 30.6,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Josh Cameron",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 4.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 1.7,
+        "Rec Yds": 17.7,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 4.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC",
+      "bye": 5,
+      "fps": 240.9,
+      "auction": 45.2,
+      "stats": {
+        "Rec": 87.6,
+        "Rec Yds": 975.9,
+        "Rec TD": 8.4,
+        "Rush Yds": 27.3,
+        "PPR": 240.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Worthy",
+      "team": "KC",
+      "bye": 5,
+      "fps": 170.7,
+      "auction": 9.0,
+      "stats": {
+        "Rec": 57.3,
+        "Rec Yds": 736.9,
+        "Rec TD": 5.3,
+        "Rush Yds": 54.8,
+        "PPR": 170.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tyquan Thornton",
+      "team": "KC",
+      "bye": 5,
+      "fps": 123.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 35.6,
+        "Rec Yds": 594.3,
+        "Rec TD": 4.7,
+        "Rush Yds": 0,
+        "PPR": 123.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Royals",
+      "team": "KC",
+      "bye": 5,
+      "fps": 41.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 16.5,
+        "Rec Yds": 173.5,
+        "Rec TD": 1.2,
+        "Rush Yds": 0,
+        "PPR": 41.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Cyrus Allen",
+      "team": "KC",
+      "bye": 5,
+      "fps": 12.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.6,
+        "Rec Yds": 55.3,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 12.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jeff Caldwell",
+      "team": "KC",
+      "bye": 5,
+      "fps": 4.1,
+      "auction": 1.0,
+      "stats": {
+        "Rec": 1.6,
+        "Rec Yds": 18.1,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 4.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ladd McConkey",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 239.0,
+      "auction": 24.4,
+      "stats": {
+        "Rec": 85.2,
+        "Rec Yds": 1129.4,
+        "Rec TD": 6.8,
+        "Rush Yds": 0,
+        "PPR": 239.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Quentin Johnston",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 195.1,
+      "auction": 3.3,
+      "stats": {
+        "Rec": 61.2,
+        "Rec Yds": 879.7,
+        "Rec TD": 7.7,
+        "Rush Yds": 0,
+        "PPR": 195.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tre' Harris",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 68.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 26.6,
+        "Rec Yds": 319.3,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 68.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Brenen Thompson",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 32.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 12.4,
+        "Rec Yds": 150.1,
+        "Rec TD": 0.9,
+        "Rush Yds": 0,
+        "PPR": 32.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "KeAndre Lambert-Smith",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 15.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 6.1,
+        "Rec Yds": 69.7,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 15.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Derius Davis",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 4.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 1.8,
+        "Rec Yds": 17.5,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 4.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Davante Adams",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 224.1,
+      "auction": 20.5,
+      "stats": {
+        "Rec": 68.7,
+        "Rec Yds": 908.2,
+        "Rec TD": 10.8,
+        "Rush Yds": 0,
+        "PPR": 224.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 350.4,
+      "auction": 19.1,
+      "stats": {
+        "Rec": 122.9,
+        "Rec Yds": 1600.8,
+        "Rec TD": 9.1,
+        "Rush Yds": 80.7,
+        "PPR": 350.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Konata Mumpfield",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 49.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 19.8,
+        "Rec Yds": 214.1,
+        "Rec TD": 1.4,
+        "Rush Yds": 0,
+        "PPR": 49.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Whittington",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 25.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 10.7,
+        "Rec Yds": 111.1,
+        "Rec TD": 0.7,
+        "Rush Yds": 0,
+        "PPR": 25.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Smith",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 20.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 7.1,
+        "Rec Yds": 101.7,
+        "Rec TD": 0.5,
+        "Rush Yds": 0,
+        "PPR": 20.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "CJ Daniels",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 7.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 2.8,
+        "Rec Yds": 38.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Nailor",
+      "team": "LV",
+      "bye": 13,
+      "fps": 127.0,
+      "auction": 3.2,
+      "stats": {
+        "Rec": 47.7,
+        "Rec Yds": 608.1,
+        "Rec TD": 3.1,
+        "Rush Yds": 0,
+        "PPR": 127.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jack Bech",
+      "team": "LV",
+      "bye": 13,
+      "fps": 127.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 51.7,
+        "Rec Yds": 568.8,
+        "Rec TD": 3.1,
+        "Rush Yds": 0,
+        "PPR": 127.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tre Tucker",
+      "team": "LV",
+      "bye": 13,
+      "fps": 112.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 40.6,
+        "Rec Yds": 482.9,
+        "Rec TD": 2.7,
+        "Rush Yds": 67.8,
+        "PPR": 112.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Dont'e Thornton",
+      "team": "LV",
+      "bye": 13,
+      "fps": 72.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 26.6,
+        "Rec Yds": 364.7,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 72.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Dareke Young",
+      "team": "LV",
+      "bye": 13,
+      "fps": 7.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.2,
+        "Rec Yds": 30.6,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Malik Benson",
+      "team": "LV",
+      "bye": 13,
+      "fps": 4.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 1.7,
+        "Rec Yds": 18.6,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 4.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Caleb Douglas",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 116.3,
+      "auction": 7.0,
+      "stats": {
+        "Rec": 41.5,
+        "Rec Yds": 583.1,
+        "Rec TD": 2.7,
+        "Rush Yds": 0,
+        "PPR": 116.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Chris Bell",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 64.9,
+      "auction": 3.4,
+      "stats": {
+        "Rec": 23.8,
+        "Rec Yds": 320.0,
+        "Rec TD": 1.5,
+        "Rush Yds": 0,
+        "PPR": 64.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Malik Washington",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 101.9,
+      "auction": 2.7,
+      "stats": {
+        "Rec": 43.2,
+        "Rec Yds": 409.9,
+        "Rec TD": 1.9,
+        "Rush Yds": 48.7,
+        "PPR": 101.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tutu Atwell",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 40.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 15.9,
+        "Rec Yds": 202.4,
+        "Rec TD": 0.7,
+        "Rush Yds": 0,
+        "PPR": 40.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Tolbert",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 124.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 48.8,
+        "Rec Yds": 566.9,
+        "Rec TD": 3.1,
+        "Rush Yds": 0,
+        "PPR": 124.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kevin Coleman",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 26.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 10.6,
+        "Rec Yds": 127.1,
+        "Rec TD": 0.5,
+        "Rush Yds": 0,
+        "PPR": 26.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Justin Jefferson",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 273.9,
+      "auction": 29.4,
+      "stats": {
+        "Rec": 101.3,
+        "Rec Yds": 1263.7,
+        "Rec TD": 7.7,
+        "Rush Yds": 0,
+        "PPR": 273.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Addison",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 204.3,
+      "auction": 20.6,
+      "stats": {
+        "Rec": 71.6,
+        "Rec Yds": 936.0,
+        "Rec TD": 5.8,
+        "Rush Yds": 35.9,
+        "PPR": 204.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jauan Jennings",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 103.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 40.8,
+        "Rec Yds": 452.5,
+        "Rec TD": 2.9,
+        "Rush Yds": 0,
+        "PPR": 103.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tai Felton",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 12.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 5.2,
+        "Rec Yds": 52.8,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 12.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jeshaun Jones",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 7.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.4,
+        "Rec Yds": 31.0,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "A.J. Brown",
+      "team": "NE",
+      "bye": 11,
+      "fps": 263.7,
+      "auction": 1.6,
+      "stats": {
+        "Rec": 85.5,
+        "Rec Yds": 1244.3,
+        "Rec TD": 9.0,
+        "Rush Yds": 0,
+        "PPR": 263.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Romeo Doubs",
+      "team": "NE",
+      "bye": 11,
+      "fps": 158.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 53.0,
+        "Rec Yds": 694.3,
+        "Rec TD": 5.9,
+        "Rush Yds": 0,
+        "PPR": 158.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kayshon Boutte",
+      "team": "NE",
+      "bye": 11,
+      "fps": 68.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 24.3,
+        "Rec Yds": 341.3,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 68.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Mack Hollins",
+      "team": "NE",
+      "bye": 11,
+      "fps": 52.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 19.9,
+        "Rec Yds": 232.3,
+        "Rec TD": 1.4,
+        "Rush Yds": 6.7,
+        "PPR": 52.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "DeMario Douglas",
+      "team": "NE",
+      "bye": 11,
+      "fps": 48.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 18.1,
+        "Rec Yds": 226.5,
+        "Rec TD": 1.3,
+        "Rush Yds": 0,
+        "PPR": 48.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kyle Williams",
+      "team": "NE",
+      "bye": 11,
+      "fps": 8.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.0,
+        "Rec Yds": 43.6,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Chris Olave",
+      "team": "NO",
+      "bye": 8,
+      "fps": 236.4,
+      "auction": 33.2,
+      "stats": {
+        "Rec": 86.0,
+        "Rec Yds": 1075.9,
+        "Rec TD": 7.1,
+        "Rush Yds": 0,
+        "PPR": 236.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jordyn Tyson",
+      "team": "NO",
+      "bye": 8,
+      "fps": 199.4,
+      "auction": 1.8,
+      "stats": {
+        "Rec": 70.9,
+        "Rec Yds": 919.1,
+        "Rec TD": 6.1,
+        "Rush Yds": 0,
+        "PPR": 199.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Devaughn Vele",
+      "team": "NO",
+      "bye": 8,
+      "fps": 63.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 25.0,
+        "Rec Yds": 292.9,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 63.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Bryce Lance",
+      "team": "NO",
+      "bye": 8,
+      "fps": 25.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 9.8,
+        "Rec Yds": 118.1,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 25.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Mason Tipton",
+      "team": "NO",
+      "bye": 8,
+      "fps": 8.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.0,
+        "Rec Yds": 32.7,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Malik Nabers",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 178.4,
+      "auction": 12.6,
+      "stats": {
+        "Rec": 62.7,
+        "Rec Yds": 836.4,
+        "Rec TD": 5.3,
+        "Rush Yds": 0,
+        "PPR": 178.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Darnell Mooney",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 98.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 36.6,
+        "Rec Yds": 461.3,
+        "Rec TD": 2.7,
+        "Rush Yds": 0,
+        "PPR": 98.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Darius Slayton",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 73.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 26.1,
+        "Rec Yds": 371.3,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 73.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Malachi Fields",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 73.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 26.5,
+        "Rec Yds": 338.1,
+        "Rec TD": 2.2,
+        "Rush Yds": 0,
+        "PPR": 73.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Calvin Austin",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 15.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 5.8,
+        "Rec Yds": 69.2,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 15.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Beaux Collins",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 12.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 9.0,
+        "Rec Yds": 0,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 12.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Garrett Wilson",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 236.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 95.3,
+        "Rec Yds": 1089.0,
+        "Rec TD": 5.4,
+        "Rush Yds": 0,
+        "PPR": 236.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Omar Cooper",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 162.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 62.5,
+        "Rec Yds": 724.8,
+        "Rec TD": 4.4,
+        "Rush Yds": 9.2,
+        "PPR": 162.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Adonai Mitchell",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 124.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 46.1,
+        "Rec Yds": 592.5,
+        "Rec TD": 3.3,
+        "Rush Yds": 0,
+        "PPR": 124.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tim Patrick",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 22.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 8.9,
+        "Rec Yds": 99.2,
+        "Rec TD": 0.6,
+        "Rush Yds": 0,
+        "PPR": 22.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Isaiah Williams",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 7.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.5,
+        "Rec Yds": 33.4,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 7.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Arian Smith",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 3.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 1.7,
+        "Rec Yds": 14.7,
+        "Rec TD": 0.1,
+        "Rush Yds": 0,
+        "PPR": 3.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "DeVonta Smith",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 241.1,
+      "auction": 13.4,
+      "stats": {
+        "Rec": 86.0,
+        "Rec Yds": 1107.1,
+        "Rec TD": 7.4,
+        "Rush Yds": 0,
+        "PPR": 241.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Makai Lemon",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 206.4,
+      "auction": 4.3,
+      "stats": {
+        "Rec": 73.9,
+        "Rec Yds": 918.1,
+        "Rec TD": 6.1,
+        "Rush Yds": 26.1,
+        "PPR": 206.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Dontayvion Wicks",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 63.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 23.7,
+        "Rec Yds": 288.3,
+        "Rec TD": 1.9,
+        "Rush Yds": 0,
+        "PPR": 63.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Hollywood Brown",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 33.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 12.9,
+        "Rec Yds": 148.9,
+        "Rec TD": 1.0,
+        "Rush Yds": 0,
+        "PPR": 33.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Elijah Moore",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 17.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 7.2,
+        "Rec Yds": 74.6,
+        "Rec TD": 0.5,
+        "Rush Yds": 0,
+        "PPR": 17.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Darius Cooper",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 10.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 4.2,
+        "Rec Yds": 42.7,
+        "Rec TD": 0.3,
+        "Rush Yds": 0,
+        "PPR": 10.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Michael Pittman",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 203.9,
+      "auction": 22.1,
+      "stats": {
+        "Rec": 85.1,
+        "Rec Yds": 860.8,
+        "Rec TD": 5.4,
+        "Rush Yds": 0,
+        "PPR": 203.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 196.1,
+      "auction": 17.2,
+      "stats": {
+        "Rec": 66.4,
+        "Rec Yds": 934.7,
+        "Rec TD": 6.0,
+        "Rush Yds": 0,
+        "PPR": 196.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Germie Bernard",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 115.1,
+      "auction": 17.1,
+      "stats": {
+        "Rec": 46.4,
+        "Rec Yds": 489.9,
+        "Rec TD": 2.8,
+        "Rush Yds": 26.8,
+        "PPR": 115.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ben Skowronek",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 18.4,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 7.8,
+        "Rec Yds": 80.6,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 18.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Roman Wilson",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 9.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.7,
+        "Rec Yds": 45.1,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 360.0,
+      "auction": 31.7,
+      "stats": {
+        "Rec": 119.7,
+        "Rec Yds": 1773.1,
+        "Rec TD": 9.9,
+        "Rush Yds": 29.7,
+        "PPR": 360.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Rashid Shaheed",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 141.7,
+      "auction": 21.4,
+      "stats": {
+        "Rec": 44.5,
+        "Rec Yds": 615.3,
+        "Rec TD": 4.2,
+        "Rush Yds": 81.3,
+        "PPR": 141.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Cooper Kupp",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 111.7,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 41.7,
+        "Rec Yds": 507.5,
+        "Rec TD": 3.2,
+        "Rush Yds": 0,
+        "PPR": 111.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tory Horton",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 48.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 16.5,
+        "Rec Yds": 212.5,
+        "Rec TD": 1.7,
+        "Rush Yds": 0,
+        "PPR": 48.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jake Bobo",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 8.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.5,
+        "Rec Yds": 40.9,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Mike Evans",
+      "team": "SF",
+      "bye": 8,
+      "fps": 229.2,
+      "auction": 16.0,
+      "stats": {
+        "Rec": 73.6,
+        "Rec Yds": 1052.6,
+        "Rec TD": 8.4,
+        "Rush Yds": 0,
+        "PPR": 229.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Deebo Samuel",
+      "team": "SF",
+      "bye": 8,
+      "fps": 183.2,
+      "auction": 13.5,
+      "stats": {
+        "Rec": 65.0,
+        "Rec Yds": 900.9,
+        "Rec TD": 4.4,
+        "Rush Yds": 14.2,
+        "PPR": 183.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "De'Zhaun Stribling",
+      "team": "SF",
+      "bye": 8,
+      "fps": 54.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 18.0,
+        "Rec Yds": 253.9,
+        "Rec TD": 1.3,
+        "Rush Yds": 20.9,
+        "PPR": 54.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Christian Kirk",
+      "team": "SF",
+      "bye": 8,
+      "fps": 48.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 18.6,
+        "Rec Yds": 217.7,
+        "Rec TD": 1.3,
+        "Rush Yds": 0,
+        "PPR": 48.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Dermarcus Robinson",
+      "team": "SF",
+      "bye": 8,
+      "fps": 16.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 6.1,
+        "Rec Yds": 78.6,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 16.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Watkins",
+      "team": "SF",
+      "bye": 8,
+      "fps": 8.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.3,
+        "Rec Yds": 39.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "bye": 10,
+      "fps": 223.9,
+      "auction": 23.5,
+      "stats": {
+        "Rec": 72.4,
+        "Rec Yds": 1062.7,
+        "Rec TD": 7.5,
+        "Rush Yds": 0,
+        "PPR": 223.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Chris Godwin",
+      "team": "TB",
+      "bye": 10,
+      "fps": 179.3,
+      "auction": 19.3,
+      "stats": {
+        "Rec": 69.5,
+        "Rec Yds": 777.1,
+        "Rec TD": 5.4,
+        "Rush Yds": 0,
+        "PPR": 179.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jalen McMillan",
+      "team": "TB",
+      "bye": 10,
+      "fps": 130.5,
+      "auction": 4.2,
+      "stats": {
+        "Rec": 44.7,
+        "Rec Yds": 588.0,
+        "Rec TD": 3.9,
+        "Rush Yds": 29.6,
+        "PPR": 130.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Ted Hurst",
+      "team": "TB",
+      "bye": 10,
+      "fps": 57.9,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 20.6,
+        "Rec Yds": 262.0,
+        "Rec TD": 1.9,
+        "Rush Yds": 0,
+        "PPR": 57.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Tez Johnson",
+      "team": "TB",
+      "bye": 10,
+      "fps": 14.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 5.2,
+        "Rec Yds": 57.5,
+        "Rec TD": 0.5,
+        "Rush Yds": 0,
+        "PPR": 14.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Kameron Johnson",
+      "team": "TB",
+      "bye": 10,
+      "fps": 8.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.4,
+        "Rec Yds": 35.8,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 8.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Carnell Tate",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 227.1,
+      "auction": 28.9,
+      "stats": {
+        "Rec": 80.8,
+        "Rec Yds": 1075.2,
+        "Rec TD": 6.5,
+        "Rush Yds": 0,
+        "PPR": 227.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 190.3,
+      "auction": 21.8,
+      "stats": {
+        "Rec": 76.5,
+        "Rec Yds": 827.4,
+        "Rec TD": 4.7,
+        "Rush Yds": 23.8,
+        "PPR": 190.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Calvin Ridley",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 127.2,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 43.5,
+        "Rec Yds": 617.1,
+        "Rec TD": 3.7,
+        "Rush Yds": 0,
+        "PPR": 127.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Elic Ayomanor",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 51.3,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 17.9,
+        "Rec Yds": 239.5,
+        "Rec TD": 1.6,
+        "Rush Yds": 0,
+        "PPR": 51.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Chimere Dike",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 24.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 9.1,
+        "Rec Yds": 85.9,
+        "Rec TD": 0.6,
+        "Rush Yds": 18.4,
+        "PPR": 24.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "K.J. Osborn",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 12.8,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 5.1,
+        "Rec Yds": 56.5,
+        "Rec TD": 0.4,
+        "Rush Yds": 0,
+        "PPR": 12.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Terry McLaurin",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 232.5,
+      "auction": 22.9,
+      "stats": {
+        "Rec": 78.7,
+        "Rec Yds": 1076.2,
+        "Rec TD": 7.7,
+        "Rush Yds": 0,
+        "PPR": 232.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Stefon Diggs",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 205.9,
+      "auction": 14.8,
+      "stats": {
+        "Rec": 76.5,
+        "Rec Yds": 913.0,
+        "Rec TD": 6.3,
+        "Rush Yds": 0,
+        "PPR": 205.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Antonio Williams",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 38.0,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 14.6,
+        "Rec Yds": 169.9,
+        "Rec TD": 1.1,
+        "Rush Yds": 0,
+        "PPR": 38.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Dyami Brown",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 24.5,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 8.1,
+        "Rec Yds": 101.3,
+        "Rec TD": 0.6,
+        "Rush Yds": 23.3,
+        "PPR": 24.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Jaylin Lane",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 37.1,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 13.5,
+        "Rec Yds": 178.7,
+        "Rec TD": 0.9,
+        "Rush Yds": 0,
+        "PPR": 37.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Treylon Burks",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 33.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 12.3,
+        "Rec Yds": 156.6,
+        "Rec TD": 0.9,
+        "Rush Yds": 0,
+        "PPR": 33.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "WR",
+      "player": "Luke McCaffrey",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 9.6,
+      "auction": 0.0,
+      "stats": {
+        "Rec": 3.8,
+        "Rec Yds": 44.6,
+        "Rec TD": 0.2,
+        "Rush Yds": 0,
+        "PPR": 9.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Trey McBride",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 232.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 140.1,
+        "Rec": 97.9,
+        "Rec Yds": 972.6,
+        "Rec TD": 6.2,
+        "PPR": 232.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Elijah Higgins",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 26.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 16.1,
+        "Rec": 11.3,
+        "Rec Yds": 107.6,
+        "Rec TD": 0.7,
+        "PPR": 26.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tip Reiman",
+      "team": "ARI",
+      "bye": 14,
+      "fps": 4.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.8,
+        "Rec": 1.9,
+        "Rec Yds": 16.0,
+        "Rec TD": 0.1,
+        "PPR": 4.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Kyle Pitts",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 178.0,
+      "auction": 12.1,
+      "stats": {
+        "Tgt": 108.4,
+        "Rec": 73.5,
+        "Rec Yds": 806.7,
+        "Rec TD": 4.0,
+        "PPR": 178.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Austin Hooper",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 41.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 22.1,
+        "Rec": 17.4,
+        "Rec Yds": 186.0,
+        "Rec TD": 1.0,
+        "PPR": 41.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Charlie Woerner",
+      "team": "ATL",
+      "bye": 11,
+      "fps": 9.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 5.7,
+        "Rec": 4.2,
+        "Rec Yds": 35.8,
+        "Rec TD": 0.2,
+        "PPR": 9.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 156.9,
+      "auction": 10.7,
+      "stats": {
+        "Tgt": 84.1,
+        "Rec": 56.3,
+        "Rec Yds": 600.9,
+        "Rec TD": 6.8,
+        "PPR": 156.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Durham Smythe",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 29.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 16.4,
+        "Rec": 11.7,
+        "Rec Yds": 109.7,
+        "Rec TD": 1.1,
+        "PPR": 29.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Josh Cuevas",
+      "team": "BAL",
+      "bye": 13,
+      "fps": 0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 4.7,
+        "Rec": 0,
+        "Rec Yds": 0,
+        "Rec TD": 0,
+        "PPR": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Dalton Kincaid",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 168.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 88.9,
+        "Rec": 61.1,
+        "Rec Yds": 742.3,
+        "Rec TD": 5.4,
+        "PPR": 168.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Dawson Knox",
+      "team": "BUF",
+      "bye": 7,
+      "fps": 75.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 39.8,
+        "Rec": 28.0,
+        "Rec Yds": 313.4,
+        "Rec TD": 2.7,
+        "PPR": 75.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Ja'Tavion Sanders",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 67.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 43.1,
+        "Rec": 31.5,
+        "Rec Yds": 250.2,
+        "Rec TD": 1.9,
+        "PPR": 67.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tommy Tremble",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 52.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 32.8,
+        "Rec": 23.6,
+        "Rec Yds": 189.4,
+        "Rec TD": 1.7,
+        "PPR": 52.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Mitchell Evans",
+      "team": "CAR",
+      "bye": 5,
+      "fps": 37.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 23.2,
+        "Rec": 16.9,
+        "Rec Yds": 136.5,
+        "Rec TD": 1.2,
+        "PPR": 37.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Colston Loveland",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 235.4,
+      "auction": 1.8,
+      "stats": {
+        "Tgt": 122.9,
+        "Rec": 83.8,
+        "Rec Yds": 1012.8,
+        "Rec TD": 8.4,
+        "PPR": 235.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Cole Kmet",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 59.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 35.0,
+        "Rec": 23.4,
+        "Rec Yds": 251.8,
+        "Rec TD": 1.8,
+        "PPR": 59.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Sam Roush",
+      "team": "CHI",
+      "bye": 10,
+      "fps": 12.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 8.5,
+        "Rec": 5.2,
+        "Rec Yds": 51.0,
+        "Rec TD": 0.3,
+        "PPR": 12.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Mike Gesicki",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 108.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 61.4,
+        "Rec": 42.4,
+        "Rec Yds": 435.0,
+        "Rec TD": 3.8,
+        "PPR": 108.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Erick All",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 39.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 21.5,
+        "Rec": 17.3,
+        "Rec Yds": 164.5,
+        "Rec TD": 0.9,
+        "PPR": 39.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Drew Sample",
+      "team": "CIN",
+      "bye": 6,
+      "fps": 0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 6.3,
+        "Rec": 0,
+        "Rec Yds": 0,
+        "Rec TD": 0,
+        "PPR": 0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Harold Fannin",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 193.0,
+      "auction": 0.4,
+      "stats": {
+        "Tgt": 119.2,
+        "Rec": 78.0,
+        "Rec Yds": 822.6,
+        "Rec TD": 5.5,
+        "PPR": 193.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Joe Royer",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 6.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 4.9,
+        "Rec": 3.1,
+        "Rec Yds": 27.1,
+        "Rec TD": 0.2,
+        "PPR": 6.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Jack Stoll",
+      "team": "CLE",
+      "bye": 11,
+      "fps": 3.2,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.5,
+        "Rec": 1.5,
+        "Rec Yds": 11.3,
+        "Rec TD": 0.1,
+        "PPR": 3.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Jake Ferguson",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 172.8,
+      "auction": 1.1,
+      "stats": {
+        "Tgt": 100.1,
+        "Rec": 74.6,
+        "Rec Yds": 606.8,
+        "Rec TD": 6.3,
+        "PPR": 172.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Luke Schoonmaker",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 32.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 19.9,
+        "Rec": 13.7,
+        "Rec Yds": 127.6,
+        "Rec TD": 1.0,
+        "PPR": 32.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Michael Trigg",
+      "team": "DAL",
+      "bye": 14,
+      "fps": 7.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 6.0,
+        "Rec": 4.1,
+        "Rec Yds": 34.1,
+        "Rec TD": 0,
+        "PPR": 7.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Evan Engram",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 92.1,
+      "auction": 7.4,
+      "stats": {
+        "Tgt": 61.6,
+        "Rec": 42.0,
+        "Rec Yds": 375.2,
+        "Rec TD": 2.1,
+        "PPR": 92.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Adam Trautman",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 25.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 14.8,
+        "Rec": 11.4,
+        "Rec Yds": 108.7,
+        "Rec TD": 0.6,
+        "PPR": 25.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Justin Joly",
+      "team": "DEN",
+      "bye": 10,
+      "fps": 42.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 27.4,
+        "Rec": 20.3,
+        "Rec Yds": 161.8,
+        "Rec TD": 1.0,
+        "PPR": 42.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Sam LaPorta",
+      "team": "DET",
+      "bye": 6,
+      "fps": 193.5,
+      "auction": 13.3,
+      "stats": {
+        "Tgt": 101.9,
+        "Rec": 75.3,
+        "Rec Yds": 825.8,
+        "Rec TD": 5.9,
+        "PPR": 193.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Brock Wright",
+      "team": "DET",
+      "bye": 6,
+      "fps": 23.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 14.6,
+        "Rec": 10.5,
+        "Rec Yds": 84.7,
+        "Rec TD": 0.8,
+        "PPR": 23.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tyler Conklin",
+      "team": "DET",
+      "bye": 6,
+      "fps": 4.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.9,
+        "Rec": 2.0,
+        "Rec Yds": 20.1,
+        "Rec TD": 0.1,
+        "PPR": 4.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "bye": 11,
+      "fps": 186.2,
+      "auction": 4.9,
+      "stats": {
+        "Tgt": 92.4,
+        "Rec": 66.1,
+        "Rec Yds": 815.6,
+        "Rec TD": 6.4,
+        "PPR": 186.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Luke Musgrave",
+      "team": "GB",
+      "bye": 11,
+      "fps": 37.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 20.9,
+        "Rec": 16.3,
+        "Rec Yds": 157.7,
+        "Rec TD": 1.0,
+        "PPR": 37.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Dalton Schultz",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 154.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 92.2,
+        "Rec": 67.7,
+        "Rec Yds": 642.8,
+        "Rec TD": 3.7,
+        "PPR": 154.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Marlin Klein",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 23.2,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 14.3,
+        "Rec": 10.3,
+        "Rec Yds": 92.8,
+        "Rec TD": 0.6,
+        "PPR": 23.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Foster Moreau",
+      "team": "HOU",
+      "bye": 8,
+      "fps": 9.4,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 5.7,
+        "Rec": 4.0,
+        "Rec Yds": 40.0,
+        "Rec TD": 0.2,
+        "PPR": 9.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tyler Warren",
+      "team": "IND",
+      "bye": 13,
+      "fps": 211.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 118.6,
+        "Rec": 87.1,
+        "Rec Yds": 903.0,
+        "Rec TD": 5.7,
+        "PPR": 211.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Drew Ogletree",
+      "team": "IND",
+      "bye": 13,
+      "fps": 21.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 13.1,
+        "Rec": 9.2,
+        "Rec Yds": 98.4,
+        "Rec TD": 0.5,
+        "PPR": 21.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Mo Alie-Cox",
+      "team": "IND",
+      "bye": 13,
+      "fps": 12.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 7.8,
+        "Rec": 5.4,
+        "Rec Yds": 52.5,
+        "Rec TD": 0.4,
+        "PPR": 12.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Brenton Strange",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 124.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 75.0,
+        "Rec": 49.6,
+        "Rec Yds": 532.9,
+        "Rec TD": 3.5,
+        "PPR": 124.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Tanner Koziol",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 25.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 16.8,
+        "Rec": 10.6,
+        "Rec Yds": 106.2,
+        "Rec TD": 0.6,
+        "PPR": 25.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Nate Boerkircher",
+      "team": "JAX",
+      "bye": 7,
+      "fps": 12.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 8.4,
+        "Rec": 5.2,
+        "Rec Yds": 51.0,
+        "Rec TD": 0.4,
+        "PPR": 12.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Travis Kelce",
+      "team": "KC",
+      "bye": 5,
+      "fps": 184.5,
+      "auction": 30.0,
+      "stats": {
+        "Tgt": 106.6,
+        "Rec": 73.6,
+        "Rec Yds": 782.0,
+        "Rec TD": 5.4,
+        "PPR": 184.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Noah Gray",
+      "team": "KC",
+      "bye": 5,
+      "fps": 62.4,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 36.9,
+        "Rec": 26.0,
+        "Rec Yds": 251.9,
+        "Rec TD": 1.9,
+        "PPR": 62.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Jared Wiley",
+      "team": "KC",
+      "bye": 5,
+      "fps": 9.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 5.9,
+        "Rec": 4.2,
+        "Rec Yds": 39.8,
+        "Rec TD": 0.3,
+        "PPR": 9.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 120.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 64.9,
+        "Rec": 46.1,
+        "Rec Yds": 531.3,
+        "Rec TD": 3.6,
+        "PPR": 120.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "David Njoku",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 89.9,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 50.0,
+        "Rec": 36.1,
+        "Rec Yds": 378.9,
+        "Rec TD": 2.7,
+        "PPR": 89.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Charlie Kolar",
+      "team": "LAC",
+      "bye": 7,
+      "fps": 18.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 10.6,
+        "Rec": 7.4,
+        "Rec Yds": 80.0,
+        "Rec TD": 0.5,
+        "PPR": 18.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Terrance Ferguson",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 120.4,
+      "auction": 6.9,
+      "stats": {
+        "Tgt": 62.2,
+        "Rec": 41.7,
+        "Rec Yds": 505.8,
+        "Rec TD": 4.7,
+        "PPR": 120.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Colby Parkinson",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 75.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 40.1,
+        "Rec": 29.3,
+        "Rec Yds": 277.2,
+        "Rec TD": 3.1,
+        "PPR": 75.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Max Klare",
+      "team": "LAR",
+      "bye": 11,
+      "fps": 45.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 26.6,
+        "Rec": 18.6,
+        "Rec Yds": 194.6,
+        "Rec TD": 1.2,
+        "PPR": 45.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Greg Dulcich",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 137.9,
+      "auction": 2.0,
+      "stats": {
+        "Tgt": 79.8,
+        "Rec": 54.5,
+        "Rec Yds": 625.0,
+        "Rec TD": 3.5,
+        "PPR": 137.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Will Kacmarek",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 27.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 16.7,
+        "Rec": 11.5,
+        "Rec Yds": 119.8,
+        "Rec TD": 0.7,
+        "PPR": 27.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Ben Sims",
+      "team": "MIA",
+      "bye": 6,
+      "fps": 15.8,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 12.3,
+        "Rec": 7.1,
+        "Rec Yds": 66.1,
+        "Rec TD": 0.4,
+        "PPR": 15.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "T.J. Hockenson",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 157.5,
+      "auction": 2.4,
+      "stats": {
+        "Tgt": 96.4,
+        "Rec": 70.4,
+        "Rec Yds": 617.1,
+        "Rec TD": 4.2,
+        "PPR": 157.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Josh Oliver",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 26.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 14.3,
+        "Rec": 11.2,
+        "Rec Yds": 104.9,
+        "Rec TD": 0.8,
+        "PPR": 26.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Ben Yurosek",
+      "team": "MIN",
+      "bye": 6,
+      "fps": 3.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.6,
+        "Rec": 1.7,
+        "Rec Yds": 14.8,
+        "Rec TD": 0.1,
+        "PPR": 3.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Hunter Henry",
+      "team": "NE",
+      "bye": 11,
+      "fps": 147.0,
+      "auction": 1.0,
+      "stats": {
+        "Tgt": 78.5,
+        "Rec": 54.3,
+        "Rec Yds": 630.2,
+        "Rec TD": 4.9,
+        "PPR": 147.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Eli Raridon",
+      "team": "NE",
+      "bye": 11,
+      "fps": 63.8,
+      "auction": 3.6,
+      "stats": {
+        "Tgt": 37.1,
+        "Rec": 26.9,
+        "Rec Yds": 268.1,
+        "Rec TD": 1.7,
+        "PPR": 63.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Julian Hill",
+      "team": "NE",
+      "bye": 11,
+      "fps": 12.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 7.6,
+        "Rec": 5.3,
+        "Rec Yds": 49.6,
+        "Rec TD": 0.3,
+        "PPR": 12.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "bye": 8,
+      "fps": 127.0,
+      "auction": 3.4,
+      "stats": {
+        "Tgt": 75.7,
+        "Rec": 52.3,
+        "Rec Yds": 568.1,
+        "Rec TD": 3.0,
+        "PPR": 127.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Noah Fant",
+      "team": "NO",
+      "bye": 8,
+      "fps": 30.4,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 17.8,
+        "Rec": 13.5,
+        "Rec Yds": 126.0,
+        "Rec TD": 0.7,
+        "PPR": 30.4
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Oscar Delp",
+      "team": "NO",
+      "bye": 8,
+      "fps": 17.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 10.2,
+        "Rec": 7.8,
+        "Rec Yds": 70.5,
+        "Rec TD": 0.5,
+        "PPR": 17.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Isaiah Likely",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 184.9,
+      "auction": 1.0,
+      "stats": {
+        "Tgt": 99.4,
+        "Rec": 72.0,
+        "Rec Yds": 787.3,
+        "Rec TD": 5.7,
+        "PPR": 184.9
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Theo Johnson",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 51.2,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 30.7,
+        "Rec": 20.3,
+        "Rec Yds": 217.5,
+        "Rec TD": 1.5,
+        "PPR": 51.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Thomas Fidone",
+      "team": "NYG",
+      "bye": 8,
+      "fps": 3.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.5,
+        "Rec": 1.5,
+        "Rec Yds": 15.7,
+        "Rec TD": 0.1,
+        "PPR": 3.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Kenyon Sadiq",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 110.2,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 65.2,
+        "Rec": 46.8,
+        "Rec Yds": 453.8,
+        "Rec TD": 3.0,
+        "PPR": 110.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 84.1,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 51.1,
+        "Rec": 38.9,
+        "Rec Yds": 325.9,
+        "Rec TD": 2.1,
+        "PPR": 84.1
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Jeremy Ruckert",
+      "team": "NYJ",
+      "bye": 13,
+      "fps": 11.7,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 8.4,
+        "Rec": 5.4,
+        "Rec Yds": 44.1,
+        "Rec TD": 0.3,
+        "PPR": 11.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Brock Bowers",
+      "team": "LV",
+      "bye": 13,
+      "fps": 236.5,
+      "auction": 21.6,
+      "stats": {
+        "Tgt": 136.6,
+        "Rec": 94.5,
+        "Rec Yds": 1016.9,
+        "Rec TD": 6.7,
+        "PPR": 236.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Michael Mayer",
+      "team": "LV",
+      "bye": 13,
+      "fps": 59.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 37.0,
+        "Rec": 25.5,
+        "Rec Yds": 245.4,
+        "Rec TD": 1.5,
+        "PPR": 59.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Dallas Goedert",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 141.8,
+      "auction": 7.0,
+      "stats": {
+        "Tgt": 78.8,
+        "Rec": 55.4,
+        "Rec Yds": 558.7,
+        "Rec TD": 5.1,
+        "PPR": 141.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Eli Stowers",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 40.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 23.1,
+        "Rec": 16.4,
+        "Rec Yds": 168.1,
+        "Rec TD": 1.2,
+        "PPR": 40.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Grant Calcaterra",
+      "team": "PHI",
+      "bye": 10,
+      "fps": 3.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 2.4,
+        "Rec": 1.7,
+        "Rec Yds": 13.4,
+        "Rec TD": 0.1,
+        "PPR": 3.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 136.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 80.1,
+        "Rec": 55.0,
+        "Rec Yds": 563.1,
+        "Rec TD": 4.2,
+        "PPR": 136.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Darnell Washington",
+      "team": "PIT",
+      "bye": 9,
+      "fps": 79.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 43.7,
+        "Rec": 31.3,
+        "Rec Yds": 340.2,
+        "Rec TD": 2.3,
+        "PPR": 79.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "AJ Barner",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 104.8,
+      "auction": 1.3,
+      "stats": {
+        "Tgt": 59.6,
+        "Rec": 40.7,
+        "Rec Yds": 416.0,
+        "Rec TD": 3.7,
+        "PPR": 104.8
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Elijah Arroyo",
+      "team": "SEA",
+      "bye": 11,
+      "fps": 51.3,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 32.3,
+        "Rec": 19.6,
+        "Rec Yds": 216.9,
+        "Rec TD": 1.7,
+        "PPR": 51.3
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "George Kittle",
+      "team": "SF",
+      "bye": 8,
+      "fps": 189.0,
+      "auction": 20.9,
+      "stats": {
+        "Tgt": 87.0,
+        "Rec": 67.8,
+        "Rec Yds": 796.4,
+        "Rec TD": 6.9,
+        "PPR": 189.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Jake Tonges",
+      "team": "SF",
+      "bye": 8,
+      "fps": 40.0,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 22.5,
+        "Rec": 15.7,
+        "Rec Yds": 158.6,
+        "Rec TD": 1.4,
+        "PPR": 40.0
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Cade Otton",
+      "team": "TB",
+      "bye": 10,
+      "fps": 112.2,
+      "auction": 2.5,
+      "stats": {
+        "Tgt": 73.4,
+        "Rec": 48.6,
+        "Rec Yds": 469.8,
+        "Rec TD": 2.8,
+        "PPR": 112.2
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Payne Durham",
+      "team": "TB",
+      "bye": 10,
+      "fps": 14.6,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 10.5,
+        "Rec": 6.2,
+        "Rec Yds": 64.4,
+        "Rec TD": 0.3,
+        "PPR": 14.6
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Gunnar Helm",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 99.7,
+      "auction": 0.3,
+      "stats": {
+        "Tgt": 62.1,
+        "Rec": 43.6,
+        "Rec Yds": 378.0,
+        "Rec TD": 3.0,
+        "PPR": 99.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Daniel Bellinger",
+      "team": "TEN",
+      "bye": 9,
+      "fps": 35.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 23.1,
+        "Rec": 15.3,
+        "Rec Yds": 146.2,
+        "Rec TD": 0.9,
+        "PPR": 35.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Chig Okonkwo",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 126.7,
+      "auction": 4.5,
+      "stats": {
+        "Tgt": 74.7,
+        "Rec": 51.2,
+        "Rec Yds": 534.0,
+        "Rec TD": 3.7,
+        "PPR": 126.7
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "TE",
+      "player": "Ben Sinnott",
+      "team": "WSH",
+      "bye": 7,
+      "fps": 22.5,
+      "auction": 0.0,
+      "stats": {
+        "Tgt": 14.4,
+        "Rec": 9.7,
+        "Rec Yds": 91.9,
+        "Rec TD": 0.6,
+        "PPR": 22.5
+      },
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Arizona Cardinals",
+      "team": null,
+      "bye": 14,
+      "fps": 92.1,
+      "auction": 0.2,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Atlanta Falcons",
+      "team": null,
+      "bye": 11,
+      "fps": 114.0,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Baltimore Ravens",
+      "team": null,
+      "bye": 13,
+      "fps": 109.7,
+      "auction": 0.3,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Buffalo Bills",
+      "team": null,
+      "bye": 7,
+      "fps": 110.2,
+      "auction": 0.1,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Carolina Panthers",
+      "team": null,
+      "bye": 5,
+      "fps": 95.1,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Chicago Bears",
+      "team": null,
+      "bye": 10,
+      "fps": 116.7,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Cincinnati Bengals",
+      "team": null,
+      "bye": 6,
+      "fps": 98.7,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Cleveland Browns",
+      "team": null,
+      "bye": 11,
+      "fps": 108.2,
+      "auction": 0.1,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Dallas Cowboys",
+      "team": null,
+      "bye": 14,
+      "fps": 94.8,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Denver Broncos",
+      "team": null,
+      "bye": 10,
+      "fps": 128.9,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Detroit Lions",
+      "team": null,
+      "bye": 6,
+      "fps": 112.4,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Green Bay Packers",
+      "team": null,
+      "bye": 11,
+      "fps": 101.5,
+      "auction": 0.1,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Houston Texans",
+      "team": null,
+      "bye": 8,
+      "fps": 132.6,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Indianapolis Colts",
+      "team": null,
+      "bye": 13,
+      "fps": 103.8,
+      "auction": 0.3,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Jacksonville Jaguars",
+      "team": null,
+      "bye": 7,
+      "fps": 114.5,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Kansas City Chiefs",
+      "team": null,
+      "bye": 5,
+      "fps": 98.8,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Las Vegas Raiders",
+      "team": null,
+      "bye": 13,
+      "fps": 92.9,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Los Angeles Chargers",
+      "team": null,
+      "bye": 7,
+      "fps": 116.0,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Los Angeles Rams",
+      "team": null,
+      "bye": 11,
+      "fps": 125.2,
+      "auction": 1.5,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Miami Dolphins",
+      "team": null,
+      "bye": 6,
+      "fps": 99.9,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Minnesota Vikings",
+      "team": null,
+      "bye": 6,
+      "fps": 122.1,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "New England Patriots",
+      "team": null,
+      "bye": 11,
+      "fps": 108.5,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "New Orleans Saints",
+      "team": null,
+      "bye": 8,
+      "fps": 108.8,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "New York Giants",
+      "team": null,
+      "bye": 8,
+      "fps": 99.5,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "New York Jets",
+      "team": null,
+      "bye": 13,
+      "fps": 91.4,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Philadelphia Eagles",
+      "team": null,
+      "bye": 10,
+      "fps": 115.5,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Pittsburgh Steelers",
+      "team": null,
+      "bye": 9,
+      "fps": 123.4,
+      "auction": 0.7,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "San Francisco 49ers",
+      "team": null,
+      "bye": 8,
+      "fps": 95.7,
+      "auction": 0.2,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Seattle Seahawks",
+      "team": null,
+      "bye": 11,
+      "fps": 129.7,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Tampa Bay Buccaneers",
+      "team": null,
+      "bye": 10,
+      "fps": 99.9,
+      "auction": 2.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Tennessee Titans",
+      "team": null,
+      "bye": 9,
+      "fps": 98.1,
+      "auction": 0.0,
+      "stats": {},
+      "tag": null,
+      "excel_comment": null
+    },
+    {
+      "position": "DST",
+      "player": "Washington Commanders",
+      "team": null,
+      "bye": 7,
+      "fps": 96.1,
+      "auction": 1.1,
+      "stats": {},
       "tag": null,
       "excel_comment": null
     }

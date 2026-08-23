@@ -1,31 +1,12 @@
 <?php
-// Simple JSON API backing the site's comment feature.
-//   GET  api/comments.php?player=Josh+Allen   -> {"comments": [...]}
-//   POST api/comments.php {player, author, text} -> {"comment": {...}}
+// Comments API (per player).
+//   GET  api/comments.php?player=Josh+Allen  -> {"comments": [...]}
+//   POST api/comments.php {player, text}      -> {"comment": {...}}
 
-header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
+require __DIR__ . '/../auth.php';
+$pdo = ffb_api_pdo();
 
-$configPath = __DIR__ . '/config.php';
-if (!file_exists($configPath)) {
-    http_response_code(500);
-    echo json_encode(['error' => 'Server not configured yet: copy api/config.example.php to api/config.php and fill in your database credentials.']);
-    exit;
-}
-$config = require $configPath;
-
-try {
-    $pdo = new PDO(
-        "mysql:host={$config['host']};dbname={$config['dbname']};charset=utf8mb4",
-        $config['user'],
-        $config['password'],
-        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-    );
-} catch (PDOException $e) {
-    http_response_code(500);
-    echo json_encode(['error' => 'Database connection failed.']);
-    exit;
-}
+const COMMENT_AUTHOR = 'Ryan';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -45,15 +26,15 @@ if ($method === 'GET') {
 if ($method === 'POST') {
     $body = json_decode(file_get_contents('php://input'), true);
     $player = trim($body['player'] ?? '');
-    $author = trim($body['author'] ?? '');
     $text = trim($body['text'] ?? '');
+    $author = COMMENT_AUTHOR;
 
-    if ($player === '' || $author === '' || $text === '') {
+    if ($player === '' || $text === '') {
         http_response_code(400);
-        echo json_encode(['error' => 'player, author, and text are all required.']);
+        echo json_encode(['error' => 'player and text are both required.']);
         exit;
     }
-    if (mb_strlen($author) > 40 || mb_strlen($text) > 1000 || mb_strlen($player) > 100) {
+    if (mb_strlen($text) > 1000 || mb_strlen($player) > 100) {
         http_response_code(400);
         echo json_encode(['error' => 'Input too long.']);
         exit;
@@ -61,7 +42,6 @@ if ($method === 'POST') {
 
     $stmt = $pdo->prepare('INSERT INTO comments (player, author, text) VALUES (?, ?, ?)');
     $stmt->execute([$player, $author, $text]);
-
     echo json_encode(['comment' => [
         'id' => $pdo->lastInsertId(),
         'player' => $player,
