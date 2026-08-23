@@ -78,12 +78,17 @@ POSITIONS = {
 
 JAKES_SHEET = "Jakes Ranks"
 COLOR_MAP = {
-    "FFFF0000": "ignore", "FF00FF00": "priority", "FFFFFF00": "like",
-    "FFFFA500": "caution", "FFFFC000": "caution",
-    "FF0000FF": "have", "FF0070C0": "have",
-    "FF6AA84F": "rookie", "FF38761D": "rookie",
+    "FFFF0000": "ignore",                          # red
+    "FF00FF00": "priority",                        # bright green
+    "FFFFFF00": "like",                            # yellow
+    "FFFF9900": "caution", "FFFFA500": "caution", "FFFFC000": "caution",  # orange
+    "FF0000FF": "have", "FF0070C0": "have",        # blue
+    "FF6AA84F": "rookie", "FF38761D": "rookie",    # darker green
 }
 NO_FILL = {None, "00000000", "FFFFFFFF"}
+
+# The four side-by-side ranking tables on "Jakes Ranks": position -> player column.
+JAKES_TAG_TABLES = {"QB": 2, "RB": 17, "WR": 31, "TE": 44}
 
 
 def is_error(v):
@@ -114,18 +119,21 @@ def clean_comment(text):
 
 
 def load_jakes_tags(wb):
-    """Map QB player name -> color tag from the left-hand QB table."""
+    """Map (position, player) -> color tag from all four ranking tables."""
     tags = {}
     if JAKES_SHEET not in wb.sheetnames:
         return tags
     ws = wb[JAKES_SHEET]
-    for row in ws.iter_rows(min_row=2, max_col=14):
-        player = row[1].value
-        if not player or is_error(player):
-            continue
-        cell = row[1]
-        rgb = cell.fill.fgColor.rgb if (cell.fill and cell.fill.fgColor) else None
-        tags[player] = COLOR_MAP.get(rgb) if rgb not in NO_FILL else None
+    for pos, pcol in JAKES_TAG_TABLES.items():
+        for r in range(2, 300):
+            cell = ws.cell(r, pcol)
+            player = cell.value
+            if not player or is_error(player):
+                continue
+            rgb = cell.fill.fgColor.rgb if (cell.fill and cell.fill.fgColor) else None
+            tag = COLOR_MAP.get(rgb) if rgb not in NO_FILL else None
+            if tag:
+                tags[(pos, player)] = tag
     return tags
 
 
@@ -206,7 +214,7 @@ def main():
                 "fps": num(ws.cell(r, cfg["fps"]).value) if cfg["fps"] else None,
                 "auction": num(ws.cell(r, cfg["auction"]).value) if cfg["auction"] else None,
                 "stats": {label: num(ws.cell(r, col).value) for label, col in cfg["stats"]},
-                "tag": tags.get(name),
+                "tag": tags.get((pos, name)),
             })
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

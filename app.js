@@ -26,6 +26,7 @@ let sortKey = "fps";
 let sortDir = -1;
 let showHidden = false;
 let editMode = false;
+let tagFilters = new Set();   // active legend filters (tag slugs); empty = show all
 
 function key(p) { return `${p.position}|${p.player}`; }
 function ovr(p) { return overrides[key(p)] || {}; }
@@ -66,9 +67,27 @@ function renderTabs() {
 // ---- legend ----
 
 function renderLegend() {
-  document.getElementById("legend").innerHTML = tags.map(t =>
-    `<div class="legend-item"><span class="dot" style="background:${t.color}"></span>${escapeHtml(t.label)}</div>`
+  const el = document.getElementById("legend");
+  const chips = tags.map(t =>
+    `<button class="legend-item ${tagFilters.has(t.slug) ? "active" : ""}" data-slug="${t.slug}" title="Filter by this tag">
+       <span class="dot" style="background:${t.color}"></span>${escapeHtml(t.label)}
+     </button>`
   ).join("");
+  const clear = tagFilters.size
+    ? `<button class="legend-clear" id="legend-clear">Clear filter ✕</button>` : "";
+  el.innerHTML = chips + clear;
+
+  el.querySelectorAll(".legend-item").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const slug = btn.dataset.slug;
+      if (tagFilters.has(slug)) tagFilters.delete(slug);
+      else tagFilters.add(slug);
+      renderLegend();
+      renderTable();
+    });
+  });
+  const cl = document.getElementById("legend-clear");
+  if (cl) cl.addEventListener("click", () => { tagFilters.clear(); renderLegend(); renderTable(); });
 }
 
 function renderLegendEditor() {
@@ -214,8 +233,6 @@ function rowsSorted() {
   return rows;
 }
 
-const POS_COLORS = { QB: "var(--pos-QB)", RB: "var(--pos-RB)", WR: "var(--pos-WR)", TE: "var(--pos-TE)", DST: "var(--pos-DST)" };
-
 function renderHead() {
   const showPos = !isSinglePos();
   document.getElementById("table-head-row").innerHTML = `
@@ -236,8 +253,13 @@ function renderTable() {
   const canDrag = editMode && isSinglePos() && sortKey === "rank" && sortDir === 1 && !query;
 
   const rows = rowsSorted().filter(p => {
-    const t = tagMap[tagOf(p)];
-    if (!showHidden && t && t.hidden_default) return false;
+    const slug = tagOf(p);
+    const t = tagMap[slug];
+    if (tagFilters.size) {
+      if (!tagFilters.has(slug)) return false;   // explicit filter overrides hidden rule
+    } else if (!showHidden && t && t.hidden_default) {
+      return false;
+    }
     if (!query) return true;
     return p.player.toLowerCase().includes(query) || (p.team || "").toLowerCase().includes(query);
   });
@@ -251,7 +273,7 @@ function renderTable() {
     const star = (editMode || picked)
       ? `<span class="pick-star ${picked ? "on" : "off"}" title="${picked ? "Remove pick" : "Mark as pick"}">${picked ? "★" : "☆"}</span>`
       : "";
-    const posBadge = showPos ? `<td><span class="pos-badge" style="background:${POS_COLORS[p.position]}">${p.position}</span></td>` : "";
+    const posBadge = showPos ? `<td><span class="pos-badge">${p.position}</span></td>` : "";
     return `
       <tr class="player-row" data-key="${encodeURIComponent(key(p))}" ${canDrag ? 'draggable="true"' : ""}>
         <td class="drag-col">${canDrag ? '<span class="drag-handle">⠿</span>' : ""}</td>

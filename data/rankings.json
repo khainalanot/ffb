@@ -1119,7 +1119,7 @@
         "Rec TD": 1.9,
         "PPR": 241.0
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "RB",
@@ -1187,7 +1187,7 @@
         "Rec TD": 3.6,
         "PPR": 361.1
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1238,7 +1238,7 @@
         "Rec TD": 1.0,
         "PPR": 250.0
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1306,7 +1306,7 @@
         "Rec TD": 2.0,
         "PPR": 270.4
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1425,7 +1425,7 @@
         "Rec TD": 1.1,
         "PPR": 197.0
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "RB",
@@ -1476,7 +1476,7 @@
         "Rec TD": 3.8,
         "PPR": 284.4
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1527,7 +1527,7 @@
         "Rec TD": 0.7,
         "PPR": 199.0
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1578,7 +1578,7 @@
         "Rec TD": 1.9,
         "PPR": 246.0
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1714,7 +1714,7 @@
         "Rec TD": 3.5,
         "PPR": 360.5
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1765,7 +1765,7 @@
         "Rec TD": 1.2,
         "PPR": 234.9
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -1833,7 +1833,7 @@
         "Rec TD": 0.7,
         "PPR": 209.1
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "RB",
@@ -1935,7 +1935,7 @@
         "Rec TD": 2.2,
         "PPR": 217.9
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "RB",
@@ -1986,7 +1986,7 @@
         "Rec TD": 2.0,
         "PPR": 253.3
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2054,7 +2054,7 @@
         "Rec TD": 1.7,
         "PPR": 258.3
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2105,7 +2105,7 @@
         "Rec TD": 1.8,
         "PPR": 236.4
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2156,7 +2156,7 @@
         "Rec TD": 1.9,
         "PPR": 258.3
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2207,7 +2207,7 @@
         "Rec TD": 3.0,
         "PPR": 280.3
       },
-      "tag": null
+      "tag": "have"
     },
     {
       "position": "RB",
@@ -2309,7 +2309,7 @@
         "Rec TD": 1.6,
         "PPR": 213.3
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "RB",
@@ -2530,7 +2530,7 @@
         "Rec TD": 1.6,
         "PPR": 249.0
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2649,7 +2649,7 @@
         "Rec TD": 0.9,
         "PPR": 193.2
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "RB",
@@ -2717,7 +2717,7 @@
         "Rec TD": 5.4,
         "PPR": 349.2
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2836,7 +2836,7 @@
         "Rec TD": 1.0,
         "PPR": 197.4
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "RB",
@@ -2887,7 +2887,7 @@
         "Rec TD": 0.4,
         "PPR": 130.9
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "RB",
@@ -2970,7 +2970,7 @@
         "Rush Yds": 0,
         "PPR": 176.6
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -3050,7 +3050,7 @@
         "Rush Yds": 0,
         "PPR": 279.4
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -3130,7 +3130,7 @@
         "Rush Yds": 56.4,
         "PPR": 245.8
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -3210,7 +3210,7 @@
         "Rush Yds": 25.9,
         "PPR": 224.5
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "WR",
@@ -3306,7 +3306,7 @@
         "Rush Yds": 0,
         "PPR": 250.2
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -3386,7 +3386,7 @@
         "Rush Yds": 49.0,
         "PPR": 232.6
       },
-      "tag": null
+      "tag": "caution"
     },
     {
       "position": "WR",
@@ -3578,7 +3578,7 @@
         "Rush Yds": 28.0,
         "PPR": 122.1
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -3674,7 +3674,7 @@
         "Rush Yds": 0,
         "PPR": 278.4
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -3754,7 +3754,7 @@
         "Rush Yds": 12.3,
         "PPR": 245.3
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -3850,7 +3850,7 @@
         "Rush Yds": 11.0,
         "PPR": 323.5
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -3914,7 +3914,7 @@
         "Rush Yds": 11.4,
         "PPR": 212.3
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -4010,7 +4010,7 @@
         "Rush Yds": 0,
         "PPR": 255.7
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "WR",
@@ -4026,7 +4026,7 @@
         "Rush Yds": 0,
         "PPR": 186.2
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -4202,7 +4202,7 @@
         "Rush Yds": 22.8,
         "PPR": 227.3
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -4298,7 +4298,7 @@
         "Rush Yds": 27.3,
         "PPR": 240.9
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -4362,7 +4362,7 @@
         "Rush Yds": 0,
         "PPR": 12.2
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -4394,7 +4394,7 @@
         "Rush Yds": 0,
         "PPR": 239.0
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "WR",
@@ -4490,7 +4490,7 @@
         "Rush Yds": 0,
         "PPR": 224.1
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -4506,7 +4506,7 @@
         "Rush Yds": 80.7,
         "PPR": 350.4
       },
-      "tag": null
+      "tag": "have"
     },
     {
       "position": "WR",
@@ -4778,7 +4778,7 @@
         "Rush Yds": 0,
         "PPR": 273.9
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -4858,7 +4858,7 @@
         "Rush Yds": 0,
         "PPR": 263.7
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "WR",
@@ -4954,7 +4954,7 @@
         "Rush Yds": 0,
         "PPR": 236.4
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "WR",
@@ -4970,7 +4970,7 @@
         "Rush Yds": 0,
         "PPR": 199.4
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -5034,7 +5034,7 @@
         "Rush Yds": 0,
         "PPR": 178.4
       },
-      "tag": null
+      "tag": "caution"
     },
     {
       "position": "WR",
@@ -5226,7 +5226,7 @@
         "Rush Yds": 0,
         "PPR": 241.1
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "WR",
@@ -5242,7 +5242,7 @@
         "Rush Yds": 26.1,
         "PPR": 206.4
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -5402,7 +5402,7 @@
         "Rush Yds": 29.7,
         "PPR": 360.0
       },
-      "tag": null
+      "tag": "ignore"
     },
     {
       "position": "WR",
@@ -5514,7 +5514,7 @@
         "Rush Yds": 20.9,
         "PPR": 54.1
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -5578,7 +5578,7 @@
         "Rush Yds": 0,
         "PPR": 223.9
       },
-      "tag": null
+      "tag": "have"
     },
     {
       "position": "WR",
@@ -5674,7 +5674,7 @@
         "Rush Yds": 0,
         "PPR": 227.1
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "WR",
@@ -6106,7 +6106,7 @@
         "Rec TD": 8.4,
         "PPR": 235.4
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "TE",
@@ -6474,7 +6474,7 @@
         "Rec TD": 5.7,
         "PPR": 211.9
       },
-      "tag": null
+      "tag": "like"
     },
     {
       "position": "TE",
@@ -6954,7 +6954,7 @@
         "Rec TD": 3.0,
         "PPR": 110.2
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "TE",
@@ -7002,7 +7002,7 @@
         "Rec TD": 6.7,
         "PPR": 236.5
       },
-      "tag": null
+      "tag": "priority"
     },
     {
       "position": "TE",
@@ -7050,7 +7050,7 @@
         "Rec TD": 1.2,
         "PPR": 40.3
       },
-      "tag": null
+      "tag": "rookie"
     },
     {
       "position": "TE",
@@ -7146,7 +7146,7 @@
         "Rec TD": 6.9,
         "PPR": 189.0
       },
-      "tag": null
+      "tag": "caution"
     },
     {
       "position": "TE",
