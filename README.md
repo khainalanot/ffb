@@ -7,14 +7,19 @@ comments — all editable right on the site.
 ## Features
 
 - **Login gate** — one shared password (Ryan's), set in `api/config.php`.
-- **All positions** — QB / RB / WR / TE / DST tabs.
-- **Color tags** — Jake's QB color-coding is imported; Ryan can set a tag on any
-  player (click the colored dot in Edit mode). Legend:
-  - 🟢 Priority · 🟡 Like · 🟠 Like but injury-cautious · 🟢 Rookie (dark) · 🔵 Have/protected · 🔴 Ignore
-- **Reds hidden by default** — toggle "Show ignored (red)" to see them.
-- **Sort** by My rank, FPS, AUC$, or Color.
-- **Edit mode** — drag the ⠿ handle to reorder (custom rank), click a dot to change color.
-- **Comments** — a shared thread per player, plus any note Jake left in the spreadsheet.
+- **Tabs** — ALL, QB, RB, WR, TE, DST, and ★ Picks.
+- **Color tags** — Jake's QB color-coding is imported; Ryan can tag any player
+  (click the colored dot in Edit mode to cycle).
+- **Editable legend** — "Edit legend" lets Ryan rename tags, change their colors,
+  add new ones, delete, or mark any tag as "hidden by default".
+- **Hidden-by-default tags** (e.g. Ignore) are filtered out unless "Show hidden" is on.
+- **Picks** — in Edit mode, tap ☆ to mark a player as a pick; the ★ Picks tab
+  shows everyone he's picked, across positions.
+- **Sort** by My rank, FPS, AUC$, Color (and Pos in the ALL view).
+- **Edit mode** — drag the ⠿ handle to reorder (custom rank), click a dot to
+  change color, tap ☆ to pick.
+- **Comments** — a shared thread per player. Any note Jake left in the spreadsheet
+  shows up as a pinned comment under Ryan, tagged "from spreadsheet".
 
 ## How the data works
 

@@ -7,12 +7,12 @@ ffb_require_auth_or_redirect();
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jake's Ranks</title>
+<title>FFB</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
-  <h1>Jake's Ranks <span class="subtitle" id="pos-subtitle">— QB</span></h1>
+  <h1>FFB</h1>
   <div class="controls">
     <input id="search" type="search" placeholder="Search player or team…">
     <a href="logout.php" class="logout-link">Log out</a>
@@ -21,31 +21,30 @@ ffb_require_auth_or_redirect();
 
 <div class="tabs" id="position-tabs"></div>
 
-<div class="legend" id="legend"></div>
+<div class="legend-row">
+  <div class="legend" id="legend"></div>
+  <button id="legend-edit-toggle" class="legend-edit-btn">Edit legend</button>
+</div>
+
+<div id="legend-editor" class="legend-editor hidden"></div>
 
 <div class="toolbar">
   <div class="sort-buttons" id="sort-buttons"></div>
   <div class="toolbar-right">
     <label class="show-ignored">
       <input type="checkbox" id="show-ignored">
-      Show ignored (red)
+      Show hidden
     </label>
     <button id="edit-toggle" class="edit-toggle">Edit</button>
   </div>
 </div>
 
-<p class="edit-hint hidden" id="edit-hint">Editing on — click a player's dot to change its color, or drag the ⠿ handle to reorder. Sort must be “My rank” to drag.</p>
+<p class="edit-hint hidden" id="edit-hint">Editing on — click a player's dot to change its color, tap ☆ to mark a pick, or drag the ⠿ handle to reorder (sort must be “My rank”).</p>
 
 <main>
   <table id="ranks-table">
     <thead>
-      <tr>
-        <th class="drag-col"></th>
-        <th data-key="rank" class="sortable">RK</th>
-        <th>Player</th>
-        <th data-key="fps" class="sortable">FPS</th>
-        <th data-key="auction" class="sortable">AUC$</th>
-      </tr>
+      <tr id="table-head-row"></tr>
     </thead>
     <tbody id="ranks-body"></tbody>
   </table>
@@ -58,11 +57,6 @@ ffb_require_auth_or_redirect();
     <div id="modal-player-sub" class="modal-player-sub"></div>
 
     <div class="stat-grid" id="modal-stats"></div>
-
-    <div id="modal-excel-comment" class="excel-comment hidden">
-      <div class="excel-comment-label">From the spreadsheet</div>
-      <p id="modal-excel-comment-text"></p>
-    </div>
 
     <h3>Comments</h3>
     <div id="modal-comments" class="comments-list"></div>

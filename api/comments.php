@@ -11,6 +11,16 @@ const COMMENT_AUTHOR = 'Ryan';
 $method = $_SERVER['REQUEST_METHOD'];
 
 if ($method === 'GET') {
+    // Counts per player, for showing comment markers on the list.
+    if (isset($_GET['counts'])) {
+        $rows = $pdo->query('SELECT player, COUNT(*) AS n FROM comments GROUP BY player')
+                    ->fetchAll(PDO::FETCH_ASSOC);
+        $counts = [];
+        foreach ($rows as $r) $counts[$r['player']] = (int) $r['n'];
+        echo json_encode(['counts' => $counts]);
+        exit;
+    }
+
     $player = trim($_GET['player'] ?? '');
     if ($player === '') {
         http_response_code(400);

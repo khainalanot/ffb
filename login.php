@@ -23,13 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jake's Ranks — Sign in</title>
+<title>FFB — Sign in</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="login-wrap">
   <form class="login-box" method="POST">
-    <h1>Jake's Ranks</h1>
+    <h1>FFB</h1>
     <p class="login-sub">Enter the password to view.</p>
     <input type="password" name="password" placeholder="Password" autofocus required>
     <?php if ($error): ?>
