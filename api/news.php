@@ -107,9 +107,9 @@ if ($xml && isset($xml->channel->item)) {
     }
 }
 
-// --- 4. RotoBaller player-news RSS (keyword match) ---
+// --- 4. RotoBaller NFL player-news RSS (keyword match, recency) ---
 $needle = mb_strtolower($player);
-foreach (['https://www.rotoballer.com/player-news/feed', 'https://www.rotoballer.com/category/nfl/feed'] as $url) {
+foreach (['https://www.rotoballer.com/player-news/feed?sport=nfl', 'https://www.rotoballer.com/category/nfl/feed'] as $url) {
     $raw = ffb_http_get_cached($url, 1800);
     $xml = $raw ? @simplexml_load_string($raw, 'SimpleXMLElement', LIBXML_NOCDATA) : null;
     if (!$xml || !isset($xml->channel->item)) continue;
