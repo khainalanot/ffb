@@ -1,5 +1,5 @@
 const POSITIONS = ["QB", "RB", "WR", "TE", "DST"];
-const TABS = ["ALL", ...POSITIONS, "PICKS"];
+const TABS = ["ALL", ...POSITIONS];
 
 const COMMENTS_API = "api/comments.php";
 const OVERRIDES_API = "api/overrides.php";
@@ -27,6 +27,7 @@ let sortDir = -1;
 let showHidden = false;
 let editMode = false;
 let tagFilters = new Set();   // active legend filters (tag slugs); empty = show all
+let keepVisible = new Set();  // keys of rows just re-tagged; stay visible until you navigate
 
 function key(p) { return `${p.position}|${p.player}`; }
 function ovr(p) { return overrides[key(p)] || {}; }
@@ -38,7 +39,6 @@ function rankOf(p) {
   const o = ovr(p);
   return (o.sort_rank !== null && o.sort_rank !== undefined) ? o.sort_rank : null;
 }
-function isPicked(p) { return !!ovr(p).picked; }
 function tagOrder(slug) {
   const i = tags.findIndex(t => t.slug === slug);
   return i < 0 ? 9999 : i;
@@ -49,13 +49,13 @@ function isSinglePos() { return POSITIONS.includes(activeTab); }
 
 function renderTabs() {
   const el = document.getElementById("position-tabs");
-  el.innerHTML = TABS.map(t => {
-    const label = t === "PICKS" ? "★ Picks" : t;
-    return `<button class="tab ${t === activeTab ? "active" : ""}" data-tab="${t}">${label}</button>`;
-  }).join("");
+  el.innerHTML = TABS.map(t =>
+    `<button class="tab ${t === activeTab ? "active" : ""}" data-tab="${t}">${t}</button>`
+  ).join("");
   el.querySelectorAll(".tab").forEach(btn => {
     btn.addEventListener("click", () => {
       activeTab = btn.dataset.tab;
+      keepVisible.clear();
       if (!isSinglePos() && sortKey === "rank") { sortKey = "fps"; sortDir = -1; }
       renderTabs();
       renderSortButtons();
@@ -82,12 +82,13 @@ function renderLegend() {
       const slug = btn.dataset.slug;
       if (tagFilters.has(slug)) tagFilters.delete(slug);
       else tagFilters.add(slug);
+      keepVisible.clear();
       renderLegend();
       renderTable();
     });
   });
   const cl = document.getElementById("legend-clear");
-  if (cl) cl.addEventListener("click", () => { tagFilters.clear(); renderLegend(); renderTable(); });
+  if (cl) cl.addEventListener("click", () => { tagFilters.clear(); keepVisible.clear(); renderLegend(); renderTable(); });
 }
 
 function renderLegendEditor() {
@@ -174,6 +175,7 @@ function renderSortButtons() {
     btn.addEventListener("click", () => {
       if (sortKey === btn.dataset.key) sortDir *= -1;
       else { sortKey = btn.dataset.key; sortDir = btn.dataset.key === "rank" ? 1 : -1; }
+      keepVisible.clear();
       updateSortButtonState();
       renderTable();
     });
@@ -201,7 +203,6 @@ function fmtMoney(n) {
 
 function workingSet() {
   if (activeTab === "ALL") return [...players];
-  if (activeTab === "PICKS") return players.filter(isPicked);
   return players.filter(p => p.position === activeTab);
 }
 
@@ -258,8 +259,8 @@ function renderTable() {
     const t = tagMap[slug];
     if (tagFilters.size) {
       if (!tagFilters.has(slug)) return false;   // explicit filter overrides hidden rule
-    } else if (!showHidden && !editMode && t && t.hidden_default) {
-      return false;                              // edit mode keeps hidden players visible
+    } else if (!showHidden && !editMode && t && t.hidden_default && !keepVisible.has(key(p))) {
+      return false;                              // edit mode / just-tagged keep hidden players visible
     }
     if (!query) return true;
     return p.player.toLowerCase().includes(query) || (p.team || "").toLowerCase().includes(query);
@@ -270,10 +271,6 @@ function renderTable() {
     const chipStyle = t ? `background:${t.color}` : "background:transparent";
     const nComments = commentCounts[p.player] || 0;
     const marker = nComments ? `<span class="note-badge" title="${nComments} note${nComments > 1 ? "s" : ""}">💬 ${nComments}</span>` : "";
-    const picked = isPicked(p);
-    const star = (editMode || picked)
-      ? `<span class="pick-star ${picked ? "on" : "off"}" title="${picked ? "Remove pick" : "Mark as pick"}">${picked ? "★" : "☆"}</span>`
-      : "";
     const posBadge = showPos ? `<td><span class="pos-badge">${p.position}</span></td>` : "";
     const inj = injuryDot(p.injury_status);
     const dimmed = (t && t.hidden_default) ? " row-hidden-tag" : "";
@@ -283,8 +280,7 @@ function renderTable() {
         <td class="rk-cell">${i + 1}</td>
         ${posBadge}
         <td class="player-cell">
-          <span class="tag-chip ${editMode ? "editable" : ""}" style="${chipStyle}" title="${t ? escapeAttr(t.label) : "No tag"}"></span>
-          ${star}
+          <span class="tag-chip editable" style="${chipStyle}" title="${t ? escapeAttr(t.label) + " — click to change" : "Click to set a tag"}"></span>
           <span class="player-name">${escapeHtml(p.player)}</span>${inj}
           <span class="player-meta">${p.team || ""}${p.bye ? " · BYE " + fmt(p.bye) : ""}</span>
           ${marker}
@@ -298,21 +294,14 @@ function renderTable() {
   body.querySelectorAll(".player-row").forEach(row => {
     const k = decodeURIComponent(row.dataset.key);
     const pill = row.querySelector(".tag-chip");
-    if (editMode) {
-      pill.addEventListener("click", (e) => { e.stopPropagation(); openTagMenu(k, pill); });
-      const starEl = row.querySelector(".pick-star");
-      if (starEl) starEl.addEventListener("click", (e) => { e.stopPropagation(); togglePick(k); });
-    }
+    pill.addEventListener("click", (e) => { e.stopPropagation(); openTagMenu(k, pill); });
     row.addEventListener("click", (e) => {
-      if (e.target.closest(".drag-handle") || e.target.closest(".pick-star")) return;
+      if (e.target.closest(".drag-handle")) return;
       openModal(k);
     });
   });
 
   if (canDrag) setupDrag(body);
-  if (activeTab === "PICKS" && rows.length === 0) {
-    body.innerHTML = `<tr><td colspan="6" class="empty-note">No picks yet. Turn on Edit and tap ☆ next to a player to add them.</td></tr>`;
-  }
 }
 
 // ---- editing: tags / picks ----
@@ -368,28 +357,13 @@ async function setTag(k, slug) {
   const p = players.find(pl => key(pl) === k);
   if (!p) return;
   overrides[k] = { ...ovr(p), tag: slug };
+  keepVisible.add(k);   // don't yank the row out from under the click; drops off on next navigation
   renderTable();
   try {
     await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ position: p.position, player: p.player, tag: slug }) });
   } catch (_) {}
 }
-
-async function togglePick(k) {
-  const p = players.find(pl => key(pl) === k);
-  if (!p) return;
-  const next = !isPicked(p);
-  overrides[k] = { ...ovr(p), picked: next ? 1 : 0 };
-  renderTable();
-  try {
-    await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ position: p.position, player: p.player, picked: next }) });
-  } catch (_) {}
-}
-
-// Star is only shown when picked; in edit mode we also need a way to ADD a pick.
-// So in edit mode, every row shows a faint ☆ toggle.
-function decorateEditStars() { /* handled in renderTable via always-present star in edit mode */ }
 
 // ---- drag ----
 
@@ -657,10 +631,11 @@ document.getElementById("comment-form").addEventListener("submit", async (e) => 
 
 // ---- controls ----
 
-document.getElementById("search").addEventListener("input", renderTable);
-document.getElementById("show-ignored").addEventListener("change", (e) => { showHidden = e.target.checked; renderTable(); });
+document.getElementById("search").addEventListener("input", () => { keepVisible.clear(); renderTable(); });
+document.getElementById("show-ignored").addEventListener("change", (e) => { showHidden = e.target.checked; keepVisible.clear(); renderTable(); });
 document.getElementById("edit-toggle").addEventListener("click", () => {
   editMode = !editMode;
+  keepVisible.clear();
   const btn = document.getElementById("edit-toggle");
   btn.classList.toggle("active", editMode);
   btn.textContent = editMode ? "Done" : "Edit";
@@ -707,12 +682,13 @@ function renderTrendList(elId, items) {
   }));
 }
 
-async function openTrending() {
-  trendModal.classList.remove("hidden");
+let trendHours = 24;
+
+async function loadTrending() {
   document.getElementById("trend-up").innerHTML = `<div class="comment-empty">Loading…</div>`;
   document.getElementById("trend-down").innerHTML = "";
   try {
-    const res = await fetch("api/trending.php");
+    const res = await fetch(`api/trending.php?hours=${trendHours}`);
     if (!res.ok) throw new Error();
     const d = await res.json();
     renderTrendList("trend-up", d.up);
@@ -721,7 +697,19 @@ async function openTrending() {
     document.getElementById("trend-up").innerHTML = `<div class="comment-empty">Couldn't load trending.</div>`;
   }
 }
+
+function openTrending() {
+  trendModal.classList.remove("hidden");
+  loadTrending();
+}
 document.getElementById("trending-open").addEventListener("click", openTrending);
+document.querySelectorAll(".trend-win").forEach(btn => {
+  btn.addEventListener("click", () => {
+    trendHours = +btn.dataset.hours;
+    document.querySelectorAll(".trend-win").forEach(b => b.classList.toggle("active", b === btn));
+    loadTrending();
+  });
+});
 
 // ---- init ----
 

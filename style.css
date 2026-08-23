@@ -413,10 +413,6 @@ td { padding: 11px 14px; font-size: 14px; white-space: nowrap; vertical-align: m
 .player-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
 .player-meta { color: var(--text-faint); font-size: 12px; white-space: nowrap; }
 
-.pick-star { cursor: pointer; font-size: 16px; line-height: 1; }
-.pick-star.on { color: #ffcb2e; text-shadow: 0 0 10px rgba(255,203,46,0.4); }
-.pick-star.off { color: var(--line); }
-.pick-star.off:hover { color: #ffcb2e; }
 
 .note-badge {
   display: inline-flex; align-items: center; gap: 3px;
@@ -509,7 +505,11 @@ td { padding: 11px 14px; font-size: 14px; white-space: nowrap; vertical-align: m
 /* trending modal */
 #trending-modal .modal-content { max-width: 640px; }
 .trend-title { font-family: var(--display); font-size: 26px; margin: 0; }
-.trend-sub { color: var(--text-dim); font-size: 12.5px; margin: 4px 0 18px; }
+.trend-sub { color: var(--text-dim); font-size: 12.5px; margin: 4px 0 12px; }
+.trend-windows { display: inline-flex; gap: 2px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 3px; margin-bottom: 18px; }
+.trend-win { background: transparent; border: none; color: var(--text-dim); padding: 6px 14px; border-radius: 999px; cursor: pointer; font-size: 13px; font-weight: 500; }
+.trend-win:hover { color: var(--text); }
+.trend-win.active { color: #fff; background: var(--brand); }
 .trend-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .section-head.up { color: var(--tag-priority, #2ecc71); }
 .section-head.down { color: var(--danger); }

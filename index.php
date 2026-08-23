@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header class="topbar">
@@ -57,7 +57,7 @@ ffb_require_auth_or_redirect();
 </div>
 
 <p class="edit-hint hidden" id="edit-hint">
-  <strong>Edit mode.</strong> Click a color chip to pick a tag · tap the star to mark a pick · drag <span class="mono">⠿</span> to reorder (sort must be “My rank”). Ignored players stay visible here and only drop off when you click Done.
+  <strong>Edit mode.</strong> Click a color chip to set a tag · drag <span class="mono">⠿</span> to reorder (sort must be “My rank”). Ignored players stay visible here and only drop off when you click Done.
 </p>
 
 <main>
@@ -114,7 +114,12 @@ ffb_require_auth_or_redirect();
   <div class="modal-content">
     <button class="modal-close" id="trending-close" aria-label="Close">&times;</button>
     <h2 class="trend-title">Trending</h2>
-    <div class="trend-sub">Adds &amp; drops across fantasy leagues (last 24h) · via Sleeper</div>
+    <div class="trend-sub">Adds &amp; drops across fantasy leagues · via Sleeper</div>
+    <div class="trend-windows" id="trend-windows">
+      <button class="trend-win active" data-hours="24">24 hours</button>
+      <button class="trend-win" data-hours="72">3 days</button>
+      <button class="trend-win" data-hours="168">7 days</button>
+    </div>
     <div class="trend-cols">
       <div><div class="section-head up">▲ Trending up</div><div id="trend-up" class="trend-list"></div></div>
       <div><div class="section-head down">▼ Trending down</div><div id="trend-down" class="trend-list"></div></div>
@@ -122,6 +127,6 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
