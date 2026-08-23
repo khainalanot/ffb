@@ -18,8 +18,9 @@ comments — all editable right on the site.
 - **Sort** by My rank, FPS, AUC$, Color (and Pos in the ALL view).
 - **Edit mode** — drag the ⠿ handle to reorder (custom rank), click a dot to
   change color, tap ☆ to pick.
-- **Comments** — a shared thread per player. Any note Jake left in the spreadsheet
-  shows up as a pinned comment under Ryan, tagged "from spreadsheet".
+- **Notes** — a thread per player; add, **edit, and delete** notes. Jake's original
+  spreadsheet comments are imported as normal notes (author "Ryan") with their real
+  timestamps — see `seed_comments.sql`.
 
 ## How the data works
 
@@ -47,9 +48,11 @@ Hostinger's Git integration redeploys automatically after the push.
    - hPanel → **Databases → MySQL Databases**: create a database + user.
    - Note the database name, username, password, and host (usually `localhost`).
 
-2. **Import the schema**
+2. **Import the schema (and Jake's notes)**
    - Open **phpMyAdmin** for that database → **Import** tab → upload `schema.sql`
      (or paste its contents into the SQL tab and run it).
+   - Then import `seed_comments.sql` the same way — this loads Jake's 11 spreadsheet
+     notes as normal, editable notes. It's safe to re-run (skips duplicates).
 
 3. **Connect the GitHub repo**
    - hPanel → **Advanced → Git**: connect `khainalanot/ffb` and point it at the

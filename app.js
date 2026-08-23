@@ -214,15 +214,17 @@ function rowsSorted() {
   return rows;
 }
 
+const POS_COLORS = { QB: "var(--pos-QB)", RB: "var(--pos-RB)", WR: "var(--pos-WR)", TE: "var(--pos-TE)", DST: "var(--pos-DST)" };
+
 function renderHead() {
   const showPos = !isSinglePos();
   document.getElementById("table-head-row").innerHTML = `
     <th class="drag-col"></th>
-    <th>RK</th>
-    ${showPos ? "<th>POS</th>" : ""}
+    <th>Rk</th>
+    ${showPos ? "<th>Pos</th>" : ""}
     <th>Player</th>
-    <th>FPS</th>
-    <th>AUC$</th>
+    <th class="num">FPS</th>
+    <th class="num auc-col">AUC$</th>
   `;
 }
 
@@ -242,34 +244,35 @@ function renderTable() {
 
   body.innerHTML = rows.map((p, i) => {
     const t = tagMap[tagOf(p)];
-    const dotStyle = t ? `background:${t.color}` : "background:transparent;border:1px solid var(--border)";
-    const nComments = (p.excel_comment ? 1 : 0) + (commentCounts[p.player] || 0);
-    const marker = nComments ? `<span class="note-badge" title="${nComments} comment${nComments > 1 ? "s" : ""}">💬 ${nComments}</span>` : "";
+    const chipStyle = t ? `background:${t.color}` : "background:transparent";
+    const nComments = commentCounts[p.player] || 0;
+    const marker = nComments ? `<span class="note-badge" title="${nComments} note${nComments > 1 ? "s" : ""}">💬 ${nComments}</span>` : "";
     const picked = isPicked(p);
     const star = (editMode || picked)
       ? `<span class="pick-star ${picked ? "on" : "off"}" title="${picked ? "Remove pick" : "Mark as pick"}">${picked ? "★" : "☆"}</span>`
       : "";
+    const posBadge = showPos ? `<td><span class="pos-badge" style="background:${POS_COLORS[p.position]}">${p.position}</span></td>` : "";
     return `
       <tr class="player-row" data-key="${encodeURIComponent(key(p))}" ${canDrag ? 'draggable="true"' : ""}>
         <td class="drag-col">${canDrag ? '<span class="drag-handle">⠿</span>' : ""}</td>
         <td class="rk-cell">${i + 1}</td>
-        ${showPos ? `<td class="pos-cell">${p.position}</td>` : ""}
+        ${posBadge}
         <td class="player-cell">
-          <span class="tag-pill ${editMode ? "editable" : ""}" style="${dotStyle}" title="${t ? escapeAttr(t.label) : "No tag"}"></span>
+          <span class="tag-chip ${editMode ? "editable" : ""}" style="${chipStyle}" title="${t ? escapeAttr(t.label) : "No tag"}"></span>
           ${star}
           <span class="player-name">${escapeHtml(p.player)}</span>
           <span class="player-meta">${p.team || ""}${p.bye ? " · BYE " + fmt(p.bye) : ""}</span>
           ${marker}
         </td>
-        <td>${fmt(p.fps)}</td>
-        <td>${fmtMoney(p.auction)}</td>
+        <td class="num fps-cell">${fmt(p.fps)}</td>
+        <td class="num auc-cell auc-col">${fmtMoney(p.auction)}</td>
       </tr>
     `;
   }).join("");
 
   body.querySelectorAll(".player-row").forEach(row => {
     const k = decodeURIComponent(row.dataset.key);
-    const pill = row.querySelector(".tag-pill");
+    const pill = row.querySelector(".tag-chip");
     if (editMode) {
       pill.addEventListener("click", (e) => { e.stopPropagation(); cycleTag(k); });
       const starEl = row.querySelector(".pick-star");
@@ -389,34 +392,90 @@ function closeModal() { modal.classList.add("hidden"); activeKey = null; }
 document.getElementById("modal-close").addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
 
+function fmtDate(s) {
+  const d = new Date((s || "").replace(" ", "T"));
+  if (isNaN(d)) return "";
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) + ", " +
+         d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+}
+
 function renderComments(list) {
   const el = document.getElementById("modal-comments");
-  if (!list || list.length === 0) { el.innerHTML = `<div class="comment-empty">No comments yet.</div>`; return; }
+  if (!list || list.length === 0) { el.innerHTML = `<div class="comment-empty">No notes yet.</div>`; return; }
   el.innerHTML = list.map(c => `
-    <div class="comment-item ${c.pinned ? "pinned" : ""}">
-      <div class="comment-meta">${escapeHtml(c.author)}${c.pinned ? ' <span class="from-sheet">from spreadsheet</span>' : " — " + new Date(c.created_at).toLocaleString()}</div>
+    <div class="comment-item" data-id="${c.id}">
+      <div class="comment-top">
+        <span class="comment-meta"><span class="comment-author">${escapeHtml(c.author)}</span> · ${fmtDate(c.created_at)}</span>
+        <span class="comment-actions">
+          <button class="comment-act edit" data-id="${c.id}">Edit</button>
+          <button class="comment-act del" data-id="${c.id}">Delete</button>
+        </span>
+      </div>
       <div class="comment-body">${escapeHtml(c.text)}</div>
     </div>`).join("");
+
+  el.querySelectorAll(".comment-act.edit").forEach(b => b.addEventListener("click", () => startEditComment(+b.dataset.id)));
+  el.querySelectorAll(".comment-act.del").forEach(b => b.addEventListener("click", () => deleteComment(+b.dataset.id)));
 }
+
 function escapeHtml(str) { const d = document.createElement("div"); d.textContent = str == null ? "" : str; return d.innerHTML; }
 function escapeAttr(str) { return escapeHtml(str).replace(/"/g, "&quot;"); }
 
 async function loadComments(p) {
   const el = document.getElementById("modal-comments");
   el.innerHTML = `<div class="comment-empty">Loading…</div>`;
-  const pinned = p.excel_comment ? [{ author: "Ryan", text: p.excel_comment, pinned: true }] : [];
   try {
     const res = await fetch(`${COMMENTS_API}?player=${encodeURIComponent(p.player)}`);
     if (!res.ok) throw new Error();
     const data = await res.json();
     commentsCache[p.player] = data.comments || [];
     commentCounts[p.player] = commentsCache[p.player].length;
-    renderComments([...pinned, ...commentsCache[p.player]]);
+    renderComments(commentsCache[p.player]);
     renderTable();
   } catch (_) {
-    if (pinned.length) renderComments(pinned);
-    else el.innerHTML = `<div class="comment-empty">Couldn't load comments. Is the backend set up yet?</div>`;
+    el.innerHTML = `<div class="comment-empty">Couldn't load notes. Is the backend set up yet?</div>`;
   }
+}
+
+function currentPlayer() { return players.find(pl => key(pl) === activeKey); }
+
+function startEditComment(id) {
+  const p = currentPlayer(); if (!p) return;
+  const c = (commentsCache[p.player] || []).find(x => +x.id === id);
+  if (!c) return;
+  const item = document.querySelector(`.comment-item[data-id="${id}"]`);
+  const body = item.querySelector(".comment-body");
+  body.innerHTML = `
+    <textarea class="comment-edit-area" maxlength="1000">${escapeHtml(c.text)}</textarea>
+    <div class="comment-form-actions" style="margin-top:8px">
+      <button class="comment-act edit-save" data-id="${id}" style="color:var(--brand)">Save</button>
+      <button class="comment-act edit-cancel">Cancel</button>
+    </div>`;
+  body.querySelector(".edit-save").addEventListener("click", () => saveEditComment(id, body.querySelector(".comment-edit-area").value));
+  body.querySelector(".edit-cancel").addEventListener("click", () => renderComments(commentsCache[p.player]));
+  body.querySelector(".comment-edit-area").focus();
+}
+
+async function saveEditComment(id, text) {
+  const p = currentPlayer(); if (!p) return;
+  text = text.trim(); if (!text) return;
+  const c = (commentsCache[p.player] || []).find(x => +x.id === id);
+  if (c) c.text = text;
+  renderComments(commentsCache[p.player]);
+  try {
+    await fetch(COMMENTS_API, { method: "PUT", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, text }) });
+  } catch (_) {}
+}
+
+async function deleteComment(id) {
+  const p = currentPlayer(); if (!p) return;
+  if (!confirm("Delete this note?")) return;
+  commentsCache[p.player] = (commentsCache[p.player] || []).filter(x => +x.id !== id);
+  commentCounts[p.player] = commentsCache[p.player].length;
+  renderComments(commentsCache[p.player]);
+  renderTable();
+  try { await fetch(`${COMMENTS_API}?id=${id}`, { method: "DELETE" }); } catch (_) {}
 }
 
 document.getElementById("comment-form").addEventListener("submit", async (e) => {
