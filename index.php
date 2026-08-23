@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <header class="topbar">
@@ -51,6 +51,7 @@ ffb_require_auth_or_redirect();
       <span class="switch-track"><span class="switch-thumb"></span></span>
       <span class="switch-text">Show hidden</span>
     </label>
+    <button id="trending-open" class="ghost-btn">📈 Trending</button>
     <button id="edit-toggle" class="edit-toggle">Edit</button>
   </div>
 </div>
@@ -72,16 +73,31 @@ ffb_require_auth_or_redirect();
 </div>
 
 <div id="comment-modal" class="modal hidden">
-  <div class="modal-content">
+  <div class="modal-content snapshot">
     <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
-    <div class="modal-head">
-      <h2 id="modal-player-name"></h2>
-      <div id="modal-player-sub" class="modal-player-sub"></div>
+
+    <div class="snap-head">
+      <img id="snap-photo" class="snap-photo" alt="" hidden>
+      <div class="snap-headinfo">
+        <h2 id="modal-player-name"></h2>
+        <div id="modal-player-sub" class="modal-player-sub"></div>
+        <div id="snap-bio" class="snap-bio"></div>
+      </div>
     </div>
 
     <div class="stat-grid" id="modal-stats"></div>
 
-    <div class="comments-head">Notes</div>
+    <div id="snap-career-wrap" class="snap-section hidden">
+      <div class="section-head">Career</div>
+      <div class="career-scroll"><table id="snap-career" class="career-table"></table></div>
+    </div>
+
+    <div id="snap-news-wrap" class="snap-section hidden">
+      <div class="section-head">News</div>
+      <div id="snap-news" class="news-list"></div>
+    </div>
+
+    <div class="section-head">Notes</div>
     <div id="modal-comments" class="comments-list"></div>
 
     <form id="comment-form">
@@ -94,6 +110,18 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=2"></script>
+<div id="trending-modal" class="modal hidden">
+  <div class="modal-content">
+    <button class="modal-close" id="trending-close" aria-label="Close">&times;</button>
+    <h2 class="trend-title">Trending</h2>
+    <div class="trend-sub">Adds &amp; drops across fantasy leagues (last 24h) · via Sleeper</div>
+    <div class="trend-cols">
+      <div><div class="section-head up">▲ Trending up</div><div id="trend-up" class="trend-list"></div></div>
+      <div><div class="section-head down">▼ Trending down</div><div id="trend-down" class="trend-list"></div></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=3"></script>
 </body>
 </html>

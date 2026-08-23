@@ -21,6 +21,15 @@ comments — all editable right on the site.
 - **Notes** — a thread per player; add, **edit, and delete** notes. Jake's original
   spreadsheet comments are imported as normal notes (author "Ryan") with their real
   timestamps — see `seed_comments.sql`.
+- **Rich player snapshot** — click any player for a card with headshot, bio, projections,
+  ADP, career stats, and news. Data pulled from free sources (Sleeper, Fantasy Football
+  Calculator, nflverse) at export time.
+- **Trending up/down** — the 📈 Trending button shows league-wide adds/drops (live via
+  Sleeper's free API, cached ~1h).
+- **News** — each snapshot lists recent headlines that mention the player, with a link to
+  the full article at the source (RotoBaller/FantasyPros RSS, cached ~30m). Article text
+  stays at the source; we only show headline + short summary + link.
+- **Injury dots** — a small red/amber dot on players who are Out/Questionable, from Sleeper.
 
 ## How the data works
 
@@ -29,6 +38,12 @@ comments — all editable right on the site.
 - Ryan's edits (tags, rank order, comments) live in a MySQL database and are
   layered on top of the snapshot at load time — so **re-exporting the Excel file
   never wipes his edits**.
+- `export_data.py` also enriches each player with bios/headshots/ADP/career stats from
+  free sources (needs an internet connection when you run it) and writes
+  `data/sleeper_map.json`, used by the live trending endpoint.
+- Trending and news are fetched live by small PHP endpoints (`api/trending.php`,
+  `api/news.php`) and cached in a `cache/` folder the server creates automatically.
+  These need PHP's cURL extension (on by default on Hostinger).
 
 ## Updating the projections (when the Excel file changes)
 

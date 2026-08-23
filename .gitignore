@@ -1,3 +1,4 @@
 api/config.php
 __pycache__/
 *.pyc
+cache/

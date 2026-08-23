@@ -274,6 +274,7 @@ function renderTable() {
       ? `<span class="pick-star ${picked ? "on" : "off"}" title="${picked ? "Remove pick" : "Mark as pick"}">${picked ? "★" : "☆"}</span>`
       : "";
     const posBadge = showPos ? `<td><span class="pos-badge">${p.position}</span></td>` : "";
+    const inj = injuryDot(p.injury_status);
     return `
       <tr class="player-row" data-key="${encodeURIComponent(key(p))}" ${canDrag ? 'draggable="true"' : ""}>
         <td class="drag-col">${canDrag ? '<span class="drag-handle">⠿</span>' : ""}</td>
@@ -282,7 +283,7 @@ function renderTable() {
         <td class="player-cell">
           <span class="tag-chip ${editMode ? "editable" : ""}" style="${chipStyle}" title="${t ? escapeAttr(t.label) : "No tag"}"></span>
           ${star}
-          <span class="player-name">${escapeHtml(p.player)}</span>
+          <span class="player-name">${escapeHtml(p.player)}</span>${inj}
           <span class="player-meta">${p.team || ""}${p.bye ? " · BYE " + fmt(p.bye) : ""}</span>
           ${marker}
         </td>
@@ -380,36 +381,125 @@ async function saveOrder(e) {
   } catch (_) {}
 }
 
-// ---- modal ----
+// ---- injury status ----
+
+const INJURY = {
+  Out:          { cls: "inj-out",   label: "Out" },
+  IR:           { cls: "inj-out",   label: "IR" },
+  PUP:          { cls: "inj-out",   label: "PUP" },
+  Doubtful:     { cls: "inj-out",   label: "Doubtful" },
+  Questionable: { cls: "inj-warn",  label: "Questionable" },
+  Sus:          { cls: "inj-warn",  label: "Suspended" },
+};
+function injuryDot(status) {
+  const i = INJURY[status];
+  if (!i) return "";
+  return `<span class="inj-dot ${i.cls}" title="${i.label}"></span>`;
+}
+
+// ---- snapshot modal ----
 
 const modal = document.getElementById("comment-modal");
 let activeKey = null;
 const STAT_ORDER_HINT = ["Pass Yds","Pass TD","INT","Rush Yds","Rush TD","Tgt","Rec","Rec Yds","Rec TD","PPR"];
 
+function heightStr(inches) {
+  const n = parseInt(inches, 10);
+  if (!n) return null;
+  return `${Math.floor(n / 12)}'${n % 12}"`;
+}
+
 function openModal(k) {
   activeKey = k;
   const p = players.find(pl => key(pl) === k);
   if (!p) return;
-  document.getElementById("modal-player-name").textContent = p.player;
+
+  // header: photo, name, pos/team/#, bio
+  const photo = document.getElementById("snap-photo");
+  if (p.headshot) { photo.src = p.headshot; photo.hidden = false; photo.onerror = () => { photo.hidden = true; }; }
+  else photo.hidden = true;
+
+  document.getElementById("modal-player-name").innerHTML = escapeHtml(p.player) + injuryDot(p.injury_status);
+  const num = p.bio && p.bio.number ? ` · #${p.bio.number}` : "";
   document.getElementById("modal-player-sub").textContent =
-    `${p.position}${p.team ? " · " + p.team : ""}${p.bye ? " · BYE " + p.bye : ""}`;
+    `${p.position}${p.team ? " · " + p.team : ""}${num}${p.bye ? " · BYE " + p.bye : ""}`;
 
+  const bio = p.bio || {};
+  const bioBits = [];
+  if (bio.college) bioBits.push(bio.college);
+  if (bio.years_exp != null) bioBits.push(bio.years_exp === 0 ? "Rookie" : `${bio.years_exp} yr exp`);
+  const h = heightStr(bio.height);
+  if (h && bio.weight) bioBits.push(`${h}, ${bio.weight} lb`);
+  if (bio.age) bioBits.push(`Age ${bio.age}`);
+  const injLabel = INJURY[p.injury_status];
+  if (injLabel) bioBits.push(`⚠ ${injLabel.label}`);
+  document.getElementById("snap-bio").textContent = bioBits.join("  ·  ");
+
+  // stat tiles: rank, ADP, AUC$, FPS + projections
+  const tiles = [];
+  tiles.push(tile("Proj Rank", `${p.position}${(rankOf(p) !== null ? Math.round(rankOf(p)) + 1 : posRankByFps(p))}`));
+  if (p.adp != null) tiles.push(tile("ADP", p.adp));
+  if (p.auction != null) tiles.push(tile("AUC$", fmtMoney(p.auction)));
+  tiles.push(tile("Proj FPS", fmt(p.fps), true));
   const stats = p.stats || {};
-  const entries = Object.entries(stats).sort((a, b) => {
-    const ia = STAT_ORDER_HINT.indexOf(a[0]); const ib = STAT_ORDER_HINT.indexOf(b[0]);
+  Object.entries(stats).sort((a, b) => {
+    const ia = STAT_ORDER_HINT.indexOf(a[0]), ib = STAT_ORDER_HINT.indexOf(b[0]);
     return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
-  });
-  const fpsBox = `<div class="stat-box"><div class="stat-label">FPS</div><div class="stat-value">${fmt(p.fps)}</div></div>`;
-  const aucBox = p.auction != null ? `<div class="stat-box"><div class="stat-label">AUC$</div><div class="stat-value">${fmtMoney(p.auction)}</div></div>` : "";
-  document.getElementById("modal-stats").innerHTML = fpsBox + aucBox + entries.map(([label, val]) =>
-    `<div class="stat-box"><div class="stat-label">${escapeHtml(label)}</div><div class="stat-value">${fmt(val)}</div></div>`
-  ).join("");
+  }).forEach(([label, val]) => tiles.push(tile(label, fmt(val))));
+  document.getElementById("modal-stats").innerHTML = tiles.join("");
 
+  renderCareer(p);
   document.getElementById("comment-error").classList.add("hidden");
   document.getElementById("comment-form").reset();
   modal.classList.remove("hidden");
   loadComments(p);
+  loadNews(p);
 }
+
+function tile(label, value, hero) {
+  return `<div class="stat-box${hero ? " hero" : ""}"><div class="stat-label">${escapeHtml(label)}</div><div class="stat-value">${value}</div></div>`;
+}
+
+function posRankByFps(p) {
+  const list = players.filter(x => x.position === p.position)
+    .sort((a, b) => (b.fps ?? -Infinity) - (a.fps ?? -Infinity));
+  return list.findIndex(x => key(x) === key(p)) + 1;
+}
+
+function renderCareer(p) {
+  const wrap = document.getElementById("snap-career-wrap");
+  const career = p.career || [];
+  if (!career.length) { wrap.classList.add("hidden"); return; }
+  wrap.classList.remove("hidden");
+  const statKeys = Object.keys(career[0].stats);
+  const head = `<tr><th>Year</th><th>Tm</th><th class="num">G</th>${statKeys.map(s => `<th class="num">${escapeHtml(s)}</th>`).join("")}</tr>`;
+  const rows = career.map(c =>
+    `<tr><td>${c.season}</td><td>${c.team || "–"}</td><td class="num">${c.games}</td>${statKeys.map(s => `<td class="num">${fmt(c.stats[s])}</td>`).join("")}</tr>`
+  ).join("");
+  document.getElementById("snap-career").innerHTML = head + rows;
+}
+
+async function loadNews(p) {
+  const wrap = document.getElementById("snap-news-wrap");
+  const el = document.getElementById("snap-news");
+  wrap.classList.remove("hidden");
+  el.innerHTML = `<div class="comment-empty">Loading news…</div>`;
+  try {
+    const res = await fetch(`api/news.php?player=${encodeURIComponent(p.player)}`);
+    if (!res.ok) throw new Error();
+    const items = (await res.json()).news || [];
+    if (!items.length) { el.innerHTML = `<div class="comment-empty">No recent news mentioning ${escapeHtml(p.player)}.</div>`; return; }
+    el.innerHTML = items.map(n => `
+      <a class="news-item" href="${escapeAttr(n.link)}" target="_blank" rel="noopener noreferrer">
+        <div class="news-title">${escapeHtml(n.title)}</div>
+        <div class="news-summary">${escapeHtml(n.summary)}</div>
+        <div class="news-meta">${escapeHtml(n.source)}${n.date ? " · " + fmtDate(n.date) : ""} ↗</div>
+      </a>`).join("");
+  } catch (_) {
+    el.innerHTML = `<div class="comment-empty">Couldn't load news right now.</div>`;
+  }
+}
+
 function closeModal() { modal.classList.add("hidden"); activeKey = null; }
 document.getElementById("modal-close").addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
@@ -538,6 +628,54 @@ document.getElementById("legend-edit-toggle").addEventListener("click", () => {
   document.getElementById("legend-edit-toggle").textContent = open ? "Edit legend" : "Done editing legend";
   if (!open) renderLegendEditor();
 });
+
+// ---- trending ----
+
+const trendModal = document.getElementById("trending-modal");
+function closeTrending() { trendModal.classList.add("hidden"); }
+document.getElementById("trending-close").addEventListener("click", closeTrending);
+trendModal.addEventListener("click", (e) => { if (e.target === trendModal) closeTrending(); });
+
+const playerByName = () => {
+  const m = new Map();
+  players.forEach(p => { if (!m.has(p.player)) m.set(p.player, p); });
+  return m;
+};
+
+function renderTrendList(elId, items) {
+  const el = document.getElementById(elId);
+  const pmap = playerByName();
+  if (!items || !items.length) { el.innerHTML = `<div class="comment-empty">No data.</div>`; return; }
+  el.innerHTML = items.map(it => {
+    const inRanks = pmap.has(it.name);
+    return `<div class="trend-row ${inRanks ? "link" : ""}" ${inRanks ? `data-name="${escapeAttr(it.name)}"` : ""}>
+        <span class="pos-badge">${it.pos}</span>
+        <span class="trend-name">${escapeHtml(it.name)}</span>
+        <span class="trend-team">${it.team || ""}</span>
+        <span class="trend-count">${(it.count >= 1000 ? (it.count/1000).toFixed(0) + "k" : it.count)}</span>
+      </div>`;
+  }).join("");
+  el.querySelectorAll(".trend-row.link").forEach(r => r.addEventListener("click", () => {
+    const p = pmap.get(r.dataset.name);
+    if (p) { closeTrending(); openModal(key(p)); }
+  }));
+}
+
+async function openTrending() {
+  trendModal.classList.remove("hidden");
+  document.getElementById("trend-up").innerHTML = `<div class="comment-empty">Loading…</div>`;
+  document.getElementById("trend-down").innerHTML = "";
+  try {
+    const res = await fetch("api/trending.php");
+    if (!res.ok) throw new Error();
+    const d = await res.json();
+    renderTrendList("trend-up", d.up);
+    renderTrendList("trend-down", d.down);
+  } catch (_) {
+    document.getElementById("trend-up").innerHTML = `<div class="comment-empty">Couldn't load trending.</div>`;
+  }
+}
+document.getElementById("trending-open").addEventListener("click", openTrending);
 
 // ---- init ----
 

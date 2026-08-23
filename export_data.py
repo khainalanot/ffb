@@ -217,6 +217,13 @@ def main():
                 "tag": tags.get((pos, name)),
             })
 
+    try:
+        from enrich import enrich
+        print("Enriching (Sleeper bios/headshots, ADP, career stats)…")
+        enrich(all_players)
+    except Exception as e:
+        print(f"  ! Enrichment skipped ({e})")
+
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps({"players": all_players}, indent=2))
     by_pos = {}
