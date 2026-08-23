@@ -15,19 +15,22 @@ ffb_require_auth_or_redirect();
 </head>
 <body>
 <header class="topbar">
-  <div class="brand">
-    <span class="brand-mark">FFB</span>
-    <span class="brand-sub">Draft Board</span>
-  </div>
-  <div class="controls">
-    <div class="search-wrap">
-      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
-      <input id="search" type="search" placeholder="Search player or team">
+  <div class="bar-inner">
+    <div class="brand">
+      <span class="brand-mark">FFB</span>
+      <span class="brand-sub">Draft Board</span>
     </div>
-    <a href="logout.php" class="logout-link">Log out</a>
+    <div class="controls">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+        <input id="search" type="search" placeholder="Search player or team">
+      </div>
+      <a href="logout.php" class="logout-link">Log out</a>
+    </div>
   </div>
 </header>
 
+<div class="page">
 <nav class="tabs" id="position-tabs"></nav>
 
 <div class="legend-row">
@@ -66,6 +69,7 @@ ffb_require_auth_or_redirect();
     </table>
   </div>
 </main>
+</div>
 
 <div id="comment-modal" class="modal hidden">
   <div class="modal-content">
