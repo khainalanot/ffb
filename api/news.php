@@ -140,13 +140,25 @@ function rank_score($it, $needleName) {
     if ($nameInTitle) return 1;
     return 0;
 }
-usort($items, function ($a, $b) use ($needleName) {
-    $ra = rank_score($a, $needleName);
-    $rb = rank_score($b, $needleName);
-    if ($ra !== $rb) return $rb - $ra;
-    return $b['ts'] - $a['ts'];
-});
-$items = array_slice($items, 0, 12);
+// Keep only genuine player-specific analysis: an ESPN athlete blurb, or a note
+// whose headline names the player. Must have a real blurb, and not be a paywall
+// stub or a generic "waiver wire / rankings / bold predictions" roundup.
+$needleName = mb_strtolower($player);
+$GENERIC = '/\b(waiver wire|bold predictions|rankings|sleepers|busts|mock draft|lotto tickets|start.?sit|dfs|league-winners|must-draft|targets|streamers|depth chart)\b/i';
+$PAYWALL = '/members only|log ?in\/register|register to read|subscribe/i';
+
+$good = array_values(array_filter($items, function ($i) use ($needleName, $GENERIC, $PAYWALL) {
+    if ($i['summary'] === '') return false;
+    if (preg_match($PAYWALL, $i['summary'])) return false;
+    $playerSpecific = ($i['source'] === 'ESPN')
+        || (mb_strpos(mb_strtolower($i['title']), $needleName) !== false);
+    if (!$playerSpecific) return false;
+    if (preg_match($GENERIC, $i['title'])) return false;   // drop roundup articles
+    return true;
+}));
+
+usort($good, fn($a, $b) => $b['ts'] - $a['ts']);
+$items = array_slice($good, 0, 4);
 foreach ($items as &$i) unset($i['ts']);
 
 echo json_encode(['news' => $items]);

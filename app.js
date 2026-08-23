@@ -508,7 +508,7 @@ async function loadNews(p) {
     const res = await fetch(`api/news.php?player=${encodeURIComponent(p.player)}${eid}`);
     if (!res.ok) throw new Error();
     const items = (await res.json()).news || [];
-    if (!items.length) { el.innerHTML = `<div class="comment-empty">No recent news mentioning ${escapeHtml(p.player)}.</div>`; return; }
+    if (!items.length) { el.innerHTML = `<div class="comment-empty">No recent analysis for ${escapeHtml(p.player)}.</div>`; return; }
     el.innerHTML = items.map(n => `
       <a class="news-item" href="${escapeAttr(n.link)}" target="_blank" rel="noopener noreferrer">
         <div class="news-title">${escapeHtml(n.title)}</div>

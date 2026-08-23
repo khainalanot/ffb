@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=10">
+<link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
 <header class="topbar">
@@ -94,7 +94,7 @@ ffb_require_auth_or_redirect();
     </div>
 
     <div id="snap-news-wrap" class="snap-section hidden">
-      <div class="section-head">News</div>
+      <div class="section-head">Analysis</div>
       <div id="snap-news" class="news-list"></div>
     </div>
 
@@ -137,6 +137,6 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=10"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
