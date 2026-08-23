@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jake's Ranks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Jake's Ranks <span class="subtitle">— QB</span></h1>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search player or team…">
+  </div>
+</header>
+
+<div class="legend" id="legend"></div>
+
+<main>
+  <table id="ranks-table">
+    <thead>
+      <tr>
+        <th data-key="rank" class="sortable">RK</th>
+        <th data-key="player" class="sortable">Player</th>
+        <th data-key="team" class="sortable">TM</th>
+        <th data-key="bye" class="sortable">BYE</th>
+        <th data-key="pass_yards" class="sortable">Pass Yds</th>
+        <th data-key="pass_td" class="sortable">Pass TD</th>
+        <th data-key="int" class="sortable">INT</th>
+        <th data-key="rush_yards" class="sortable">Rush Yds</th>
+        <th data-key="rush_td" class="sortable">Rush TD</th>
+        <th data-key="fps" class="sortable">FPS</th>
+        <th data-key="auction" class="sortable">AUC$</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="ranks-body"></tbody>
+  </table>
+</main>
+
+<div id="comment-modal" class="modal hidden">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <h2 id="modal-player-name"></h2>
+
+    <div id="modal-excel-comment" class="excel-comment hidden">
+      <div class="excel-comment-label">From the spreadsheet</div>
+      <p id="modal-excel-comment-text"></p>
+    </div>
+
+    <h3>Comments</h3>
+    <div id="modal-comments" class="comments-list"></div>
+
+    <form id="comment-form">
+      <input id="comment-author" type="text" placeholder="Your name" required maxlength="40">
+      <textarea id="comment-text" placeholder="Add a comment…" required maxlength="1000"></textarea>
+      <button type="submit">Post</button>
+      <div id="comment-error" class="comment-error hidden"></div>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

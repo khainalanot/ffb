@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS comments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  player VARCHAR(100) NOT NULL,
+  author VARCHAR(40) NOT NULL,
+  text VARCHAR(1000) NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX idx_comments_player ON comments (player);
