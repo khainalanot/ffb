@@ -56,7 +56,29 @@ if ($espnId !== '') {
     }
 }
 
-// --- 2. Google News search (broad coverage) ---
+// --- 2. RotoBaller search RSS (per-player fantasy analysis with blurbs) ---
+$rbUrl = "https://www.rotoballer.com/?s=" . rawurlencode($player) . "&feed=rss2";
+$raw = ffb_http_get_cached($rbUrl, 1800);
+$xml = $raw ? @simplexml_load_string($raw, 'SimpleXMLElement', LIBXML_NOCDATA) : null;
+if ($xml && isset($xml->channel->item)) {
+    foreach ($xml->channel->item as $it) {
+        $title = clean_text((string) $it->title, 200);
+        $desc  = clean_text((string) $it->description, 500);
+        // Skip other sports (RotoBaller covers MLB/NBA/etc. too).
+        if (preg_match('/\b(baseball|MLB|NBA|NHL|closer|bullpen|fantasy hockey)\b/i', $title . ' ' . $desc)) continue;
+        $ts = strtotime((string) $it->pubDate) ?: 0;
+        add_item($items, $seenLink, $seenTitle, [
+            'title'   => $title,
+            'summary' => $desc,
+            'source'  => 'RotoBaller',
+            'date'    => $ts ? date('c', $ts) : null,
+            'ts'      => $ts,
+            'link'    => (string) $it->link,
+        ]);
+    }
+}
+
+// --- 3. Google News search (broad coverage) ---
 $q = rawurlencode('"' . $player . '" NFL');
 $raw = ffb_http_get_cached("https://news.google.com/rss/search?q=$q&hl=en-US&gl=US&ceid=US:en", 1800);
 $xml = $raw ? @simplexml_load_string($raw, 'SimpleXMLElement', LIBXML_NOCDATA) : null;
@@ -85,7 +107,7 @@ if ($xml && isset($xml->channel->item)) {
     }
 }
 
-// --- 3. RotoBaller player-news RSS (keyword match) ---
+// --- 4. RotoBaller player-news RSS (keyword match) ---
 $needle = mb_strtolower($player);
 foreach (['https://www.rotoballer.com/player-news/feed', 'https://www.rotoballer.com/category/nfl/feed'] as $url) {
     $raw = ffb_http_get_cached($url, 1800);
@@ -107,7 +129,23 @@ foreach (['https://www.rotoballer.com/player-news/feed', 'https://www.rotoballer
     }
 }
 
-usort($items, fn($a, $b) => $b['ts'] - $a['ts']);
+// Rank: player-specific analysis notes first (name in title + a blurb),
+// then any analysis blurb, then remaining headlines by recency.
+$needleName = mb_strtolower($player);
+function rank_score($it, $needleName) {
+    $nameInTitle = mb_strpos(mb_strtolower($it['title']), $needleName) !== false;
+    $hasBlurb = $it['summary'] !== '';
+    if ($nameInTitle && $hasBlurb) return 3;
+    if ($hasBlurb) return 2;
+    if ($nameInTitle) return 1;
+    return 0;
+}
+usort($items, function ($a, $b) use ($needleName) {
+    $ra = rank_score($a, $needleName);
+    $rb = rank_score($b, $needleName);
+    if ($ra !== $rb) return $rb - $ra;
+    return $b['ts'] - $a['ts'];
+});
 $items = array_slice($items, 0, 12);
 foreach ($items as &$i) unset($i['ts']);
 
