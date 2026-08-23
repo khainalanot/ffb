@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 <header class="topbar">
@@ -51,6 +51,7 @@ ffb_require_auth_or_redirect();
       <span class="switch-track"><span class="switch-thumb"></span></span>
       <span class="switch-text">Show hidden</span>
     </label>
+    <button id="latest-open" class="ghost-btn">📰 Latest</button>
     <button id="trending-open" class="ghost-btn">📈 Trending</button>
     <button id="edit-toggle" class="edit-toggle">Edit</button>
   </div>
@@ -110,6 +111,15 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
+<div id="latest-modal" class="modal hidden">
+  <div class="modal-content">
+    <button class="modal-close" id="latest-close" aria-label="Close">&times;</button>
+    <h2 class="trend-title">Latest analysis</h2>
+    <div class="trend-sub">Freshest NFL player notes · via RotoBaller</div>
+    <div id="latest-list" class="news-list"></div>
+  </div>
+</div>
+
 <div id="trending-modal" class="modal hidden">
   <div class="modal-content">
     <button class="modal-close" id="trending-close" aria-label="Close">&times;</button>
@@ -127,6 +137,6 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>

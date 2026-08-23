@@ -703,6 +703,34 @@ function openTrending() {
   loadTrending();
 }
 document.getElementById("trending-open").addEventListener("click", openTrending);
+
+// ---- latest analysis ----
+
+const latestModal = document.getElementById("latest-modal");
+function closeLatest() { latestModal.classList.add("hidden"); }
+document.getElementById("latest-close").addEventListener("click", closeLatest);
+latestModal.addEventListener("click", (e) => { if (e.target === latestModal) closeLatest(); });
+
+async function openLatest() {
+  latestModal.classList.remove("hidden");
+  const el = document.getElementById("latest-list");
+  el.innerHTML = `<div class="comment-empty">Loading…</div>`;
+  try {
+    const res = await fetch("api/latest.php");
+    if (!res.ok) throw new Error();
+    const items = (await res.json()).news || [];
+    if (!items.length) { el.innerHTML = `<div class="comment-empty">No notes right now.</div>`; return; }
+    el.innerHTML = items.map(n => `
+      <a class="news-item" href="${escapeAttr(n.link)}" target="_blank" rel="noopener noreferrer">
+        <div class="news-title">${escapeHtml(n.title)}</div>
+        ${n.summary ? `<div class="news-summary">${escapeHtml(n.summary)}</div>` : ""}
+        <div class="news-meta">${escapeHtml(n.source)}${n.date ? " · " + fmtDate(n.date) : ""} ↗</div>
+      </a>`).join("");
+  } catch (_) {
+    el.innerHTML = `<div class="comment-empty">Couldn't load latest notes.</div>`;
+  }
+}
+document.getElementById("latest-open").addEventListener("click", openLatest);
 document.querySelectorAll(".trend-win").forEach(btn => {
   btn.addEventListener("click", () => {
     trendHours = +btn.dataset.hours;
