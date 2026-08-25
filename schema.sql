@@ -17,9 +17,13 @@ CREATE TABLE IF NOT EXISTS overrides (
   tag VARCHAR(30) DEFAULT NULL,
   sort_rank DOUBLE DEFAULT NULL,
   picked TINYINT(1) NOT NULL DEFAULT 0,
+  watched TINYINT(1) NOT NULL DEFAULT 0,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   UNIQUE KEY uniq_pos_player (position, player)
 );
+
+-- Migration for existing databases (safe to ignore the error if it already exists):
+--   ALTER TABLE overrides ADD COLUMN watched TINYINT(1) NOT NULL DEFAULT 0;
 
 -- Editable legend: Ryan can rename, recolor, add, or remove tags.
 CREATE TABLE IF NOT EXISTS tags (

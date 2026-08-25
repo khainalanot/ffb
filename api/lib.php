@@ -5,6 +5,7 @@ require_once __DIR__ . '/../auth.php';
 
 function ffb_api_guard() {
     header('Content-Type: application/json');
+    header('Cache-Control: no-store, no-cache, must-revalidate');
     if (!ffb_is_authed()) {
         http_response_code(401);
         echo json_encode(['error' => 'Not signed in.']);

@@ -11,7 +11,7 @@ ffb_require_auth_or_redirect();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
 <header class="topbar">
@@ -83,6 +83,7 @@ ffb_require_auth_or_redirect();
         <div class="snap-title-row">
           <h2 id="modal-player-name"></h2>
           <button id="snap-tag" class="snap-tag" type="button" aria-label="Set tag"></button>
+          <button id="snap-watch" class="snap-watch" type="button" aria-label="Toggle watchlist"></button>
         </div>
         <div id="modal-player-sub" class="modal-player-sub"></div>
         <div id="snap-bio" class="snap-bio"></div>
@@ -151,6 +152,14 @@ ffb_require_auth_or_redirect();
   </div>
 </div>
 
-<script src="app.js?v=14"></script>
+<aside id="watchlist-mini" class="watchlist-mini">
+  <div class="watch-mini-head">
+    <span class="watch-mini-title">🔖 Watchlist <span id="watch-count" class="watch-badge">0</span></span>
+    <a href="watchlist.php" class="watch-open-btn">Open ↗</a>
+  </div>
+  <div id="watch-mini-list" class="watch-mini-body"></div>
+</aside>
+
+<script src="app.js?v=16"></script>
 </body>
 </html>

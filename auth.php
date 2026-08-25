@@ -37,6 +37,7 @@ function ffb_pdo() {
 // Guard an API endpoint: enforce auth + config, return a ready PDO or exit JSON.
 function ffb_api_pdo() {
     header('Content-Type: application/json');
+    header('Cache-Control: no-store, no-cache, must-revalidate');   // never serve stale edits
     if (!ffb_is_authed()) {
         http_response_code(401);
         echo json_encode(['error' => 'Not signed in.']);

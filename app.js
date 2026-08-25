@@ -38,11 +38,20 @@ function key(p) { return `${p.position}|${p.player}`; }
 function ovr(p) { return overrides[key(p)] || {}; }
 function tagOf(p) {
   const o = ovr(p);
+  if (o.tag === "") return null;                          // explicitly cleared — no tag
   return (o.tag !== undefined && o.tag !== null) ? o.tag : p.tag;
 }
 function rankOf(p) {
   const o = ovr(p);
   return (o.sort_rank !== null && o.sort_rank !== undefined) ? o.sort_rank : null;
+}
+function isWatched(p) { return !!ovr(p).watched; }
+
+// Bookmark icon — filled when the player is on the watchlist, outline when not.
+function watchIcon(on) {
+  return on
+    ? `<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6 4h12a1 1 0 0 1 1 1v15.5a.5.5 0 0 1-.79.41L12 16.5l-6.21 4.41A.5.5 0 0 1 5 20.5V5a1 1 0 0 1 1-1"/></svg>`
+    : `<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17 5v13.11l-4.42-3.14-.58-.41-.58.41L7 18.11V5h10m0-1.5H7A1.5 1.5 0 0 0 5.5 5v15.5a.5.5 0 0 0 .79.41L12 16.85l5.71 4.06a.5.5 0 0 0 .79-.41V5A1.5 1.5 0 0 0 17 3.5"/></svg>`;
 }
 function tagOrder(slug) {
   const i = tags.findIndex(t => t.slug === slug);
@@ -289,6 +298,7 @@ function renderTable() {
           <span class="player-name">${escapeHtml(p.player)}</span>${inj}
           <span class="player-meta">${p.team || ""}${p.bye ? " · BYE " + fmt(p.bye) : ""}</span>
           ${marker}
+          <button class="watch-btn${isWatched(p) ? " on" : ""}" title="${isWatched(p) ? "On your watchlist" : "Add to watchlist"}" aria-label="Toggle watchlist">${watchIcon(isWatched(p))}</button>
         </td>
         <td class="num fps-cell">${fmt(p.fps)}</td>
         <td class="num auc-cell auc-col">${fmtMoney(p.auction)}</td>
@@ -300,6 +310,8 @@ function renderTable() {
     const k = decodeURIComponent(row.dataset.key);
     const pill = row.querySelector(".tag-chip");
     pill.addEventListener("click", (e) => { e.stopPropagation(); openTagMenu(k, pill); });
+    const watch = row.querySelector(".watch-btn");
+    watch.addEventListener("click", (e) => { e.stopPropagation(); toggleWatch(k); });
     row.addEventListener("click", (e) => {
       if (e.target.closest(".drag-handle")) return;
       openModal(k);
@@ -350,7 +362,7 @@ function openTagMenu(k, anchor) {
   menu.querySelectorAll(".tag-opt").forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
-      setTag(k, btn.dataset.slug || null);
+      setTag(k, btn.dataset.slug);   // "" from the "No tag" button = explicitly cleared
       closeTagMenu();
     });
   });
@@ -369,6 +381,72 @@ async function setTag(k, slug) {
     await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ position: p.position, player: p.player, tag: slug }) });
   } catch (_) {}
+}
+
+// ---- watchlist ----
+
+async function toggleWatch(k) {
+  const p = players.find(pl => key(pl) === k);
+  if (!p) return;
+  const next = isWatched(p) ? 0 : 1;
+  overrides[k] = { ...ovr(p), watched: next };
+  renderTable();
+  renderWatchlist();
+  if (activeKey === k) updateSnapWatch(p);
+  try {
+    await fetch(OVERRIDES_API, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ position: p.position, player: p.player, watched: next }) });
+  } catch (_) {}
+}
+
+function watchedPlayers() {
+  return players.filter(isWatched);
+}
+
+function renderWatchlist() {
+  const panel = document.getElementById("watchlist-mini");
+  if (!panel) return;
+  const list = watchedPlayers();
+  const countEl = document.getElementById("watch-count");
+  if (countEl) countEl.textContent = list.length;
+
+  const body = document.getElementById("watch-mini-list");
+  if (list.length === 0) {
+    body.innerHTML = `<div class="watch-empty">No players yet. Tap the bookmark on any player to add them.</div>`;
+    return;
+  }
+  body.innerHTML = list.map(p => {
+    const k = encodeURIComponent(key(p));
+    const photo = p.headshot
+      ? `<img class="watch-mini-photo" src="${escapeAttr(p.headshot)}" alt="" onerror="this.style.visibility='hidden'">`
+      : `<span class="watch-mini-photo placeholder">${escapeHtml((p.player || "?").charAt(0))}</span>`;
+    return `<div class="watch-mini-row" data-key="${k}">
+        ${photo}
+        <span class="watch-mini-info">
+          <span class="watch-mini-name">${escapeHtml(p.player)}</span>
+          <span class="watch-mini-meta"><span class="pos-badge">${p.position}</span>${p.team || ""}</span>
+        </span>
+        <button class="watch-mini-remove" data-key="${k}" title="Remove from watchlist" aria-label="Remove">✕</button>
+      </div>`;
+  }).join("");
+
+  body.querySelectorAll(".watch-mini-row").forEach(row => {
+    row.addEventListener("click", (e) => {
+      if (e.target.closest(".watch-mini-remove")) return;
+      openModal(decodeURIComponent(row.dataset.key));
+    });
+  });
+  body.querySelectorAll(".watch-mini-remove").forEach(btn => {
+    btn.addEventListener("click", (e) => { e.stopPropagation(); toggleWatch(decodeURIComponent(btn.dataset.key)); });
+  });
+}
+
+function updateSnapWatch(p) {
+  const btn = document.getElementById("snap-watch");
+  if (!btn) return;
+  const on = isWatched(p);
+  btn.classList.toggle("on", on);
+  btn.innerHTML = `${watchIcon(on)}<span>${on ? "Watching" : "Watch"}</span>`;
 }
 
 // ---- drag ----
@@ -474,6 +552,7 @@ function openModal(k) {
   document.getElementById("modal-stats").innerHTML = tiles.join("");
 
   updateSnapTag(p);
+  updateSnapWatch(p);
   renderCareer(p);
   document.getElementById("comment-error").classList.add("hidden");
   document.getElementById("comment-form").reset();
@@ -567,6 +646,10 @@ modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); }
 document.getElementById("snap-tag").addEventListener("click", (e) => {
   e.stopPropagation();
   if (activeKey) openTagMenu(activeKey, e.currentTarget);
+});
+document.getElementById("snap-watch").addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (activeKey) toggleWatch(activeKey);
 });
 
 function fmtDate(s) {
@@ -790,7 +873,7 @@ document.querySelectorAll(".trend-win").forEach(btn => {
 
 async function loadTags() {
   try {
-    const res = await fetch(TAGS_API);
+    const res = await fetch(TAGS_API, { cache: "no-store" });
     if (!res.ok) throw new Error();
     const data = await res.json();
     tags = (data.tags && data.tags.length) ? data.tags : DEFAULT_TAGS.slice();
@@ -800,14 +883,14 @@ async function loadTags() {
 }
 async function loadOverrides() {
   try {
-    const res = await fetch(OVERRIDES_API);
+    const res = await fetch(OVERRIDES_API, { cache: "no-store" });
     if (!res.ok) return;
     overrides = (await res.json()).overrides || {};
   } catch (_) { overrides = {}; }
 }
 async function loadCounts() {
   try {
-    const res = await fetch(`${COMMENTS_API}?counts=1`);
+    const res = await fetch(`${COMMENTS_API}?counts=1`, { cache: "no-store" });
     if (!res.ok) return;
     commentCounts = (await res.json()).counts || {};
   } catch (_) { commentCounts = {}; }
@@ -822,6 +905,14 @@ async function init() {
   players = (await res.json()).players;
   await Promise.all([loadOverrides(), loadCounts()]);
   renderTable();
+  renderWatchlist();
+
+  // Deep link from the watchlist page (index.php?p=POS|Player) opens the full profile.
+  const deep = new URLSearchParams(location.search).get("p");
+  if (deep && players.some(pl => key(pl) === deep)) {
+    openModal(deep);
+    history.replaceState(null, "", location.pathname);   // drop the param so refresh won't re-open
+  }
 }
 
 init();

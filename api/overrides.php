@@ -12,19 +12,28 @@ $pdo = ffb_api_pdo();
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+// Self-healing migration: add the watchlist column if an older DB predates it.
+try {
+    $has = $pdo->query("SHOW COLUMNS FROM overrides LIKE 'watched'")->fetch();
+    if (!$has) {
+        $pdo->exec('ALTER TABLE overrides ADD COLUMN watched TINYINT(1) NOT NULL DEFAULT 0');
+    }
+} catch (Exception $e) { /* ignore — column probably already exists */ }
+
 // Valid tag slugs come from the (editable) tags table.
 function ffb_valid_tags($pdo) {
     return $pdo->query('SELECT slug FROM tags')->fetchAll(PDO::FETCH_COLUMN);
 }
 
 if ($method === 'GET') {
-    $stmt = $pdo->query('SELECT position, player, tag, sort_rank, picked FROM overrides');
+    $stmt = $pdo->query('SELECT position, player, tag, sort_rank, picked, watched FROM overrides');
     $out = [];
     foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row) {
         $out[$row['position'] . '|' . $row['player']] = [
             'tag' => $row['tag'],
             'sort_rank' => $row['sort_rank'] === null ? null : (float) $row['sort_rank'],
             'picked' => (int) $row['picked'],
+            'watched' => (int) $row['watched'],
         ];
     }
     echo json_encode(['overrides' => $out]);
@@ -77,10 +86,23 @@ if ($method === 'POST') {
         exit;
     }
 
-    // Set / clear a color tag
+    // Toggle watchlist flag
+    if (array_key_exists('watched', $body)) {
+        $watched = !empty($body['watched']) ? 1 : 0;
+        $stmt = $pdo->prepare(
+            'INSERT INTO overrides (position, player, watched) VALUES (?, ?, ?)
+             ON DUPLICATE KEY UPDATE watched = VALUES(watched)'
+        );
+        $stmt->execute([$position, $player, $watched]);
+        echo json_encode(['ok' => true, 'position' => $position, 'player' => $player, 'watched' => $watched]);
+        exit;
+    }
+
+    // Set / clear a color tag.
+    // An empty string is an *explicit clear* (stored as ""), kept distinct from
+    // NULL ("no override") so clearing a tag never falls back to the base Excel tag.
     $tag = $body['tag'] ?? null;
-    if ($tag === '') $tag = null;
-    if ($tag !== null && !in_array($tag, ffb_valid_tags($pdo), true)) {
+    if ($tag !== null && $tag !== '' && !in_array($tag, ffb_valid_tags($pdo), true)) {
         http_response_code(400);
         echo json_encode(['error' => 'Invalid tag.']);
         exit;
